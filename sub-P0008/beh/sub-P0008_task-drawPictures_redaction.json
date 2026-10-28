@@ -1,0 +1,10 @@
+[
+  {
+    "rel_start": 15.0,
+    "rel_end": 251.0,
+    "blur_video": true,
+    "region": null,
+    "mute_audio": true,
+    "reason": "not task data (video and audio altered for this range) -- non-task interruption (loose EEG electrode reattached by researcher) -- subject was not performing the task; EEG/IMU left unaltered but recommend excluding this range from analysis"
+  }
+]

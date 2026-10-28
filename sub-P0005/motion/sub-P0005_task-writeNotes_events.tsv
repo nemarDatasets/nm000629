@@ -1,0 +1,4 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	349.1897	write-notes	meta.json action	stim-P0005S031Ego	sub-P0005/stim-P0005S031Ego_audiovideo.mp4	stim-P0005S031Audio	sub-P0005/stim-P0005S031Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	349.182
+4.817	100.335	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+105.152	240.0	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0007_phase2_031_play-puzzle",
+  "subject_id": "P0007",
+  "phase": "Phase_2",
+  "sequence": 31,
+  "category": "task",
+  "raw_type": "phase_Play_Puzzle",
+  "start_ts": -2208948437.151495,
+  "end_ts": -2208948255.7673893,
+  "duration_sec": 181.384106,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.044,
+      "back_sec": 0.019
+    },
+    "imu_2": {
+      "front_sec": 0.007,
+      "back_sec": 0.149
+    },
+    "imu_3": {
+      "front_sec": 0.017,
+      "back_sec": 0.017
+    },
+    "imu_4": {
+      "front_sec": 0.116,
+      "back_sec": 0.092
+    }
+  },
+  "verb": "Play_II",
+  "verb_class": 2,
+  "noun": "Puzzle",
+  "noun_class": 8,
+  "action": "Play_II Puzzle",
+  "action_class": 8,
+  "imu_hz": 9.94,
+  "imu_hz_per_device": {
+    "imu_1": 9.94,
+    "imu_2": 9.94,
+    "imu_3": 9.95,
+    "imu_4": 9.93
+  }
+}

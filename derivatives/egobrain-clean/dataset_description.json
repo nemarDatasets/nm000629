@@ -1,0 +1,17 @@
+{
+  "Name": "EgoBrain-Mini clean EEG (authors' processing)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-NC-4.0",
+  "GeneratedBy": [
+    {
+      "Name": "EgoBrain authors' pipeline",
+      "Description": "see README"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "bids::"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "TaskName": "writeNotes",
+  "TaskDescription": "Everyday action 'Write Notes' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 155.7539,
+  "EgoBrainSegment": {
+    "segment_id": "P0019_phase2_003_write-notes",
+    "action": "Write Notes",
+    "phase": "Phase_2",
+    "duration_sec": 155.754408,
+    "imu_hz": 9.94,
+    "imu_hz_per_device": {
+      "imu_1": 9.95,
+      "imu_2": 9.95,
+      "imu_3": 9.95,
+      "imu_4": 9.94
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.016,
+        "back_sec": 0.052
+      },
+      "imu_2": {
+        "front_sec": 0.015,
+        "back_sec": 0.064
+      },
+      "imu_3": {
+        "front_sec": 0.017,
+        "back_sec": 0.013
+      },
+      "imu_4": {
+        "front_sec": 0.103,
+        "back_sec": 0.112
+      }
+    },
+    "verb": "Write",
+    "verb_class": 5,
+    "noun": "Notes",
+    "noun_class": 17,
+    "action_class": 17,
+    "category": "task",
+    "sequence": 3,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0019/names",
+    "start_key": "start_ts"
+  }
+}

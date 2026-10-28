@@ -1,0 +1,66 @@
+{
+  "TaskName": "drawPictures",
+  "TaskDescription": "Everyday action 'Draw Pictures' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 154.9062,
+  "EgoBrainSegment": {
+    "segment_id": "P0033_phase2_033_draw-pictures",
+    "action": "Draw Pictures",
+    "phase": "Phase_2",
+    "duration_sec": 154.904043,
+    "imu_hz": 198.03,
+    "imu_hz_per_device": {
+      "imu_1": 198.59,
+      "imu_2": 196.32,
+      "imu_3": 198.59,
+      "imu_4": 198.64
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.003,
+        "back_sec": 0.045
+      },
+      "imu_2": {
+        "front_sec": 0.006,
+        "back_sec": 0.001
+      },
+      "imu_3": {
+        "front_sec": 0.008,
+        "back_sec": 0.036
+      },
+      "imu_4": {
+        "front_sec": 0.001,
+        "back_sec": 0.024
+      }
+    },
+    "verb": "Draw",
+    "verb_class": 7,
+    "noun": "Pictures",
+    "noun_class": 22,
+    "action_class": 22,
+    "category": "task",
+    "sequence": 33,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0033/names",
+    "start_key": "start_ts"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "SourceRepository": "ut-vision/EgoBrain-Mini",
+  "SourceURL": "https://huggingface.co/datasets/ut-vision/EgoBrain-Mini",
+  "SourceRevision": "dfd2906a246ba1edfa99b1081df6efa7e961adde",
+  "OriginalFiles": 17520,
+  "OriginalBytes": 44568261067,
+  "SourceFidelity": "All original release paths retained. Signals, media and non-time IMU values remain unchanged; participant wall-clock metadata is shifted consistently in this NEMAR copy. Exact originals retained on Voyager, not deposited.",
+  "Access": "PRIVATE research copy only; no publication or redistribution without author review.",
+  "SourcePrivacy": "Participant JSON/report/IMU acquisition clocks shifted by one whole-day offset per subject to an artificial January 1900 epoch. Author publication/review history dates are not participant acquisition dates and are retained. Media have original author redactions and residual consent context; no semantic anonymity certification.",
+  "ConvertedPrivacy": "BIDS acquisition times use an artificial epoch. Raw source remains unmodified separately.",
+  "OriginalGitAttributes": "Source LFS declarations commented out in this copy for NEMAR annex compatibility; original file and original checksum retained locally.",
+  "Transformations": "egobrain-mini-source-copy-transformations.json",
+  "DepositedChecksums": "egobrain-mini-deposited-SHA256SUMS.tsv",
+  "ReidentificationKey": "retained locally, not included in deposit",
+  "ReportCommentPrivacy": "Two subject-linked recording-day strings in the shared viewer comments are omitted in all 40 copies. Executable JavaScript and all media/signal bytes are unchanged."
+}

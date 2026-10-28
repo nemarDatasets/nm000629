@@ -1,0 +1,8 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	449.2147	operate-computer-powerpoint	meta.json action	stim-P0014S003Ego	sub-P0014/stim-P0014S003Ego_audiovideo.mp4	stim-P0014S003Audio	sub-P0014/stim-P0014S003Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	449.2148
+1.525	5.0	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+7.525	4.5	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+56.525	10.0	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+71.525	1.0	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+88.525	14.0	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+412.525	7.0	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

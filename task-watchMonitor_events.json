@@ -1,0 +1,42 @@
+{
+  "trial_type": {
+    "Description": "Segment-level labels",
+    "Levels": {
+      "watch-monitor": "the instructed everyday action 'watch-monitor' (whole segment: prompt -> execute -> end click)",
+      "bad_signal_quality_poor": "EEG dominated by a shared large artifact (authors' flag); exclude from EEG analyses",
+      "bad_reference_contact_lost": "an ear reference (CMS/DRL) lost contact (authors' flag)",
+      "video_redacted": "region-limited blur applied by the authors in ego.mp4 for this window",
+      "video_redacted_audio_muted": "blur plus muted audio in this window"
+    }
+  },
+  "source": {
+    "Description": "metadata field the row comes from"
+  },
+  "experience_id": {
+    "Description": "Custom catalog id for recorded experience, not BIDS presented-stimulus stim_id"
+  },
+  "experience_file": {
+    "Description": "Custom video path relative to stimuli/; not presented-stimulus stim_file"
+  },
+  "audio_experience_id": {
+    "Description": "Custom catalog audio id"
+  },
+  "audio_experience_file": {
+    "Description": "Custom audio path relative to stimuli/"
+  },
+  "media_role": {
+    "Description": "recorded_experience_not_presented_stimulus"
+  },
+  "media_onset": {
+    "Description": "Recording-relative start of linked clip",
+    "Units": "s"
+  },
+  "media_offset": {
+    "Description": "File-relative offset at recording start",
+    "Units": "s"
+  },
+  "common_duration": {
+    "Description": "Usable interval common to EEG/audio/video actual durations",
+    "Units": "s"
+  }
+}

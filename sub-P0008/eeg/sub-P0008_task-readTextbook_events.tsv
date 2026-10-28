@@ -1,0 +1,5 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	185.0	bad_signal_quality_poor	meta.json eeg_quality_flags	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+0.0	276.4148	read-textbook	meta.json action	stim-P0008S036Ego	sub-P0008/stim-P0008S036Ego_audiovideo.mp4	stim-P0008S036Audio	sub-P0008/stim-P0008S036Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	276.409
+3.03	75.37	bad_reference_contact_lost	meta.json eeg_quality_flags	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+12.0	212.0	video_redacted_audio_muted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

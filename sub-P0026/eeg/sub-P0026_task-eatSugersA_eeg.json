@@ -1,0 +1,66 @@
+{
+  "TaskName": "eatSugersA",
+  "TaskDescription": "Everyday action 'Eat Sugers' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 37.4883,
+  "EgoBrainSegment": {
+    "segment_id": "P0026_phase2_027_eat-sugers-a",
+    "action": "Eat Sugers",
+    "phase": "Phase_2",
+    "duration_sec": 37.485994,
+    "imu_hz": 198.79,
+    "imu_hz_per_device": {
+      "imu_1": 199.17,
+      "imu_2": 198.74,
+      "imu_3": 198.53,
+      "imu_4": 198.74
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.036,
+        "back_sec": 0.019
+      },
+      "imu_2": {
+        "front_sec": 0.022,
+        "back_sec": 0.028
+      },
+      "imu_3": {
+        "front_sec": 0.045,
+        "back_sec": 0.03
+      },
+      "imu_4": {
+        "front_sec": 0.02,
+        "back_sec": 0.038
+      }
+    },
+    "verb": "Eat",
+    "verb_class": 8,
+    "noun": "Sugers",
+    "noun_class": 25,
+    "action_class": 25,
+    "category": "task",
+    "sequence": 27,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0026/names",
+    "start_key": "start_ts"
+  }
+}

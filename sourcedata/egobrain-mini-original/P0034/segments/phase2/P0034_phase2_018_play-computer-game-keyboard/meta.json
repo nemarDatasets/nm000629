@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0034_phase2_018_play-computer-game-keyboard",
+  "subject_id": "P0034",
+  "phase": "Phase_2",
+  "sequence": 18,
+  "category": "task",
+  "raw_type": "phase_Play_Computer_Game_(Keyboard)",
+  "start_ts": -2208944623.2416363,
+  "end_ts": -2208944388.1526747,
+  "duration_sec": 235.088961,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.04,
+      "back_sec": 0.017
+    },
+    "imu_2": {
+      "front_sec": 0.078,
+      "back_sec": 0.027
+    },
+    "imu_3": {
+      "front_sec": 0.041,
+      "back_sec": 0.009
+    },
+    "imu_4": {
+      "front_sec": 0.0,
+      "back_sec": 0.007
+    }
+  },
+  "verb": "Play_I",
+  "verb_class": 1,
+  "noun": "Computer game (Keyboard)",
+  "noun_class": 5,
+  "action": "Play_I Computer game (Keyboard)",
+  "action_class": 5,
+  "imu_hz": 198.33,
+  "imu_hz_per_device": {
+    "imu_1": 198.61,
+    "imu_2": 198.57,
+    "imu_3": 197.52,
+    "imu_4": 198.64
+  }
+}

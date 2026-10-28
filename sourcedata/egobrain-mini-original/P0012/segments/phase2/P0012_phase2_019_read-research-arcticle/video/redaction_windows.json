@@ -1,0 +1,47 @@
+[
+  {
+    "rel_start": 5.087,
+    "rel_end": 16.854,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1900,
+        1920,
+        320,
+        240
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 115.755,
+    "rel_end": 133.087,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1780,
+        1740,
+        560,
+        420
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 221.087,
+    "rel_end": 228.822,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1780,
+        1740,
+        560,
+        420
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  }
+]

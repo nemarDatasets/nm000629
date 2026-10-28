@@ -1,0 +1,5 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	154.5	bad_reference_contact_lost	meta.json eeg_quality_flags	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+0.0	234.5599	write-notes	meta.json action	stim-P0020S019Ego	sub-P0020/stim-P0020S019Ego_audiovideo.mp4	stim-P0020S019Audio	sub-P0020/stim-P0020S019Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	234.5625
+16.741	16.0	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+217.53	17.03	bad_reference_contact_lost	meta.json eeg_quality_flags	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

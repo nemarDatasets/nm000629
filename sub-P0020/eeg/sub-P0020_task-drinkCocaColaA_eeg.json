@@ -1,0 +1,75 @@
+{
+  "TaskName": "drinkCocaColaA",
+  "TaskDescription": "Everyday action 'Drink Coca-cola' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 31.2461,
+  "EgoBrainSegment": {
+    "segment_id": "P0020_phase2_027_drink-coca-cola-a",
+    "action": "Drink Coca-cola",
+    "phase": "Phase_2",
+    "duration_sec": 31.248093,
+    "imu_hz": 9.98,
+    "imu_hz_per_device": {
+      "imu_1": 9.98,
+      "imu_2": 9.98,
+      "imu_3": 9.98,
+      "imu_4": 9.98
+    },
+    "eeg_quality_flags": [
+      {
+        "rel_start": 0.0,
+        "rel_end": 31.25,
+        "issue": "reference_contact_lost",
+        "description": "An EEG ear reference electrode (CMS/DRL) lost skin contact. All 32 channels share this reference, so every channel is affected, not only those on one side. The signal still shows coarse physiological events (eye blinks, chewing), but its amplitude and spectral power (e.g. alpha) are not comparable to normally-referenced recordings: exclude this range from band-power / amplitude-based analyses, and use it for anything else only with care.",
+        "evidence": "Emotiv headset contact-quality channels CQ_CMS / CQ_DRL read 0 (no contact) in the raw EDF for this range; the EEG shows large transients at the moments contact was lost and restored."
+      }
+    ],
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.113,
+        "back_sec": 0.074
+      },
+      "imu_2": {
+        "front_sec": 0.076,
+        "back_sec": 0.069
+      },
+      "imu_3": {
+        "front_sec": 0.089,
+        "back_sec": 0.141
+      },
+      "imu_4": {
+        "front_sec": 0.101,
+        "back_sec": 0.016
+      }
+    },
+    "verb": "Drink",
+    "verb_class": 9,
+    "noun": "Coca-cola",
+    "noun_class": 27,
+    "action_class": 27,
+    "category": "task",
+    "sequence": 27,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0020/names",
+    "start_key": "start_ts"
+  }
+}

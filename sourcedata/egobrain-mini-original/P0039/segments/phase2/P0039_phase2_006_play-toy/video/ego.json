@@ -1,0 +1,20 @@
+[
+  {
+    "chapter": "GX030111.MP4",
+    "start_frame": 12567,
+    "end_frame": 23040,
+    "fps": 29.97002997002997
+  },
+  {
+    "chapter": "GX040111.MP4",
+    "start_frame": 0,
+    "end_frame": 21120,
+    "fps": 29.97002997002997
+  },
+  {
+    "chapter": "GX050111.MP4",
+    "start_frame": 0,
+    "end_frame": 101,
+    "fps": 29.97002997002997
+  }
+]

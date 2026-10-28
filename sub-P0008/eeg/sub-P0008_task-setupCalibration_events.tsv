@@ -1,0 +1,3 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	72.662	setup-calibration	meta.json action	stim-P0008S000Ego	sub-P0008/stim-P0008S000Ego_audiovideo.mp4	stim-P0008S000Audio	sub-P0008/stim-P0008S000Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	72.6516875
+0.0	72.662	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

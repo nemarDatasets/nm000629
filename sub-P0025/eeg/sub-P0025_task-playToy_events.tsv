@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	136.1116	play-toy	meta.json action	stim-P0025S004Ego	sub-P0025/stim-P0025S004Ego_audiovideo.mp4	stim-P0025S004Audio	sub-P0025/stim-P0025S004Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	136.103

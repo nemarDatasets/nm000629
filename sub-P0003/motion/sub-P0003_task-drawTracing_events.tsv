@@ -1,0 +1,4 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	35.087	draw-tracing	meta.json action	stim-P0003S035Ego	sub-P0003/stim-P0003S035Ego_audiovideo.mp4	stim-P0003S035Audio	sub-P0003/stim-P0003S035Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	35.0859
+0.0	1.082	video_redacted_audio_muted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+13.082	6.0	video_redacted_audio_muted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

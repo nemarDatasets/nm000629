@@ -1,0 +1,66 @@
+{
+  "TaskName": "eatSnackC",
+  "TaskDescription": "Everyday action 'Eat Snack' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 31.9805,
+  "EgoBrainSegment": {
+    "segment_id": "P0032_phase2_031_eat-snack-c",
+    "action": "Eat Snack",
+    "phase": "Phase_2",
+    "duration_sec": 31.982127,
+    "imu_hz": 197.92,
+    "imu_hz_per_device": {
+      "imu_1": 198.42,
+      "imu_2": 196.17,
+      "imu_3": 198.67,
+      "imu_4": 198.42
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.028,
+        "back_sec": 0.033
+      },
+      "imu_2": {
+        "front_sec": 0.07,
+        "back_sec": 0.011
+      },
+      "imu_3": {
+        "front_sec": 0.021,
+        "back_sec": 0.01
+      },
+      "imu_4": {
+        "front_sec": 0.073,
+        "back_sec": 0.049
+      }
+    },
+    "verb": "Eat",
+    "verb_class": 8,
+    "noun": "Snack",
+    "noun_class": 23,
+    "action_class": 23,
+    "category": "task",
+    "sequence": 31,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0032/names",
+    "start_key": "start_ts"
+  }
+}

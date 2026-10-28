@@ -1,0 +1,47 @@
+{
+  "Description": "Authors' processed EEG: linear + 6th-order detrend, 0.1-75 Hz bandpass, 50 Hz notch, resample 200 Hz, RANSAC bad-channel interpolation, average reference, exponential-moving-average standardization (unitless).",
+  "SamplingFrequency": 200.0,
+  "Shape": [
+    32,
+    4735
+  ],
+  "ChannelNames": [
+    "Cz",
+    "Fz",
+    "Fp1",
+    "F7",
+    "F3",
+    "FC1",
+    "C3",
+    "FC5",
+    "FT9",
+    "T7",
+    "CP5",
+    "CP1",
+    "P3",
+    "P7",
+    "PO9",
+    "O1",
+    "Pz",
+    "Oz",
+    "O2",
+    "PO10",
+    "P8",
+    "P4",
+    "CP2",
+    "CP6",
+    "T8",
+    "FT10",
+    "FC6",
+    "C4",
+    "FC2",
+    "F4",
+    "F8",
+    "Fp2"
+  ],
+  "Units": "standardized (unitless)",
+  "ChannelNamesProvenance": "Inferred same row order as raw.npy under the authors' described order-preserving processing; raw waveform verification does not independently verify clean-array row order.",
+  "Sources": [
+    "bids::sub-P0002/eeg/sub-P0002_task-operateComputerExcel_eeg.vhdr"
+  ]
+}

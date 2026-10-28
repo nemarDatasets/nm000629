@@ -1,0 +1,1611 @@
+{
+  "subject_id": "P0015",
+  "note": "EgoBrain-Mini: egocentric-only release (first-person video, EEG, IMU, audio). Third-person camera views are not part of this release.",
+  "segments": [
+    {
+      "segment_id": "P0015_phase2_000_setup-calibration",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 0,
+      "category": "auxiliary",
+      "raw_type": "setup_calibration",
+      "start_ts": -2208956367.1654053,
+      "end_ts": -2208956307.074297,
+      "duration_sec": 60.091108,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.083,
+          "back_sec": 0.066
+        },
+        "imu_2": {
+          "front_sec": 0.131,
+          "back_sec": 0.08
+        },
+        "imu_3": {
+          "front_sec": 0.157,
+          "back_sec": 0.086
+        },
+        "imu_4": {
+          "front_sec": 0.088,
+          "back_sec": 0.022
+        }
+      },
+      "raw_types": [
+        "sensor_check",
+        "published_date",
+        "sound_check",
+        "phase_calibration",
+        "phase_Calibration_phase",
+        "eyesopen_element_hcdo",
+        "eyesclose_element_q956"
+      ]
+    },
+    {
+      "segment_id": "P0015_phase2_001_drink-coca-cola-b",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 1,
+      "category": "task",
+      "raw_type": "phase_Drink_Coca-cola_B",
+      "start_ts": -2208956307.074297,
+      "end_ts": -2208956262.164118,
+      "duration_sec": 44.910179,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.022,
+          "back_sec": 0.034
+        },
+        "imu_2": {
+          "front_sec": 0.038,
+          "back_sec": 0.035
+        },
+        "imu_3": {
+          "front_sec": 0.03,
+          "back_sec": 0.058
+        },
+        "imu_4": {
+          "front_sec": 0.118,
+          "back_sec": 0.001
+        }
+      },
+      "verb": "Drink",
+      "verb_class": 9,
+      "noun": "Coca-cola",
+      "noun_class": 27,
+      "action": "Drink Coca-cola",
+      "action_class": 27
+    },
+    {
+      "segment_id": "P0015_phase2_002_play-cards",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 2,
+      "category": "task",
+      "raw_type": "phase_Play_Cards",
+      "start_ts": -2208956262.164118,
+      "end_ts": -2208956138.90073,
+      "duration_sec": 123.263388,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.023,
+          "back_sec": 0.032
+        },
+        "imu_2": {
+          "front_sec": 0.07,
+          "back_sec": 0.042
+        },
+        "imu_3": {
+          "front_sec": 0.066,
+          "back_sec": 0.049
+        },
+        "imu_4": {
+          "front_sec": 0.129,
+          "back_sec": 0.078
+        }
+      },
+      "verb": "Play_II",
+      "verb_class": 2,
+      "noun": "Cards",
+      "noun_class": 7,
+      "action": "Play_II Cards",
+      "action_class": 7
+    },
+    {
+      "segment_id": "P0015_phase2_003_play-toy",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 3,
+      "category": "task",
+      "raw_type": "phase_Play_Toy",
+      "start_ts": -2208956138.90073,
+      "end_ts": -2208955916.466064,
+      "duration_sec": 222.434666,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.027,
+          "back_sec": 0.099
+        },
+        "imu_2": {
+          "front_sec": 0.112,
+          "back_sec": 0.106
+        },
+        "imu_3": {
+          "front_sec": 0.111,
+          "back_sec": 0.0
+        },
+        "imu_4": {
+          "front_sec": 0.015,
+          "back_sec": 0.018
+        }
+      },
+      "verb": "Play_II",
+      "verb_class": 2,
+      "noun": "Toys",
+      "noun_class": 6,
+      "action": "Play_II Toys",
+      "action_class": 6
+    },
+    {
+      "segment_id": "P0015_phase2_004_play-cube",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 4,
+      "category": "task",
+      "raw_type": "phase_Play_Cube",
+      "start_ts": -2208955916.466064,
+      "end_ts": -2208955789.7577877,
+      "duration_sec": 126.708276,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.014,
+          "back_sec": 0.024
+        },
+        "imu_2": {
+          "front_sec": 0.004,
+          "back_sec": 0.098
+        },
+        "imu_3": {
+          "front_sec": 0.09,
+          "back_sec": 0.075
+        },
+        "imu_4": {
+          "front_sec": 0.086,
+          "back_sec": 0.018
+        }
+      },
+      "verb": "Play_II",
+      "verb_class": 2,
+      "noun": "Cube",
+      "noun_class": 9,
+      "action": "Play_II Cube",
+      "action_class": 9
+    },
+    {
+      "segment_id": "P0015_phase2_005_drink-coca-cola-c",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 5,
+      "category": "task",
+      "raw_type": "phase_Drink_Coca-cola_C",
+      "start_ts": -2208955789.7577877,
+      "end_ts": -2208955755.909059,
+      "duration_sec": 33.848729,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.09,
+          "back_sec": 0.038
+        },
+        "imu_2": {
+          "front_sec": 0.02,
+          "back_sec": 0.086
+        },
+        "imu_3": {
+          "front_sec": 0.014,
+          "back_sec": 0.116
+        },
+        "imu_4": {
+          "front_sec": 0.076,
+          "back_sec": 0.028
+        }
+      },
+      "verb": "Drink",
+      "verb_class": 9,
+      "noun": "Coca-cola",
+      "noun_class": 27,
+      "action": "Drink Coca-cola",
+      "action_class": 27
+    },
+    {
+      "segment_id": "P0015_phase2_006_write-tracing",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 6,
+      "category": "task",
+      "raw_type": "phase_Write_Tracing",
+      "start_ts": -2208955755.909059,
+      "end_ts": -2208955634.58652,
+      "duration_sec": 121.322539,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.083,
+          "back_sec": 0.1
+        },
+        "imu_2": {
+          "front_sec": 0.015,
+          "back_sec": 0.052
+        },
+        "imu_3": {
+          "front_sec": 0.014,
+          "back_sec": 0.06
+        },
+        "imu_4": {
+          "front_sec": 0.061,
+          "back_sec": 0.001
+        }
+      },
+      "verb": "Write",
+      "verb_class": 5,
+      "noun": "Copybook",
+      "noun_class": 16,
+      "action": "Write Copybook",
+      "action_class": 16
+    },
+    {
+      "segment_id": "P0015_phase2_007_eat-sugers-b",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 7,
+      "category": "task",
+      "raw_type": "phase_Eat_Sugers_B",
+      "start_ts": -2208955634.58652,
+      "end_ts": -2208955555.355302,
+      "duration_sec": 79.231218,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.018,
+          "back_sec": 0.04
+        },
+        "imu_2": {
+          "front_sec": 0.01,
+          "back_sec": 0.041
+        },
+        "imu_3": {
+          "front_sec": 0.0,
+          "back_sec": 0.031
+        },
+        "imu_4": {
+          "front_sec": 0.062,
+          "back_sec": 0.001
+        }
+      },
+      "verb": "Eat",
+      "verb_class": 8,
+      "noun": "Sugers",
+      "noun_class": 25,
+      "action": "Eat Sugers",
+      "action_class": 25
+    },
+    {
+      "segment_id": "P0015_phase2_008_drink-water-b",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 8,
+      "category": "task",
+      "raw_type": "phase_Drink_Water_B",
+      "start_ts": -2208955555.355302,
+      "end_ts": -2208955522.46679,
+      "duration_sec": 32.888512,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.02,
+          "back_sec": 0.107
+        },
+        "imu_2": {
+          "front_sec": 0.068,
+          "back_sec": 0.115
+        },
+        "imu_3": {
+          "front_sec": 0.064,
+          "back_sec": 0.099
+        },
+        "imu_4": {
+          "front_sec": 0.12,
+          "back_sec": 0.126
+        }
+      },
+      "verb": "Drink",
+      "verb_class": 9,
+      "noun": "Water",
+      "noun_class": 26,
+      "action": "Drink Water",
+      "action_class": 26
+    },
+    {
+      "segment_id": "P0015_phase2_009_play-computer-game-mouse",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 9,
+      "category": "task",
+      "raw_type": "phase_Play_Computer_Game_(Mouse)",
+      "start_ts": -2208955522.46679,
+      "end_ts": -2208955192.392524,
+      "duration_sec": 330.074266,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.04,
+          "back_sec": 0.025
+        },
+        "imu_2": {
+          "front_sec": 0.001,
+          "back_sec": 0.04
+        },
+        "imu_3": {
+          "front_sec": 0.022,
+          "back_sec": 0.045
+        },
+        "imu_4": {
+          "front_sec": 0.021,
+          "back_sec": 0.047
+        }
+      },
+      "verb": "Play_I",
+      "verb_class": 1,
+      "noun": "Computer game (Mouse)",
+      "noun_class": 4,
+      "action": "Play_I Computer game (Mouse)",
+      "action_class": 4
+    },
+    {
+      "segment_id": "P0015_phase2_010_watch-monitor",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 10,
+      "category": "task",
+      "raw_type": "phase_Watch_Monitor",
+      "start_ts": -2208955192.392524,
+      "end_ts": -2208954649.265753,
+      "duration_sec": 543.126771,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.031,
+          "back_sec": 0.026
+        },
+        "imu_2": {
+          "front_sec": 0.084,
+          "back_sec": 0.096
+        },
+        "imu_3": {
+          "front_sec": 0.073,
+          "back_sec": 0.104
+        },
+        "imu_4": {
+          "front_sec": 0.041,
+          "back_sec": 0.047
+        }
+      },
+      "verb": "Watch",
+      "verb_class": 4,
+      "noun": "Computer (Web & Video)",
+      "noun_class": 14,
+      "action": "Watch Computer (Web & Video)",
+      "action_class": 14
+    },
+    {
+      "segment_id": "P0015_phase2_011_drink-water-c",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 11,
+      "category": "task",
+      "raw_type": "phase_Drink_Water_C",
+      "start_ts": -2208954649.265753,
+      "end_ts": -2208954621.818248,
+      "duration_sec": 27.447505,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.094,
+          "back_sec": 0.043
+        },
+        "imu_2": {
+          "front_sec": 0.025,
+          "back_sec": 0.034
+        },
+        "imu_3": {
+          "front_sec": 0.023,
+          "back_sec": 0.038
+        },
+        "imu_4": {
+          "front_sec": 0.077,
+          "back_sec": 0.103
+        }
+      },
+      "verb": "Drink",
+      "verb_class": 9,
+      "noun": "Water",
+      "noun_class": 26,
+      "action": "Drink Water",
+      "action_class": 26
+    },
+    {
+      "segment_id": "P0015_phase2_012_eat-sugers-c",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 12,
+      "category": "task",
+      "raw_type": "phase_Eat_Sugers_C",
+      "start_ts": -2208954621.818248,
+      "end_ts": -2208954577.365037,
+      "duration_sec": 44.453211,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.035,
+          "back_sec": 0.014
+        },
+        "imu_2": {
+          "front_sec": 0.028,
+          "back_sec": 0.086
+        },
+        "imu_3": {
+          "front_sec": 0.047,
+          "back_sec": 0.094
+        },
+        "imu_4": {
+          "front_sec": 0.018,
+          "back_sec": 0.033
+        }
+      },
+      "verb": "Eat",
+      "verb_class": 8,
+      "noun": "Sugers",
+      "noun_class": 25,
+      "action": "Eat Sugers",
+      "action_class": 25
+    },
+    {
+      "segment_id": "P0015_phase2_013_play-phone-game-complex-a",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 13,
+      "category": "task",
+      "raw_type": "phase_Play_Phone_Game_(Complex)_A",
+      "start_ts": -2208954577.365037,
+      "end_ts": -2208954000.064509,
+      "duration_sec": 577.300528,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.104,
+          "back_sec": 0.021
+        },
+        "imu_2": {
+          "front_sec": 0.037,
+          "back_sec": 0.088
+        },
+        "imu_3": {
+          "front_sec": 0.034,
+          "back_sec": 0.097
+        },
+        "imu_4": {
+          "front_sec": 0.098,
+          "back_sec": 0.041
+        }
+      },
+      "verb": "Play_III",
+      "verb_class": 3,
+      "noun": "Phone game (Complex)",
+      "noun_class": 12,
+      "action": "Play_III Phone game (Complex)",
+      "action_class": 12
+    },
+    {
+      "segment_id": "P0015_phase2_014_read-comic-book",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 14,
+      "category": "task",
+      "raw_type": "phase_Read_Comic-book",
+      "start_ts": -2208954000.064509,
+      "end_ts": -2208953750.2966003,
+      "duration_sec": 249.767909,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.102,
+          "back_sec": 0.007
+        },
+        "imu_2": {
+          "front_sec": 0.031,
+          "back_sec": 0.103
+        },
+        "imu_3": {
+          "front_sec": 0.022,
+          "back_sec": 0.072
+        },
+        "imu_4": {
+          "front_sec": 0.099,
+          "back_sec": 0.116
+        }
+      },
+      "verb": "Read",
+      "verb_class": 6,
+      "noun": "Comic-book",
+      "noun_class": 19,
+      "action": "Read Comic-book",
+      "action_class": 19
+    },
+    {
+      "segment_id": "P0015_phase2_015_eat-snack-a",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 15,
+      "category": "task",
+      "raw_type": "phase_Eat_Snack_A",
+      "start_ts": -2208953750.2966003,
+      "end_ts": -2208953680.62661,
+      "duration_sec": 69.66999,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.128,
+          "back_sec": 0.069
+        },
+        "imu_2": {
+          "front_sec": 0.027,
+          "back_sec": 0.083
+        },
+        "imu_3": {
+          "front_sec": 0.068,
+          "back_sec": 0.063
+        },
+        "imu_4": {
+          "front_sec": 0.003,
+          "back_sec": 0.003
+        }
+      },
+      "verb": "Eat",
+      "verb_class": 8,
+      "noun": "Snack",
+      "noun_class": 23,
+      "action": "Eat Snack",
+      "action_class": 23
+    },
+    {
+      "segment_id": "P0015_phase2_016_eat-sugers-a",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 16,
+      "category": "task",
+      "raw_type": "phase_Eat_Sugers_A",
+      "start_ts": -2208953680.62661,
+      "end_ts": -2208953632.482415,
+      "duration_sec": 48.144195,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.018,
+          "back_sec": 0.039
+        },
+        "imu_2": {
+          "front_sec": 0.076,
+          "back_sec": 0.069
+        },
+        "imu_3": {
+          "front_sec": 0.06,
+          "back_sec": 0.029
+        },
+        "imu_4": {
+          "front_sec": 0.12,
+          "back_sec": 0.185
+        }
+      },
+      "verb": "Eat",
+      "verb_class": 8,
+      "noun": "Sugers",
+      "noun_class": 25,
+      "action": "Eat Sugers",
+      "action_class": 25
+    },
+    {
+      "segment_id": "P0015_phase2_017_draw-tracing",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 17,
+      "category": "task",
+      "raw_type": "phase_Draw_Tracing",
+      "start_ts": -2208953632.482415,
+      "end_ts": -2208953371.9526873,
+      "duration_sec": 260.529728,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.026,
+          "back_sec": 0.074
+        },
+        "imu_2": {
+          "front_sec": 0.041,
+          "back_sec": 0.022
+        },
+        "imu_3": {
+          "front_sec": 0.064,
+          "back_sec": 0.03
+        },
+        "imu_4": {
+          "front_sec": 0.008,
+          "back_sec": 0.065
+        }
+      },
+      "verb": "Draw",
+      "verb_class": 7,
+      "noun": "Picture Tracing",
+      "noun_class": 21,
+      "action": "Draw Picture Tracing",
+      "action_class": 21
+    },
+    {
+      "segment_id": "P0015_phase2_018_watch-smartphone",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 18,
+      "category": "task",
+      "raw_type": "phase_Watch_Smartphone",
+      "start_ts": -2208953371.9526873,
+      "end_ts": -2208953049.2840652,
+      "duration_sec": 322.668622,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.076,
+          "back_sec": 0.054
+        },
+        "imu_2": {
+          "front_sec": 0.035,
+          "back_sec": 0.005
+        },
+        "imu_3": {
+          "front_sec": 0.067,
+          "back_sec": 0.105
+        },
+        "imu_4": {
+          "front_sec": 0.028,
+          "back_sec": 0.047
+        }
+      },
+      "verb": "Watch",
+      "verb_class": 4,
+      "noun": "Smartphone (APP & Video)",
+      "noun_class": 15,
+      "action": "Watch Smartphone (APP & Video)",
+      "action_class": 15
+    },
+    {
+      "segment_id": "P0015_phase2_019_operate-computer-excel",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 19,
+      "category": "task",
+      "raw_type": "phase_Operate_Computer_(Excel)",
+      "start_ts": -2208953049.2840652,
+      "end_ts": -2208952892.043363,
+      "duration_sec": 157.240702,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.06,
+          "back_sec": 0.058
+        },
+        "imu_2": {
+          "front_sec": 0.081,
+          "back_sec": 0.045
+        },
+        "imu_3": {
+          "front_sec": 0.027,
+          "back_sec": 0.053
+        },
+        "imu_4": {
+          "front_sec": 0.047,
+          "back_sec": 0.056
+        }
+      },
+      "verb": "Operate",
+      "verb_class": 0,
+      "noun": "Computer (Excel)",
+      "noun_class": 2,
+      "action": "Operate Computer (Excel)",
+      "action_class": 2
+    },
+    {
+      "segment_id": "P0015_phase2_020_play-phone-game-complex-b",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 20,
+      "category": "task",
+      "raw_type": "phase_Play_Phone_Game_(Complex)_B",
+      "start_ts": -2208952892.043363,
+      "end_ts": -2208952363.7467537,
+      "duration_sec": 528.296609,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.022,
+          "back_sec": 0.095
+        },
+        "imu_2": {
+          "front_sec": 0.087,
+          "back_sec": 0.069
+        },
+        "imu_3": {
+          "front_sec": 0.085,
+          "back_sec": 0.072
+        },
+        "imu_4": {
+          "front_sec": 0.031,
+          "back_sec": 0.002
+        }
+      },
+      "verb": "Play_III",
+      "verb_class": 3,
+      "noun": "Phone game (Complex)",
+      "noun_class": 13,
+      "action": "Play_III Phone game (Complex)",
+      "action_class": 13
+    },
+    {
+      "segment_id": "P0015_phase2_021_operate-computer-word",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 21,
+      "category": "task",
+      "raw_type": "phase_Operate_Computer_(Word)",
+      "start_ts": -2208952363.7467537,
+      "end_ts": -2208952062.470311,
+      "duration_sec": 301.276443,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.007,
+          "back_sec": 0.067
+        },
+        "imu_2": {
+          "front_sec": 0.0,
+          "back_sec": 0.015
+        },
+        "imu_3": {
+          "front_sec": 0.016,
+          "back_sec": 0.115
+        },
+        "imu_4": {
+          "front_sec": 0.073,
+          "back_sec": 0.058
+        }
+      },
+      "verb": "Operate",
+      "verb_class": 0,
+      "noun": "Computer (Word)",
+      "noun_class": 0,
+      "action": "Operate Computer (Word)",
+      "action_class": 0
+    },
+    {
+      "segment_id": "P0015_phase2_022_read-research-arcticle",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 22,
+      "category": "task",
+      "raw_type": "phase_Read_Research_Arcticle",
+      "start_ts": -2208952062.470311,
+      "end_ts": -2208951755.210804,
+      "duration_sec": 307.259507,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.053,
+          "back_sec": 0.118
+        },
+        "imu_2": {
+          "front_sec": 0.071,
+          "back_sec": 0.013
+        },
+        "imu_3": {
+          "front_sec": 0.003,
+          "back_sec": 0.083
+        },
+        "imu_4": {
+          "front_sec": 0.059,
+          "back_sec": 0.016
+        }
+      },
+      "verb": "Read",
+      "verb_class": 6,
+      "noun": "Research Article",
+      "noun_class": 20,
+      "action": "Read Research Article",
+      "action_class": 20
+    },
+    {
+      "segment_id": "P0015_phase2_023_draw-computer-pictures",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 23,
+      "category": "task",
+      "raw_type": "phase_Draw_Computer_Pictures",
+      "start_ts": -2208951755.210804,
+      "end_ts": -2208951567.753487,
+      "duration_sec": 187.457317,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.024,
+          "back_sec": 0.076
+        },
+        "imu_2": {
+          "front_sec": 0.106,
+          "back_sec": 0.029
+        },
+        "imu_3": {
+          "front_sec": 0.008,
+          "back_sec": 0.007
+        },
+        "imu_4": {
+          "front_sec": 0.096,
+          "back_sec": 0.065
+        }
+      },
+      "verb": "Operate",
+      "verb_class": 0,
+      "noun": "Computer (Paint)",
+      "noun_class": 3,
+      "action": "Operate Computer (Paint)",
+      "action_class": 3
+    },
+    {
+      "segment_id": "P0015_phase2_024_draw-pictures",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 24,
+      "category": "task",
+      "raw_type": "phase_Draw_Pictures",
+      "start_ts": -2208951567.753487,
+      "end_ts": -2208951419.1794147,
+      "duration_sec": 148.574072,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.07,
+          "back_sec": 0.042
+        },
+        "imu_2": {
+          "front_sec": 0.06,
+          "back_sec": 0.068
+        },
+        "imu_3": {
+          "front_sec": 0.086,
+          "back_sec": 0.042
+        },
+        "imu_4": {
+          "front_sec": 0.053,
+          "back_sec": 0.078
+        }
+      },
+      "verb": "Draw",
+      "verb_class": 7,
+      "noun": "Pictures",
+      "noun_class": 22,
+      "action": "Draw Pictures",
+      "action_class": 22
+    },
+    {
+      "segment_id": "P0015_phase2_025_drink-water-a",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 25,
+      "category": "task",
+      "raw_type": "phase_Drink_Water_A",
+      "start_ts": -2208951419.1794147,
+      "end_ts": -2208951390.064904,
+      "duration_sec": 29.114511,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.043,
+          "back_sec": 0.105
+        },
+        "imu_2": {
+          "front_sec": 0.056,
+          "back_sec": 0.027
+        },
+        "imu_3": {
+          "front_sec": 0.071,
+          "back_sec": 0.035
+        },
+        "imu_4": {
+          "front_sec": 0.01,
+          "back_sec": 0.065
+        }
+      },
+      "verb": "Drink",
+      "verb_class": 9,
+      "noun": "Water",
+      "noun_class": 26,
+      "action": "Drink Water",
+      "action_class": 26
+    },
+    {
+      "segment_id": "P0015_phase2_026_drink-coca-cola-a",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 26,
+      "category": "task",
+      "raw_type": "phase_Drink_Coca-cola_A",
+      "start_ts": -2208951390.064904,
+      "end_ts": -2208951356.4076014,
+      "duration_sec": 33.657303,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.03,
+          "back_sec": 0.102
+        },
+        "imu_2": {
+          "front_sec": 0.064,
+          "back_sec": 0.05
+        },
+        "imu_3": {
+          "front_sec": 0.059,
+          "back_sec": 0.057
+        },
+        "imu_4": {
+          "front_sec": 0.031,
+          "back_sec": 0.001
+        }
+      },
+      "verb": "Drink",
+      "verb_class": 9,
+      "noun": "Coca-cola",
+      "noun_class": 27,
+      "action": "Drink Coca-cola",
+      "action_class": 27
+    },
+    {
+      "segment_id": "P0015_phase2_027_eat-spicy-strips",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 27,
+      "category": "task",
+      "raw_type": "phase_Eat_Spicy_Strips",
+      "start_ts": -2208951356.4076014,
+      "end_ts": -2208951261.5873623,
+      "duration_sec": 94.820239,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.016,
+          "back_sec": 0.063
+        },
+        "imu_2": {
+          "front_sec": 0.006,
+          "back_sec": 0.01
+        },
+        "imu_3": {
+          "front_sec": 0.034,
+          "back_sec": 0.081
+        },
+        "imu_4": {
+          "front_sec": 0.119,
+          "back_sec": 0.035
+        }
+      },
+      "verb": "Eat",
+      "verb_class": 8,
+      "noun": "Spicy strips",
+      "noun_class": 24,
+      "action": "Eat Spicy strips",
+      "action_class": 24
+    },
+    {
+      "segment_id": "P0015_phase2_028_play-phone-game-simple-b",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 28,
+      "category": "task",
+      "raw_type": "phase_Play_Phone_Game_(Simple)_B",
+      "start_ts": -2208951261.5873623,
+      "end_ts": -2208951052.471809,
+      "duration_sec": 209.115553,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.061,
+          "back_sec": 0.107
+        },
+        "imu_2": {
+          "front_sec": 0.082,
+          "back_sec": 0.05
+        },
+        "imu_3": {
+          "front_sec": 0.01,
+          "back_sec": 0.035
+        },
+        "imu_4": {
+          "front_sec": 0.07,
+          "back_sec": 0.097
+        }
+      },
+      "verb": "Play_III",
+      "verb_class": 3,
+      "noun": "Phone game (Simple)",
+      "noun_class": 11,
+      "action": "Play_III Phone game (Simple)",
+      "action_class": 11
+    },
+    {
+      "segment_id": "P0015_phase2_029_drink-bitter-gourd-juice",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 29,
+      "category": "task",
+      "raw_type": "phase_Drink_Bitter_Gourd_Juice",
+      "start_ts": -2208951052.471809,
+      "end_ts": -2208951010.627595,
+      "duration_sec": 41.844214,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.053,
+          "back_sec": 0.039
+        },
+        "imu_2": {
+          "front_sec": 0.039,
+          "back_sec": 0.1
+        },
+        "imu_3": {
+          "front_sec": 0.057,
+          "back_sec": 0.085
+        },
+        "imu_4": {
+          "front_sec": 0.057,
+          "back_sec": 0.101
+        }
+      },
+      "verb": "Drink",
+      "verb_class": 9,
+      "noun": "Bitter Gourd Juice",
+      "noun_class": 28,
+      "action": "Drink Bitter Gourd Juice",
+      "action_class": 28
+    },
+    {
+      "segment_id": "P0015_phase2_030_play-computer-game-keyboard",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 30,
+      "category": "task",
+      "raw_type": "phase_Play_Computer_Game_(Keyboard)",
+      "start_ts": -2208951010.627595,
+      "end_ts": -2208950820.346431,
+      "duration_sec": 190.281164,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.102,
+          "back_sec": 0.057
+        },
+        "imu_2": {
+          "front_sec": 0.012,
+          "back_sec": 0.036
+        },
+        "imu_3": {
+          "front_sec": 0.032,
+          "back_sec": 0.105
+        },
+        "imu_4": {
+          "front_sec": 0.031,
+          "back_sec": 0.012
+        }
+      },
+      "verb": "Play_I",
+      "verb_class": 1,
+      "noun": "Computer game (Keyboard)",
+      "noun_class": 5,
+      "action": "Play_I Computer game (Keyboard)",
+      "action_class": 5
+    },
+    {
+      "segment_id": "P0015_phase2_031_eat-snack-c",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 31,
+      "category": "task",
+      "raw_type": "phase_Eat_Snack_C",
+      "start_ts": -2208950820.346431,
+      "end_ts": -2208950773.057248,
+      "duration_sec": 47.289183,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.038,
+          "back_sec": 0.002
+        },
+        "imu_2": {
+          "front_sec": 0.085,
+          "back_sec": 0.059
+        },
+        "imu_3": {
+          "front_sec": 0.027,
+          "back_sec": 0.046
+        },
+        "imu_4": {
+          "front_sec": 0.042,
+          "back_sec": 0.06
+        }
+      },
+      "verb": "Eat",
+      "verb_class": 8,
+      "noun": "Snack",
+      "noun_class": 23,
+      "action": "Eat Snack",
+      "action_class": 23
+    },
+    {
+      "segment_id": "P0015_phase2_032_eat-snack-b",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 32,
+      "category": "task",
+      "raw_type": "phase_Eat_Snack_B",
+      "start_ts": -2208950773.057248,
+      "end_ts": -2208950731.385109,
+      "duration_sec": 41.672139,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.085,
+          "back_sec": 0.099
+        },
+        "imu_2": {
+          "front_sec": 0.035,
+          "back_sec": 0.037
+        },
+        "imu_3": {
+          "front_sec": 0.036,
+          "back_sec": 0.025
+        },
+        "imu_4": {
+          "front_sec": 0.009,
+          "back_sec": 0.038
+        }
+      },
+      "verb": "Eat",
+      "verb_class": 8,
+      "noun": "Snack",
+      "noun_class": 23,
+      "action": "Eat Snack",
+      "action_class": 23
+    },
+    {
+      "segment_id": "P0015_phase2_033_operate-computer-powerpoint",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 33,
+      "category": "task",
+      "raw_type": "phase_Operate_Computer_(PowerPoint)",
+      "start_ts": -2208950731.385109,
+      "end_ts": -2208950587.994315,
+      "duration_sec": 143.390794,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.024,
+          "back_sec": 0.085
+        },
+        "imu_2": {
+          "front_sec": 0.063,
+          "back_sec": 0.013
+        },
+        "imu_3": {
+          "front_sec": 0.066,
+          "back_sec": 0.012
+        },
+        "imu_4": {
+          "front_sec": 0.065,
+          "back_sec": 0.044
+        }
+      },
+      "verb": "Operate",
+      "verb_class": 0,
+      "noun": "Computer (PowerPoint)",
+      "noun_class": 1,
+      "action": "Operate Computer (PowerPoint)",
+      "action_class": 1
+    },
+    {
+      "segment_id": "P0015_phase2_034_read-textbook",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 34,
+      "category": "task",
+      "raw_type": "phase_Read_Textbook",
+      "start_ts": -2208950587.994315,
+      "end_ts": -2208950380.058578,
+      "duration_sec": 207.935737,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.069,
+          "back_sec": 0.119
+        },
+        "imu_2": {
+          "front_sec": 0.069,
+          "back_sec": 0.009
+        },
+        "imu_3": {
+          "front_sec": 0.079,
+          "back_sec": 0.048
+        },
+        "imu_4": {
+          "front_sec": 0.045,
+          "back_sec": 0.018
+        }
+      },
+      "verb": "Read",
+      "verb_class": 6,
+      "noun": "Textbook",
+      "noun_class": 18,
+      "action": "Read Textbook",
+      "action_class": 18
+    },
+    {
+      "segment_id": "P0015_phase2_035_play-phone-game-simple-a",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 35,
+      "category": "task",
+      "raw_type": "phase_Play_Phone_Game_(Simple)_A",
+      "start_ts": -2208950380.058578,
+      "end_ts": -2208949983.177332,
+      "duration_sec": 396.881246,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.0,
+          "back_sec": 0.005
+        },
+        "imu_2": {
+          "front_sec": 0.117,
+          "back_sec": 0.077
+        },
+        "imu_3": {
+          "front_sec": 0.012,
+          "back_sec": 0.034
+        },
+        "imu_4": {
+          "front_sec": 0.07,
+          "back_sec": 0.086
+        }
+      },
+      "verb": "Play_III",
+      "verb_class": 3,
+      "noun": "Phone game (Simple)",
+      "noun_class": 10,
+      "action": "Play_III Phone game (Simple)",
+      "action_class": 10
+    },
+    {
+      "segment_id": "P0015_phase2_036_play-puzzle",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 36,
+      "category": "task",
+      "raw_type": "phase_Play_Puzzle",
+      "start_ts": -2208949983.177332,
+      "end_ts": -2208949116.299209,
+      "duration_sec": 866.878123,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.118,
+          "back_sec": 0.079
+        },
+        "imu_2": {
+          "front_sec": 0.07,
+          "back_sec": 0.07
+        },
+        "imu_3": {
+          "front_sec": 0.07,
+          "back_sec": 0.022
+        },
+        "imu_4": {
+          "front_sec": 0.004,
+          "back_sec": 0.037
+        }
+      },
+      "verb": "Play_II",
+      "verb_class": 2,
+      "noun": "Puzzle",
+      "noun_class": 8,
+      "action": "Play_II Puzzle",
+      "action_class": 8
+    },
+    {
+      "segment_id": "P0015_phase2_037_write-notes",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 37,
+      "category": "task",
+      "raw_type": "phase_Write_Notes",
+      "start_ts": -2208949116.299209,
+      "end_ts": -2208948898.77752,
+      "duration_sec": 217.521689,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.037,
+          "back_sec": 0.069
+        },
+        "imu_2": {
+          "front_sec": 0.037,
+          "back_sec": 0.064
+        },
+        "imu_3": {
+          "front_sec": 0.107,
+          "back_sec": 0.071
+        },
+        "imu_4": {
+          "front_sec": 0.06,
+          "back_sec": 0.02
+        }
+      },
+      "verb": "Write",
+      "verb_class": 5,
+      "noun": "Notes",
+      "noun_class": 17,
+      "action": "Write Notes",
+      "action_class": 17
+    },
+    {
+      "segment_id": "P0015_phase2_038_closing-calibration",
+      "subject_id": "P0015",
+      "phase": "Phase_2",
+      "sequence": 38,
+      "category": "auxiliary",
+      "raw_type": "closing_calibration",
+      "start_ts": -2208948898.77752,
+      "end_ts": -2208948837.079659,
+      "duration_sec": 61.697861,
+      "modality_presence": {
+        "eeg": true,
+        "imu": true,
+        "video_ego": true,
+        "audio_ego": true
+      },
+      "imu_padding": {
+        "imu_1": {
+          "front_sec": 0.029,
+          "back_sec": 0.03
+        },
+        "imu_2": {
+          "front_sec": 0.03,
+          "back_sec": 0.009
+        },
+        "imu_3": {
+          "front_sec": 0.029,
+          "back_sec": 0.061
+        },
+        "imu_4": {
+          "front_sec": 0.065,
+          "back_sec": 0.041
+        }
+      },
+      "raw_types": [
+        "CQ",
+        "sensor_check",
+        "phase_Calibration_phase_(End)",
+        "eyesopen_element_hcdo",
+        "last_stimuli",
+        "eyesclose_element_q956",
+        "finish_running"
+      ]
+    }
+  ]
+}

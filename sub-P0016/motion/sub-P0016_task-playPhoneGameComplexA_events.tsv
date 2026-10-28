@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	104.9914	play-phone-game-complex-a	meta.json action	stim-P0016S032Ego	sub-P0016/stim-P0016S032Ego_audiovideo.mp4	stim-P0016S032Audio	sub-P0016/stim-P0016S032Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	104.9883

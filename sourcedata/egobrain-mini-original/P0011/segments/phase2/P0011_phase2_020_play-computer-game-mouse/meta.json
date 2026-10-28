@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0011_phase2_020_play-computer-game-mouse",
+  "subject_id": "P0011",
+  "phase": "Phase_2",
+  "sequence": 20,
+  "category": "task",
+  "raw_type": "phase_Play_Computer_Game_(Mouse)",
+  "start_ts": -2208953276.4980497,
+  "end_ts": -2208952689.241588,
+  "duration_sec": 587.256462,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.061,
+      "back_sec": 0.004
+    },
+    "imu_2": {
+      "front_sec": 0.077,
+      "back_sec": 0.002
+    },
+    "imu_3": {
+      "front_sec": 0.017,
+      "back_sec": 0.002
+    },
+    "imu_4": {
+      "front_sec": 0.016,
+      "back_sec": 0.073
+    }
+  },
+  "verb": "Play_I",
+  "verb_class": 1,
+  "noun": "Computer game (Mouse)",
+  "noun_class": 4,
+  "action": "Play_I Computer game (Mouse)",
+  "action_class": 4,
+  "imu_hz": 9.93,
+  "imu_hz_per_device": {
+    "imu_1": 9.93,
+    "imu_2": 9.93,
+    "imu_3": 9.93,
+    "imu_4": 9.93
+  }
+}

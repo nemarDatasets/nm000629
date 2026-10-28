@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	173.2498	play-cube	meta.json action	stim-P0028S009Ego	sub-P0028/stim-P0028S009Ego_audiovideo.mp4	stim-P0028S009Audio	sub-P0028/stim-P0028S009Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	173.23973333333333

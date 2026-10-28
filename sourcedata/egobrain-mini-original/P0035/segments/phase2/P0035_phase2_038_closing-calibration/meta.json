@@ -1,0 +1,52 @@
+{
+  "segment_id": "P0035_phase2_038_closing-calibration",
+  "subject_id": "P0035",
+  "phase": "Phase_2",
+  "sequence": 38,
+  "category": "auxiliary",
+  "raw_type": "closing_calibration",
+  "start_ts": -2208943713.815983,
+  "end_ts": -2208943654.112596,
+  "duration_sec": 59.703387,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.019,
+      "back_sec": 0.067
+    },
+    "imu_2": {
+      "front_sec": 0.048,
+      "back_sec": 0.055
+    },
+    "imu_3": {
+      "front_sec": 0.021,
+      "back_sec": 0.072
+    },
+    "imu_4": {
+      "front_sec": 0.047,
+      "back_sec": 0.027
+    }
+  },
+  "raw_types": [
+    "CQ",
+    "sensor_check",
+    "phase_Calibration_phase_(End)",
+    "eyesopen_element_hcdo",
+    "last_stimuli",
+    "eyesclose_element_q956",
+    "finish_running"
+  ],
+  "clean_pad_back_sec": 0.95,
+  "imu_hz": 185.82,
+  "imu_hz_per_device": {
+    "imu_1": 198.62,
+    "imu_2": 198.48,
+    "imu_3": 198.48,
+    "imu_4": 147.7
+  }
+}

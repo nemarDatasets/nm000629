@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0036_phase2_034_drink-bitter-gourd-juice",
+  "subject_id": "P0036",
+  "phase": "Phase_2",
+  "sequence": 34,
+  "category": "task",
+  "raw_type": "phase_Drink_Bitter_Gourd_Juice",
+  "start_ts": -2208963018.7635527,
+  "end_ts": -2208962969.970091,
+  "duration_sec": 48.793462,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.085,
+      "back_sec": 0.052
+    },
+    "imu_2": {
+      "front_sec": 0.062,
+      "back_sec": 0.05
+    },
+    "imu_3": {
+      "front_sec": 0.032,
+      "back_sec": 0.013
+    },
+    "imu_4": {
+      "front_sec": 0.021,
+      "back_sec": 0.019
+    }
+  },
+  "verb": "Drink",
+  "verb_class": 9,
+  "noun": "Bitter Gourd Juice",
+  "noun_class": 28,
+  "action": "Drink Bitter Gourd Juice",
+  "action_class": 28,
+  "imu_hz": 198.43,
+  "imu_hz_per_device": {
+    "imu_1": 198.26,
+    "imu_2": 198.43,
+    "imu_3": 198.43,
+    "imu_4": 198.59
+  }
+}

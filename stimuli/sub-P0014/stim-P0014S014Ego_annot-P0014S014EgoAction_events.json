@@ -1,0 +1,8 @@
+{
+  "source_segment": {
+    "Description": "Original release segment"
+  },
+  "trial_type": {
+    "Description": "Source whole-segment action label, not stimulus presentation"
+  }
+}

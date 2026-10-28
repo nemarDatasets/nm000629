@@ -1,0 +1,57 @@
+{
+  "segment_id": "P0020_phase2_037_play-cards",
+  "subject_id": "P0020",
+  "phase": "Phase_2",
+  "sequence": 37,
+  "category": "task",
+  "raw_type": "phase_Play_Cards",
+  "start_ts": -2208968975.557734,
+  "end_ts": -2208968776.394109,
+  "duration_sec": 199.163625,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.072,
+      "back_sec": 0.063
+    },
+    "imu_2": {
+      "front_sec": 0.079,
+      "back_sec": 0.089
+    },
+    "imu_3": {
+      "front_sec": 0.071,
+      "back_sec": 0.005
+    },
+    "imu_4": {
+      "front_sec": 0.03,
+      "back_sec": 0.047
+    }
+  },
+  "verb": "Play_II",
+  "verb_class": 2,
+  "noun": "Cards",
+  "noun_class": 7,
+  "action": "Play_II Cards",
+  "action_class": 7,
+  "eeg_quality_flags": [
+    {
+      "rel_start": 0.0,
+      "rel_end": 199.16,
+      "issue": "reference_contact_lost",
+      "description": "An EEG ear reference electrode (CMS/DRL) lost skin contact. All 32 channels share this reference, so every channel is affected, not only those on one side. The signal still shows coarse physiological events (eye blinks, chewing), but its amplitude and spectral power (e.g. alpha) are not comparable to normally-referenced recordings: exclude this range from band-power / amplitude-based analyses, and use it for anything else only with care.",
+      "evidence": "Emotiv headset contact-quality channels CQ_CMS / CQ_DRL read 0 (no contact) in the raw EDF for this range; the EEG shows large transients at the moments contact was lost and restored."
+    }
+  ],
+  "imu_hz": 9.94,
+  "imu_hz_per_device": {
+    "imu_1": 9.94,
+    "imu_2": 9.94,
+    "imu_3": 9.94,
+    "imu_4": 9.94
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "TaskName": "playComputerGameMouse",
+  "TaskDescription": "Everyday action 'Play_I Computer game (Mouse)' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 371.5781,
+  "EgoBrainSegment": {
+    "segment_id": "P0032_phase2_008_play-computer-game-mouse",
+    "action": "Play_I Computer game (Mouse)",
+    "phase": "Phase_2",
+    "duration_sec": 371.575436,
+    "imu_hz": 198.32,
+    "imu_hz_per_device": {
+      "imu_1": 198.6,
+      "imu_2": 197.52,
+      "imu_3": 198.58,
+      "imu_4": 198.6
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.017,
+        "back_sec": 0.002
+      },
+      "imu_2": {
+        "front_sec": 0.012,
+        "back_sec": 0.043
+      },
+      "imu_3": {
+        "front_sec": 0.013,
+        "back_sec": 0.01
+      },
+      "imu_4": {
+        "front_sec": 0.011,
+        "back_sec": 0.023
+      }
+    },
+    "verb": "Play_I",
+    "verb_class": 1,
+    "noun": "Computer game (Mouse)",
+    "noun_class": 4,
+    "action_class": 4,
+    "category": "task",
+    "sequence": 8,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0032/names",
+    "start_key": "start_ts"
+  }
+}

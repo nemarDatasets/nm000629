@@ -1,0 +1,10 @@
+[
+  {
+    "rel_start": 0.0,
+    "rel_end": 1.34,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": true,
+    "reason": "interaction tag (audio altered for this range) -- interaction (subject visibly interacting with another person; not solo-subject data)"
+  }
+]

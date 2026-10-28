@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	94.0489	write-tracing	meta.json action	stim-P0031S012Ego	sub-P0031/stim-P0031S012Ego_audiovideo.mp4	stim-P0031S012Audio	sub-P0031/stim-P0031S012Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	94.0469

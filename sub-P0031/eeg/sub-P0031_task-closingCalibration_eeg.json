@@ -1,0 +1,62 @@
+{
+  "TaskName": "closingCalibration",
+  "TaskDescription": "Everyday action 'closing-calibration' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 82.793,
+  "EgoBrainSegment": {
+    "segment_id": "P0031_phase2_038_closing-calibration",
+    "phase": "Phase_2",
+    "duration_sec": 82.791814,
+    "imu_hz": 164.44,
+    "imu_hz_per_device": {
+      "imu_1": 62.16,
+      "imu_2": 198.59,
+      "imu_3": 198.5,
+      "imu_4": 198.5
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.011,
+        "back_sec": 0.075
+      },
+      "imu_2": {
+        "front_sec": 0.012,
+        "back_sec": 0.035
+      },
+      "imu_3": {
+        "front_sec": 0.068,
+        "back_sec": 0.037
+      },
+      "imu_4": {
+        "front_sec": 0.003,
+        "back_sec": 0.004
+      }
+    },
+    "category": "auxiliary",
+    "sequence": 38,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "clean_pad_back_sec",
+      "end_ts",
+      "raw_type",
+      "raw_types",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0031/names",
+    "start_key": "start_ts"
+  }
+}

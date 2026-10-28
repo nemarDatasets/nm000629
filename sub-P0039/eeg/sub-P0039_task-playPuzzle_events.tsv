@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	1026.0233	play-puzzle	meta.json action	stim-P0039S014Ego	sub-P0039/stim-P0039S014Ego_audiovideo.mp4	stim-P0039S014Audio	sub-P0039/stim-P0039S014Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	1026.0234

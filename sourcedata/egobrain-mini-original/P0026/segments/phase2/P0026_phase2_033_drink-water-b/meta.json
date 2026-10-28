@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0026_phase2_033_drink-water-b",
+  "subject_id": "P0026",
+  "phase": "Phase_2",
+  "sequence": 33,
+  "category": "task",
+  "raw_type": "phase_Drink_Water_B",
+  "start_ts": -2208937149.7436457,
+  "end_ts": -2208937132.096286,
+  "duration_sec": 17.64736,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.053,
+      "back_sec": 0.012
+    },
+    "imu_2": {
+      "front_sec": 0.044,
+      "back_sec": 0.013
+    },
+    "imu_3": {
+      "front_sec": 0.034,
+      "back_sec": 0.014
+    },
+    "imu_4": {
+      "front_sec": 0.028,
+      "back_sec": 0.009
+    }
+  },
+  "verb": "Drink",
+  "verb_class": 9,
+  "noun": "Water",
+  "noun_class": 26,
+  "action": "Drink Water",
+  "action_class": 26,
+  "imu_hz": 198.44,
+  "imu_hz_per_device": {
+    "imu_1": 198.22,
+    "imu_2": 198.22,
+    "imu_3": 198.67,
+    "imu_4": 198.67
+  }
+}

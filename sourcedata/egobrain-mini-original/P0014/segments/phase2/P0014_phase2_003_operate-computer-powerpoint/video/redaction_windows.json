@@ -1,0 +1,92 @@
+[
+  {
+    "rel_start": 1.525,
+    "rel_end": 6.525,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        0,
+        0,
+        3840,
+        2160
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 7.525,
+    "rel_end": 12.025,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        0,
+        0,
+        3840,
+        2160
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 56.525,
+    "rel_end": 66.525,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        0,
+        0,
+        3840,
+        2160
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 71.525,
+    "rel_end": 72.525,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        0,
+        0,
+        3840,
+        2160
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 88.525,
+    "rel_end": 102.525,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        0,
+        0,
+        3840,
+        2160
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 412.525,
+    "rel_end": 419.525,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        0,
+        0,
+        3840,
+        2160
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "rel_start": 0.0,
+    "rel_end": 55.246,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "interaction tag (video/audio kept as recorded) -- the experimenter is present and interacting with the subject during this range; not purely solo-subject data"
+  }
+]

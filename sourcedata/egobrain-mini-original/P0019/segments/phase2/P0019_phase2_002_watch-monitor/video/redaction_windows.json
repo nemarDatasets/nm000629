@@ -1,0 +1,17 @@
+[
+  {
+    "rel_start": 3.1,
+    "rel_end": 11.1,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1300,
+        0,
+        1450,
+        860
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0007_phase2_013_operate-computer-excel",
+  "subject_id": "P0007",
+  "phase": "Phase_2",
+  "sequence": 13,
+  "category": "task",
+  "raw_type": "phase_Operate_Computer_(Excel)",
+  "start_ts": -2208951038.130829,
+  "end_ts": -2208950943.771255,
+  "duration_sec": 94.359574,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.075,
+      "back_sec": 0.108
+    },
+    "imu_2": {
+      "front_sec": 0.066,
+      "back_sec": 0.031
+    },
+    "imu_3": {
+      "front_sec": 0.11,
+      "back_sec": 0.104
+    },
+    "imu_4": {
+      "front_sec": 0.084,
+      "back_sec": 0.043
+    }
+  },
+  "verb": "Operate",
+  "verb_class": 0,
+  "noun": "Computer (Excel)",
+  "noun_class": 2,
+  "action": "Operate Computer (Excel)",
+  "action_class": 2,
+  "imu_hz": 9.94,
+  "imu_hz_per_device": {
+    "imu_1": 9.94,
+    "imu_2": 9.95,
+    "imu_3": 9.94,
+    "imu_4": 9.94
+  }
+}

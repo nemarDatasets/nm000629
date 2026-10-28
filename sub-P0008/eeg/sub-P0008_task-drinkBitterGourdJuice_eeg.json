@@ -1,0 +1,66 @@
+{
+  "TaskName": "drinkBitterGourdJuice",
+  "TaskDescription": "Everyday action 'Drink Bitter Gourd Juice' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 12.0,
+  "EgoBrainSegment": {
+    "segment_id": "P0008_phase2_018_drink-bitter-gourd-juice",
+    "action": "Drink Bitter Gourd Juice",
+    "phase": "Phase_2",
+    "duration_sec": 11.999013,
+    "imu_hz": 10.1,
+    "imu_hz_per_device": {
+      "imu_1": 10.17,
+      "imu_2": 10.08,
+      "imu_3": 10.08,
+      "imu_4": 10.08
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.054,
+        "back_sec": 0.034
+      },
+      "imu_2": {
+        "front_sec": 0.085,
+        "back_sec": 0.031
+      },
+      "imu_3": {
+        "front_sec": 0.086,
+        "back_sec": 0.035
+      },
+      "imu_4": {
+        "front_sec": 0.053,
+        "back_sec": 0.114
+      }
+    },
+    "verb": "Drink",
+    "verb_class": 9,
+    "noun": "Bitter Gourd Juice",
+    "noun_class": 28,
+    "action_class": 28,
+    "category": "task",
+    "sequence": 18,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0008/names",
+    "start_key": "start_ts"
+  }
+}

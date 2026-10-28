@@ -1,0 +1,4 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	47.59	bad_signal_quality_poor	meta.json eeg_quality_flags	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+0.0	47.5859	eat-spicy-strips	meta.json action	stim-P0008S024Ego	sub-P0008/stim-P0008S024Ego_audiovideo.mp4	stim-P0008S024Audio	sub-P0008/stim-P0008S024Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	47.581
+29.63	17.96	bad_reference_contact_lost	meta.json eeg_quality_flags	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

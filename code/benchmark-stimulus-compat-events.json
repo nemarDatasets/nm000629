@@ -1,0 +1,4 @@
+{
+  "Description": "Opt-in compatibility view for loaders requiring stim_id/stim_file; never evidence a movie/sound was presented to a participant.",
+  "PathConvention": "All media paths relative to dataset stimuli/ root; pinned draft filename object is ambiguous and this is an explicit local profile."
+}

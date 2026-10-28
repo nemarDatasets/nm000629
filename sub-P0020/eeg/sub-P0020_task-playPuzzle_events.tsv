@@ -1,0 +1,3 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	308.61	bad_reference_contact_lost	meta.json eeg_quality_flags	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+0.0	308.6101	play-puzzle	meta.json action	stim-P0020S025Ego	sub-P0020/stim-P0020S025Ego_audiovideo.mp4	stim-P0020S025Audio	sub-P0020/stim-P0020S025Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	308.608

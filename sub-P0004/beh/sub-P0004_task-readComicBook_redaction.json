@@ -1,0 +1,15 @@
+[
+  {
+    "rel_start": 0.0,
+    "rel_end": 8.117,
+    "blur_video": true,
+    "region": [
+      1650,
+      0,
+      950,
+      650
+    ],
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  }
+]

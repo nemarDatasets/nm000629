@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0033_phase2_020_operate-computer-powerpoint",
+  "subject_id": "P0033",
+  "phase": "Phase_2",
+  "sequence": 20,
+  "category": "task",
+  "raw_type": "phase_Operate_Computer_(PowerPoint)",
+  "start_ts": -2208953598.584731,
+  "end_ts": -2208953396.775159,
+  "duration_sec": 201.809572,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.078,
+      "back_sec": 0.004
+    },
+    "imu_2": {
+      "front_sec": 0.031,
+      "back_sec": 0.029
+    },
+    "imu_3": {
+      "front_sec": 0.032,
+      "back_sec": 0.025
+    },
+    "imu_4": {
+      "front_sec": 0.038,
+      "back_sec": 0.018
+    }
+  },
+  "verb": "Operate",
+  "verb_class": 0,
+  "noun": "Computer (PowerPoint)",
+  "noun_class": 1,
+  "action": "Operate Computer (PowerPoint)",
+  "action_class": 1,
+  "imu_hz": 195.71,
+  "imu_hz_per_device": {
+    "imu_1": 198.57,
+    "imu_2": 187.08,
+    "imu_3": 198.57,
+    "imu_4": 198.61
+  }
+}

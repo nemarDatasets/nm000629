@@ -1,0 +1,192 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>EgoBrain-Mini · P0025</title>
+<style>
+:root {
+  --bg: #F3F5F7; --surface: #FFFFFF; --surface-2: #EAEDF1; --surface-3: #DEE3E8;
+  --text: #1A222C; --text-dim: #5B6675; --text-faint: #8892A0;
+  --accent: #00A4EF; --accent-soft: rgba(0,164,239,0.12);
+  --good: #7FBA00; --good-soft: rgba(127,186,0,0.14);
+  --bad: #F25022; --bad-soft: rgba(242,80,34,0.12);
+  --warn: #FFB900; --warn-soft: rgba(255,185,0,0.16);
+  --border: rgba(15,20,30,0.10);
+  --shadow: 0 1px 2px rgba(15,20,30,0.06), 0 8px 24px rgba(15,20,30,0.05);
+  --shadow-hover: 0 2px 6px rgba(15,20,30,0.09), 0 14px 32px rgba(15,20,30,0.10);
+  --stat-purple: #7FBA00; --stat-gold: #FFB900;
+  --fs-h1: 40px; --fs-body: 16px;
+  --mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141A; --surface: #1B212B; --surface-2: #222A35; --surface-3: #2B3542;
+    --text: #E7EAEE; --text-dim: #9AA5B3; --text-faint: #6C7787;
+    --accent: #00A4EF; --accent-soft: rgba(0,164,239,0.22);
+    --good: #7FBA00; --good-soft: rgba(127,186,0,0.24);
+    --bad: #F25022; --bad-soft: rgba(242,80,34,0.22);
+    --warn: #FFB900; --warn-soft: rgba(255,185,0,0.24);
+    --stat-purple: #7FBA00; --stat-gold: #FFB900;
+    --border: rgba(255,255,255,0.08);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    --shadow-hover: 0 2px 6px rgba(0,0,0,0.4), 0 14px 32px rgba(0,0,0,0.45);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141A; --surface: #1B212B; --surface-2: #222A35; --surface-3: #2B3542;
+  --text: #E7EAEE; --text-dim: #9AA5B3; --text-faint: #6C7787;
+  --accent: #00A4EF; --accent-soft: rgba(0,164,239,0.22);
+  --good: #7FBA00; --good-soft: rgba(127,186,0,0.24);
+  --bad: #F25022; --bad-soft: rgba(242,80,34,0.22);
+  --warn: #FFB900; --warn-soft: rgba(255,185,0,0.24);
+  --stat-purple: #7FBA00; --stat-gold: #FFB900;
+  --border: rgba(255,255,255,0.08);
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  --shadow-hover: 0 2px 6px rgba(0,0,0,0.4), 0 14px 32px rgba(0,0,0,0.45);
+}
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.55; font-size:var(--fs-body); }
+.topbar { position:sticky; top:0; z-index:20; height:52px; display:flex; align-items:center;
+  justify-content:space-between; padding:0 20px; background:var(--surface); border-bottom:1px solid var(--border); }
+.topbar .brand { display:flex; align-items:center; gap:9px; font-weight:700; color:var(--text); text-decoration:none; }
+.topbar .brand .dot { width:7px; height:7px; border-radius:50%; background:var(--good); box-shadow:0 0 0 3px var(--accent-soft); flex-shrink:0; }
+#theme-toggle { border:1px solid var(--border); background:var(--surface-2); color:var(--text-dim); border-radius:8px;
+  padding:6px 12px; cursor:pointer; font-family:var(--mono); }
+#theme-toggle:hover { border-color:var(--accent); color:var(--accent); }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 48px 24px 90px; }
+.breadcrumb { display:flex; align-items:center; gap:8px; color:var(--text-dim); margin:0 0 22px; }
+.breadcrumb a { color:var(--text-dim); text-decoration:none; display:inline-flex; align-items:center; }
+.breadcrumb a:hover { color:var(--accent); }
+.breadcrumb .sep { color:var(--text-faint); }
+.breadcrumb .current { color:var(--text); font-weight:650; display:inline-flex; align-items:center; gap:6px; }
+.home-icon { width:14px; height:14px; display:block; }
+.subject-tag { font-family:var(--mono); font-weight:700; color:var(--accent); background:var(--accent-soft);
+  padding:2px 10px; border-radius:7px; letter-spacing:.02em; }
+h1 { font-size:var(--fs-h1); margin:0 0 6px; letter-spacing:-.01em; font-weight:700; display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+h1 .subject-tag { font-size:1em; padding:3px 12px; }
+h1 .rest { color:var(--text-dim); font-weight:600; }
+.h1-sub { font-family:var(--mono); color:var(--accent); font-weight:600; margin:0 0 16px; }
+.dek { color:var(--text-dim); max-width:70ch; margin:0 0 28px; }
+.section-label { font-family:var(--mono); letter-spacing:.02em;
+  color:var(--text-faint); margin:32px 0 12px; font-weight:700; }
+.stats-panel { background:var(--surface-2); border:1px solid var(--border); border-radius:14px;
+  padding:20px 22px 6px; margin-bottom:36px; }
+.stats-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:20px 28px; padding-bottom:20px; }
+.stat .n { font-family:var(--mono); font-weight:700; color:var(--text); font-size:var(--fs-h1); }
+.stat .l { color:var(--text-faint); margin-top:2px; }
+.stat.c-eeg .n { color: var(--stat-purple); }
+.stat.c-cov .n { color: var(--stat-gold); }
+.gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:18px 16px; margin-bottom:40px; }
+.gallery-item { text-decoration:none; color:var(--text); display:block; }
+.gallery-item .thumb { position:relative; aspect-ratio:1/1; border-radius:10px; overflow:hidden;
+  background:var(--surface-2); box-shadow:var(--shadow); transition:transform .15s ease, box-shadow .15s ease; }
+.gallery-item:hover .thumb { transform:translateY(-4px); box-shadow:var(--shadow-hover); }
+.gallery-item .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+.gallery-item .dot { position:absolute; top:8px; right:8px; width:9px; height:9px; border-radius:50%; box-shadow:0 0 0 2px rgba(255,255,255,.85); }
+.gallery-item .dot.pass { background:var(--good); }
+.gallery-item .dot.fail { background:var(--bad); }
+.gallery-item .dot.warn { background:#E69600; }
+.gallery-item .eegq-badge { font-family:var(--mono); font-size:10px;
+  font-weight:800; color:#1A222C; padding:2px 6px; border-radius:6px; background:rgba(230,150,0,.96);
+  border:1.5px solid #fff3d6; }
+.eegq-note, .eegq-banner { background:rgba(230,150,0,0.10); border:1px solid rgba(199,119,0,0.55); border-radius:10px;
+  padding:12px 16px; margin:0 0 16px; color:var(--text); }
+.eegq-note b.t, .eegq-banner-title { color:#C77700; font-weight:700; }
+.eegq-banner ul { margin:6px 0 8px; padding-left:20px; font-size:13.5px; }
+.eegq-banner-note { color:var(--text-dim); font-size:12.5px; }
+.eegq-note p { margin:0 0 8px; }
+.eegq-note p:last-child { margin:0; }
+.gallery-item .badge-stack { position:absolute; top:6px; left:7px; display:flex; flex-direction:column; gap:4px; align-items:flex-start; }
+.gallery-item .thumb.short-dur { box-shadow:0 0 0 3px var(--bad) inset; }
+.gallery-item .short-badge { font-family:var(--mono); font-size:10px; font-weight:700;
+  color:#fff; padding:2px 6px; border-radius:6px; background:rgba(224,82,82,.92); }
+.gallery-item .gap-badge, .gallery-item .pad-badge { font-family:var(--mono); font-size:10px;
+  font-weight:700; color:#fff; padding:2px 6px; border-radius:6px; }
+.gallery-item .gap-badge { background:rgba(242,80,34,.92); }
+.gallery-item .pad-badge { background:rgba(255,185,0,.92); color:#1A222C; }
+.gallery-item .interaction-badge { font-family:var(--mono); font-size:10px;
+  font-weight:700; color:#1A222C; padding:2px 6px; border-radius:6px; background:rgba(255,145,0,.95); }
+.gallery-item .exclude-badge { font-family:var(--mono); font-size:10px;
+  font-weight:700; color:#fff; padding:2px 6px; border-radius:6px; background:rgba(180,30,30,.96); border:1.5px solid #ffd9d9; }
+.mod-strip { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:14px; }
+.mod-chip { font-family:var(--mono); font-size:12px; font-weight:700; padding:3px 9px; border-radius:999px; border:1px solid; }
+.mod-chip.present { color:var(--good); border-color:var(--good); background:var(--good-soft); }
+.mod-chip.absent { color:var(--bad); border-color:var(--bad); background:var(--bad-soft); }
+.mod-chip.warn { color:#8a5a00; border-color:rgba(255,145,0,.95); background:rgba(255,145,0,.16); }
+.mod-chip.eegq { color:#C77700; border-color:#C77700; background:rgba(230,150,0,.14); }
+.mod-chip.exclude { color:#b41e1e; border-color:rgba(180,30,30,.9); background:rgba(180,30,30,.12); }
+.modality-missing { color:var(--text-faint); font-family:var(--mono); font-size:13px; padding:14px 0; }
+.exclude-banner { border:1.5px solid rgba(180,30,30,.55); background:rgba(180,30,30,.08);
+  border-radius:10px; padding:12px 16px; margin-bottom:16px; }
+.exclude-banner-title { font-weight:700; color:#b41e1e; margin-bottom:6px; }
+.exclude-banner ul { margin:0 0 6px 20px; padding:0; }
+.exclude-banner-note { color:var(--text-faint); font-size:12.5px; }
+.g-cap { font-weight:650; margin-top:9px; line-height:1.3; }
+.g-sub { color:var(--text-faint); font-family:var(--mono); margin-top:2px; }
+footer { padding-top:24px; margin-top:36px; border-top:1px solid var(--border); color:var(--text-faint); }
+a { color:var(--accent); }
+.sub { color:var(--text-dim); margin-bottom:6px; }
+.video-cell { background:#000; border-radius:10px; overflow:hidden; position:relative; box-shadow:var(--shadow); margin:0 auto 24px; max-width:640px; }
+.video-cell video { width:100%; display:block; background:#000; }
+.video-cell .vlabel { position:absolute; top:8px; left:10px; color:#fff; font-family:var(--mono);
+  background:rgba(0,0,0,.55); padding:2px 8px; border-radius:6px; }
+.panel { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 18px; box-shadow:var(--shadow); margin-bottom:14px; }
+.panel h3 { margin:0 0 4px; color:var(--text-dim); font-weight:700; letter-spacing:.02em; }
+.coverage-table { width:100%; border-collapse:collapse; font-family:var(--mono); font-size:13px;
+  border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+.coverage-table th { text-align:left; padding:8px 12px; background:var(--surface-2); color:var(--text-dim);
+  font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:.04em; border-bottom:1px solid var(--border); }
+.coverage-table th:not(:first-child), .coverage-table td.num { text-align:right; }
+.coverage-table td { padding:7px 12px; border-bottom:1px solid var(--border); }
+.coverage-table tbody tr:last-child td { border-bottom:none; }
+.coverage-table tbody tr:nth-child(even) { background:var(--surface-2); }
+.coverage-table td.num { color:var(--text); font-variant-numeric:tabular-nums; }
+.coverage-table td.delta { color:var(--text-faint); }
+.coverage-table.mismatch td.num { color:var(--bad); font-weight:700; }
+.coverage-table.mismatch td.delta { color:var(--bad); }
+.coverage-note { font-family:var(--mono); font-size:13px; margin-top:10px; padding:8px 12px; border-radius:8px; }
+.coverage-note.ok { color:var(--good); background:var(--good-soft); }
+.coverage-note.bad { color:var(--bad); background:var(--bad-soft); }
+.footnote { color:var(--text-faint); font-family:var(--mono); margin:0 0 10px; }
+canvas { width:100%; height:90px; display:block; border-radius:8px; background:var(--surface-2); cursor:pointer; }
+.legend { color:var(--text-faint); margin-top:6px; font-family:var(--mono); }
+.legend b { color: var(--accent); }
+
+
+.imuq-note { background:rgba(230,150,0,0.10); border:1px solid rgba(199,119,0,0.55); border-radius:10px;
+  padding:12px 16px; margin:0 0 18px; color:var(--text); }
+.imuq-note b.t { color:#C77700; }
+.imuq-note p { margin:0 0 8px; }
+.imuq-note p:last-child { margin:0; }
+.imuq-note code { font-family:var(--mono); }
+</style>
+<div class="topbar">
+  <a class="brand" href="index.html"><span class="dot"></span>EgoBrain-Mini</a>
+  <button id="theme-toggle">&#9789; Theme</button>
+</div>
+<main class="main-content">
+    <div class="wrap">
+  <p class="breadcrumb"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="sep">&rsaquo;</span><a class="current" href="index.html">P0025</a></p>
+  <h1><span class="subject-tag">P0025</span><span class="rest">Egocentric Verification</span></h1>
+  <p class="h1-sub">39 / 39 sub-actions verified &middot; No sampling</p>
+  <p class="dek">EgoBrain-Mini is a lightweight, temporally aligned version of EgoBrain: brain activity (EEG),
+  first-person video (Egocentric Video), a body-worn motion sensor (IMU), and audio, all captured from
+  <b>the same person performing the same action at the same instant</b>. Multimodal synchronization is
+  achieved through an EEG-anchored, cross-modal calibration procedure. Below are all 39 sub-actions
+  performed by P0025 that day, each individually verified.</p>
+
+  
+  <div class="imuq-note"><p><b class="t">&#9888; IMU sample rate: <code>imu_3</code> (right wrist) logged far slower</b> &mdash; a median <b>58 Hz</b> against <b>199 Hz</b> on the other three, in <b>38 of 39 segments</b>. Bluetooth packet loss on that one unit, not a different configuration: the samples it did record are real and correctly timestamped, there are simply about a third as many of them. On the chart below its trace is visibly sparser than the rest.</p><p>Video, audio and EEG are unaffected. <code>meta.json</code>&rsquo;s <code>imu_hz</code> is the <b>mean</b> across the four units, so it reads lower than usual rather than showing this &mdash; use <code>imu_hz_per_device</code>, and avoid analyses that assume the four sensors share a sample grid.</p></div>
+  <p class="section-label">Summary across all 39 segments</p>
+  <div class="stats-panel"><div class="stats-row">
+    <div class="stat c-eeg"><div class="n">39/39</div><div class="l">EEG Integrity Passed (finite, no flat channels)</div></div>
+    <div class="stat c-cov"><div class="n">39/39</div><div class="l">100% Coverage (no sampling)</div></div>
+  </div></div>
+
+  <p class="section-label">Sub-action gallery (click any thumbnail for synced video + EEG/IMU/audio evidence)</p>
+  <div class="gallery"><a class="gallery-item" href="detail/P0025_phase2_000_setup-calibration.html"><div class="thumb"><img src="thumbs/P0025_phase2_000_setup-calibration.jpg" loading="lazy" alt="Setup Calibration"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Setup Calibration</div><div class="g-sub">65.8s</div></a><a class="gallery-item" href="detail/P0025_phase2_001_play-computer-game-mouse.html"><div class="thumb"><img src="thumbs/P0025_phase2_001_play-computer-game-mouse.jpg" loading="lazy" alt="Play_I Computer game (Mouse)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_I Computer game (Mouse)</div><div class="g-sub">105.1s</div></a><a class="gallery-item" href="detail/P0025_phase2_002_write-tracing.html"><div class="thumb"><img src="thumbs/P0025_phase2_002_write-tracing.jpg" loading="lazy" alt="Write Copybook"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Write Copybook</div><div class="g-sub">100.4s</div></a><a class="gallery-item" href="detail/P0025_phase2_003_draw-tracing.html"><div class="thumb"><img src="thumbs/P0025_phase2_003_draw-tracing.jpg" loading="lazy" alt="Draw Picture Tracing"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Draw Picture Tracing</div><div class="g-sub">96.4s</div></a><a class="gallery-item" href="detail/P0025_phase2_004_play-toy.html"><div class="thumb"><img src="thumbs/P0025_phase2_004_play-toy.jpg" loading="lazy" alt="Play_II Toys"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_II Toys</div><div class="g-sub">136.1s</div></a><a class="gallery-item" href="detail/P0025_phase2_005_operate-computer-word.html"><div class="thumb"><img src="thumbs/P0025_phase2_005_operate-computer-word.jpg" loading="lazy" alt="Operate Computer (Word)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Operate Computer (Word)</div><div class="g-sub">173.2s</div></a><a class="gallery-item" href="detail/P0025_phase2_006_drink-water-a.html"><div class="thumb"><img src="thumbs/P0025_phase2_006_drink-water-a.jpg" loading="lazy" alt="Drink Water"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Drink Water</div><div class="g-sub">19.8s</div></a><a class="gallery-item" href="detail/P0025_phase2_007_read-research-arcticle.html"><div class="thumb"><img src="thumbs/P0025_phase2_007_read-research-arcticle.jpg" loading="lazy" alt="Read Research Article"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Read Research Article</div><div class="g-sub">228.2s</div></a><a class="gallery-item" href="detail/P0025_phase2_008_watch-monitor.html"><div class="thumb"><img src="thumbs/P0025_phase2_008_watch-monitor.jpg" loading="lazy" alt="Watch Computer (Web & Video)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Watch Computer (Web & Video)</div><div class="g-sub">183.2s</div></a><a class="gallery-item" href="detail/P0025_phase2_009_eat-snack-c.html"><div class="thumb"><img src="thumbs/P0025_phase2_009_eat-snack-c.jpg" loading="lazy" alt="Eat Snack"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Eat Snack</div><div class="g-sub">53.5s</div></a><a class="gallery-item" href="detail/P0025_phase2_010_drink-water-b.html"><div class="thumb"><img src="thumbs/P0025_phase2_010_drink-water-b.jpg" loading="lazy" alt="Drink Water"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Drink Water</div><div class="g-sub">28.9s</div></a><a class="gallery-item" href="detail/P0025_phase2_011_play-phone-game-complex-a.html"><div class="thumb"><img src="thumbs/P0025_phase2_011_play-phone-game-complex-a.jpg" loading="lazy" alt="Play_III Phone game (Complex)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_III Phone game (Complex)</div><div class="g-sub">166.4s</div></a><a class="gallery-item" href="detail/P0025_phase2_012_read-textbook.html"><div class="thumb"><img src="thumbs/P0025_phase2_012_read-textbook.jpg" loading="lazy" alt="Read Textbook"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Read Textbook</div><div class="g-sub">215.7s</div></a><a class="gallery-item" href="detail/P0025_phase2_013_draw-computer-pictures.html"><div class="thumb"><img src="thumbs/P0025_phase2_013_draw-computer-pictures.jpg" loading="lazy" alt="Operate Computer (Paint)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Operate Computer (Paint)</div><div class="g-sub">140.4s</div></a><a class="gallery-item" href="detail/P0025_phase2_014_play-cube.html"><div class="thumb"><img src="thumbs/P0025_phase2_014_play-cube.jpg" loading="lazy" alt="Play_II Cube"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_II Cube</div><div class="g-sub">103.8s</div></a><a class="gallery-item" href="detail/P0025_phase2_015_eat-sugers-b.html"><div class="thumb"><img src="thumbs/P0025_phase2_015_eat-sugers-b.jpg" loading="lazy" alt="Eat Sugers"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Eat Sugers</div><div class="g-sub">61.9s</div></a><a class="gallery-item" href="detail/P0025_phase2_016_play-puzzle.html"><div class="thumb"><img src="thumbs/P0025_phase2_016_play-puzzle.jpg" loading="lazy" alt="Play_II Puzzle"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_II Puzzle</div><div class="g-sub">362.1s</div></a><a class="gallery-item" href="detail/P0025_phase2_017_play-phone-game-simple-a.html"><div class="thumb"><img src="thumbs/P0025_phase2_017_play-phone-game-simple-a.jpg" loading="lazy" alt="Play_III Phone game (Simple)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_III Phone game (Simple)</div><div class="g-sub">292.7s</div></a><a class="gallery-item" href="detail/P0025_phase2_018_drink-bitter-gourd-juice.html"><div class="thumb"><img src="thumbs/P0025_phase2_018_drink-bitter-gourd-juice.jpg" loading="lazy" alt="Drink Bitter Gourd Juice"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Drink Bitter Gourd Juice</div><div class="g-sub">113.2s</div></a><a class="gallery-item" href="detail/P0025_phase2_019_play-phone-game-simple-b.html"><div class="thumb"><img src="thumbs/P0025_phase2_019_play-phone-game-simple-b.jpg" loading="lazy" alt="Play_III Phone game (Simple)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_III Phone game (Simple)</div><div class="g-sub">169.3s</div></a><a class="gallery-item" href="detail/P0025_phase2_020_draw-pictures.html"><div class="thumb"><img src="thumbs/P0025_phase2_020_draw-pictures.jpg" loading="lazy" alt="Draw Pictures"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Draw Pictures</div><div class="g-sub">129.2s</div></a><a class="gallery-item" href="detail/P0025_phase2_021_play-phone-game-complex-b.html"><div class="thumb"><img src="thumbs/P0025_phase2_021_play-phone-game-complex-b.jpg" loading="lazy" alt="Play_III Phone game (Complex)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_III Phone game (Complex)</div><div class="g-sub">246.3s</div></a><a class="gallery-item" href="detail/P0025_phase2_022_read-comic-book.html"><div class="thumb"><img src="thumbs/P0025_phase2_022_read-comic-book.jpg" loading="lazy" alt="Read Comic-book"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Read Comic-book</div><div class="g-sub">135.6s</div></a><a class="gallery-item" href="detail/P0025_phase2_023_drink-coca-cola-a.html"><div class="thumb"><img src="thumbs/P0025_phase2_023_drink-coca-cola-a.jpg" loading="lazy" alt="Drink Coca-cola"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Drink Coca-cola</div><div class="g-sub">15.9s</div></a><a class="gallery-item" href="detail/P0025_phase2_024_play-cards.html"><div class="thumb"><img src="thumbs/P0025_phase2_024_play-cards.jpg" loading="lazy" alt="Play_II Cards"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_II Cards</div><div class="g-sub">220.1s</div></a><a class="gallery-item" href="detail/P0025_phase2_025_drink-coca-cola-b.html"><div class="thumb"><img src="thumbs/P0025_phase2_025_drink-coca-cola-b.jpg" loading="lazy" alt="Drink Coca-cola"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Drink Coca-cola</div><div class="g-sub">12.3s</div></a><a class="gallery-item" href="detail/P0025_phase2_026_eat-sugers-a.html"><div class="thumb"><img src="thumbs/P0025_phase2_026_eat-sugers-a.jpg" loading="lazy" alt="Eat Sugers"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Eat Sugers</div><div class="g-sub">74.9s</div></a><a class="gallery-item" href="detail/P0025_phase2_027_watch-smartphone.html"><div class="thumb"><img src="thumbs/P0025_phase2_027_watch-smartphone.jpg" loading="lazy" alt="Watch Smartphone (APP & Video)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Watch Smartphone (APP & Video)</div><div class="g-sub">229.1s</div></a><a class="gallery-item" href="detail/P0025_phase2_028_play-computer-game-keyboard.html"><div class="thumb"><img src="thumbs/P0025_phase2_028_play-computer-game-keyboard.jpg" loading="lazy" alt="Play_I Computer game (Keyboard)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Play_I Computer game (Keyboard)</div><div class="g-sub">134.8s</div></a><a class="gallery-item" href="detail/P0025_phase2_029_drink-water-c.html"><div class="thumb"><img src="thumbs/P0025_phase2_029_drink-water-c.jpg" loading="lazy" alt="Drink Water"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Drink Water</div><div class="g-sub">18.2s</div></a><a class="gallery-item" href="detail/P0025_phase2_030_eat-sugers-c.html"><div class="thumb"><img src="thumbs/P0025_phase2_030_eat-sugers-c.jpg" loading="lazy" alt="Eat Sugers"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Eat Sugers</div><div class="g-sub">59.9s</div></a><a class="gallery-item" href="detail/P0025_phase2_031_operate-computer-excel.html"><div class="thumb"><img src="thumbs/P0025_phase2_031_operate-computer-excel.jpg" loading="lazy" alt="Operate Computer (Excel)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Operate Computer (Excel)</div><div class="g-sub">127.4s</div></a><a class="gallery-item" href="detail/P0025_phase2_032_operate-computer-powerpoint.html"><div class="thumb"><img src="thumbs/P0025_phase2_032_operate-computer-powerpoint.jpg" loading="lazy" alt="Operate Computer (PowerPoint)"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Operate Computer (PowerPoint)</div><div class="g-sub">127.6s</div></a><a class="gallery-item" href="detail/P0025_phase2_033_eat-spicy-strips.html"><div class="thumb"><img src="thumbs/P0025_phase2_033_eat-spicy-strips.jpg" loading="lazy" alt="Eat Spicy strips"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Eat Spicy strips</div><div class="g-sub">79.5s</div></a><a class="gallery-item" href="detail/P0025_phase2_034_drink-coca-cola-c.html"><div class="thumb"><img src="thumbs/P0025_phase2_034_drink-coca-cola-c.jpg" loading="lazy" alt="Drink Coca-cola"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Drink Coca-cola</div><div class="g-sub">18.4s</div></a><a class="gallery-item" href="detail/P0025_phase2_035_eat-snack-a.html"><div class="thumb"><img src="thumbs/P0025_phase2_035_eat-snack-a.jpg" loading="lazy" alt="Eat Snack"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Eat Snack</div><div class="g-sub">55.8s</div></a><a class="gallery-item" href="detail/P0025_phase2_036_eat-snack-b.html"><div class="thumb"><img src="thumbs/P0025_phase2_036_eat-snack-b.jpg" loading="lazy" alt="Eat Snack"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Eat Snack</div><div class="g-sub">43.3s</div></a><a class="gallery-item" href="detail/P0025_phase2_037_write-notes.html"><div class="thumb"><img src="thumbs/P0025_phase2_037_write-notes.jpg" loading="lazy" alt="Write Notes"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Write Notes</div><div class="g-sub">133.5s</div></a><a class="gallery-item" href="detail/P0025_phase2_038_closing-calibration.html"><div class="thumb"><img src="thumbs/P0025_phase2_038_closing-calibration.jpg" loading="lazy" alt="Closing Calibration"><span class="dot pass" title="EEG: Signal Intact"></span></div><div class="g-cap">Closing Calibration</div><div class="g-sub">73.8s</div></a></div>
+
+  <footer>Generated by an automated pipeline, covering all 39 sub-actions for P0025 — not a sample.</footer>
+    </div>
+</main>
+<script src="site.js"></script>

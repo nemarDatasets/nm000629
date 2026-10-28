@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0036_phase2_016_play-cards",
+  "subject_id": "P0036",
+  "phase": "Phase_2",
+  "sequence": 16,
+  "category": "task",
+  "raw_type": "phase_Play_Cards",
+  "start_ts": -2208965323.2156076,
+  "end_ts": -2208965197.072089,
+  "duration_sec": 126.143519,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.021,
+      "back_sec": 0.013
+    },
+    "imu_2": {
+      "front_sec": 0.025,
+      "back_sec": 0.008
+    },
+    "imu_3": {
+      "front_sec": 0.012,
+      "back_sec": 0.054
+    },
+    "imu_4": {
+      "front_sec": 0.022,
+      "back_sec": 0.003
+    }
+  },
+  "verb": "Play_II",
+  "verb_class": 2,
+  "noun": "Cards",
+  "noun_class": 7,
+  "action": "Play_II Cards",
+  "action_class": 7,
+  "imu_hz": 198.57,
+  "imu_hz_per_device": {
+    "imu_1": 198.33,
+    "imu_2": 198.65,
+    "imu_3": 198.65,
+    "imu_4": 198.65
+  }
+}

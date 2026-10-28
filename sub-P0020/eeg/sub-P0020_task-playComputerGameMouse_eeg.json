@@ -1,0 +1,75 @@
+{
+  "TaskName": "playComputerGameMouse",
+  "TaskDescription": "Everyday action 'Play_I Computer game (Mouse)' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 672.0547,
+  "EgoBrainSegment": {
+    "segment_id": "P0020_phase2_031_play-computer-game-mouse",
+    "action": "Play_I Computer game (Mouse)",
+    "phase": "Phase_2",
+    "duration_sec": 672.056635,
+    "imu_hz": 9.93,
+    "imu_hz_per_device": {
+      "imu_1": 9.93,
+      "imu_2": 9.93,
+      "imu_3": 9.93,
+      "imu_4": 9.93
+    },
+    "eeg_quality_flags": [
+      {
+        "rel_start": 0.0,
+        "rel_end": 672.06,
+        "issue": "reference_contact_lost",
+        "description": "An EEG ear reference electrode (CMS/DRL) lost skin contact. All 32 channels share this reference, so every channel is affected, not only those on one side. The signal still shows coarse physiological events (eye blinks, chewing), but its amplitude and spectral power (e.g. alpha) are not comparable to normally-referenced recordings: exclude this range from band-power / amplitude-based analyses, and use it for anything else only with care.",
+        "evidence": "Emotiv headset contact-quality channels CQ_CMS / CQ_DRL read 0 (no contact) in the raw EDF for this range; the EEG shows large transients at the moments contact was lost and restored."
+      }
+    ],
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.001,
+        "back_sec": 0.005
+      },
+      "imu_2": {
+        "front_sec": 0.103,
+        "back_sec": 0.094
+      },
+      "imu_3": {
+        "front_sec": 0.028,
+        "back_sec": 0.01
+      },
+      "imu_4": {
+        "front_sec": 0.139,
+        "back_sec": 0.085
+      }
+    },
+    "verb": "Play_I",
+    "verb_class": 1,
+    "noun": "Computer game (Mouse)",
+    "noun_class": 4,
+    "action_class": 4,
+    "category": "task",
+    "sequence": 31,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0020/names",
+    "start_key": "start_ts"
+  }
+}

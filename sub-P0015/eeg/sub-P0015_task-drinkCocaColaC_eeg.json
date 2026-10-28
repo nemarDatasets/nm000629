@@ -1,0 +1,66 @@
+{
+  "TaskName": "drinkCocaColaC",
+  "TaskDescription": "Everyday action 'Drink Coca-cola' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 33.8516,
+  "EgoBrainSegment": {
+    "segment_id": "P0015_phase2_005_drink-coca-cola-c",
+    "action": "Drink Coca-cola",
+    "phase": "Phase_2",
+    "duration_sec": 33.848729,
+    "imu_hz": 9.99,
+    "imu_hz_per_device": {
+      "imu_1": 9.99,
+      "imu_2": 9.99,
+      "imu_3": 9.99,
+      "imu_4": 9.99
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.09,
+        "back_sec": 0.038
+      },
+      "imu_2": {
+        "front_sec": 0.02,
+        "back_sec": 0.086
+      },
+      "imu_3": {
+        "front_sec": 0.014,
+        "back_sec": 0.116
+      },
+      "imu_4": {
+        "front_sec": 0.076,
+        "back_sec": 0.028
+      }
+    },
+    "verb": "Drink",
+    "verb_class": 9,
+    "noun": "Coca-cola",
+    "noun_class": 27,
+    "action_class": 27,
+    "category": "task",
+    "sequence": 5,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0015/names",
+    "start_key": "start_ts"
+  }
+}

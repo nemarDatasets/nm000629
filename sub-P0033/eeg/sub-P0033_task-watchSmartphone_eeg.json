@@ -1,0 +1,66 @@
+{
+  "TaskName": "watchSmartphone",
+  "TaskDescription": "Everyday action 'Watch Smartphone (APP & Video)' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 106.5508,
+  "EgoBrainSegment": {
+    "segment_id": "P0033_phase2_004_watch-smartphone",
+    "action": "Watch Smartphone (APP & Video)",
+    "phase": "Phase_2",
+    "duration_sec": 106.55108,
+    "imu_hz": 196.96,
+    "imu_hz_per_device": {
+      "imu_1": 198.61,
+      "imu_2": 192.08,
+      "imu_3": 198.61,
+      "imu_4": 198.53
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.001,
+        "back_sec": 0.045
+      },
+      "imu_2": {
+        "front_sec": 0.008,
+        "back_sec": 0.064
+      },
+      "imu_3": {
+        "front_sec": 0.01,
+        "back_sec": 0.036
+      },
+      "imu_4": {
+        "front_sec": 0.02,
+        "back_sec": 0.055
+      }
+    },
+    "verb": "Watch",
+    "verb_class": 4,
+    "noun": "Smartphone (APP & Video)",
+    "noun_class": 15,
+    "action_class": 15,
+    "category": "task",
+    "sequence": 4,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0033/names",
+    "start_key": "start_ts"
+  }
+}

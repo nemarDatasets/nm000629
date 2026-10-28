@@ -1,0 +1,36 @@
+{
+  "Name": "EgoBrain-Mini: egocentric video, 32-channel EEG, wrist/arm IMU and audio during everyday actions (40 adults)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "raw",
+  "License": "CC-BY-NC-4.0",
+  "Authors": [
+    "Nie Lin",
+    "Yansen Wang",
+    "Dongqi Han",
+    "Weibang Jiang",
+    "Jingyuan Li",
+    "Ryosuke Furuta",
+    "Yoichi Sato",
+    "Dongsheng Li"
+  ],
+  "HowToAcknowledge": "Cite: Lin N, Wang Y, Han D, Jiang W, Li J, Furuta R, Sato Y, Li D. EgoBrain: Synergizing Minds and Eyes For Human Action Understanding. International Conference on Learning Representations (ICLR), 2026. arXiv:2506.01353. Also name the release: EgoBrain-Mini (Hugging Face: ut-vision/EgoBrain-Mini), 40 subjects, 1,562 sub-actions.",
+  "ReferencesAndLinks": [
+    "https://arxiv.org/abs/2506.01353",
+    "https://huggingface.co/datasets/ut-vision/EgoBrain-Mini",
+    "https://lin-nie.github.io/EgoBrain/"
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://huggingface.co/datasets/ut-vision/EgoBrain-Mini",
+      "Version": "dfd2906a246ba1edfa99b1081df6efa7e961adde"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "egobrain-mini-to-bids",
+      "Version": "ae88f9c",
+      "Description": "BIDS conversion for NEMAR (values and media bytes unchanged)"
+    }
+  ],
+  "Description": "BIDS conversion of EgoBrain-Mini with original Mini release under sourcedata, role-aware recorded-experience catalog, and tested lazy multimodal reader. Private author-review copy only."
+}

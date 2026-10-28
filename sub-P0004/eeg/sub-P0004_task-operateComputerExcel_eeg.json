@@ -1,0 +1,66 @@
+{
+  "TaskName": "operateComputerExcel",
+  "TaskDescription": "Everyday action 'Operate Computer (Excel)' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 122.043,
+  "EgoBrainSegment": {
+    "segment_id": "P0004_phase2_019_operate-computer-excel",
+    "action": "Operate Computer (Excel)",
+    "phase": "Phase_2",
+    "duration_sec": 122.040694,
+    "imu_hz": 9.95,
+    "imu_hz_per_device": {
+      "imu_1": 9.95,
+      "imu_2": 9.94,
+      "imu_3": 9.95,
+      "imu_4": 9.96
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.027,
+        "back_sec": 0.084
+      },
+      "imu_2": {
+        "front_sec": 0.135,
+        "back_sec": 0.044
+      },
+      "imu_3": {
+        "front_sec": 0.025,
+        "back_sec": 0.063
+      },
+      "imu_4": {
+        "front_sec": 0.026,
+        "back_sec": 0.009
+      }
+    },
+    "verb": "Operate",
+    "verb_class": 0,
+    "noun": "Computer (Excel)",
+    "noun_class": 2,
+    "action_class": 2,
+    "category": "task",
+    "sequence": 19,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0004/names",
+    "start_key": "start_ts"
+  }
+}

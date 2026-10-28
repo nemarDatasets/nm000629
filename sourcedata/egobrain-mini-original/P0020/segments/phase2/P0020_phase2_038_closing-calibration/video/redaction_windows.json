@@ -1,0 +1,10 @@
+[
+  {
+    "rel_start": 0.0,
+    "rel_end": 102.462,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "interaction tag (video/audio kept as recorded) -- at ~18 s an experimenter comes in and re-attaches the subject's right-ear EEG reference electrode, which had come off ~98 min earlier; see this segment's eeg_quality_flags"
+  }
+]

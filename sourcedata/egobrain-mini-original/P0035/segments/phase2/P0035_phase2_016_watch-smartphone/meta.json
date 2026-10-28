@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0035_phase2_016_watch-smartphone",
+  "subject_id": "P0035",
+  "phase": "Phase_2",
+  "sequence": 16,
+  "category": "task",
+  "raw_type": "phase_Watch_Smartphone",
+  "start_ts": -2208947132.974469,
+  "end_ts": -2208946748.1112423,
+  "duration_sec": 384.863227,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.024,
+      "back_sec": 0.029
+    },
+    "imu_2": {
+      "front_sec": 0.0,
+      "back_sec": 0.012
+    },
+    "imu_3": {
+      "front_sec": 0.023,
+      "back_sec": 0.042
+    },
+    "imu_4": {
+      "front_sec": 0.027,
+      "back_sec": 0.05
+    }
+  },
+  "verb": "Watch",
+  "verb_class": 4,
+  "noun": "Smartphone (APP & Video)",
+  "noun_class": 15,
+  "action": "Watch Smartphone (APP & Video)",
+  "action_class": 15,
+  "imu_hz": 190.39,
+  "imu_hz_per_device": {
+    "imu_1": 198.58,
+    "imu_2": 198.59,
+    "imu_3": 198.58,
+    "imu_4": 165.82
+  }
+}

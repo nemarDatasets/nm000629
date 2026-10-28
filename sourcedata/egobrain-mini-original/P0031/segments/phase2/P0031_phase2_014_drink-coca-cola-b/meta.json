@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0031_phase2_014_drink-coca-cola-b",
+  "subject_id": "P0031",
+  "phase": "Phase_2",
+  "sequence": 14,
+  "category": "task",
+  "raw_type": "phase_Drink_Coca-cola_B",
+  "start_ts": -2208943956.292737,
+  "end_ts": -2208943912.412607,
+  "duration_sec": 43.88013,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.013,
+      "back_sec": 0.144
+    },
+    "imu_2": {
+      "front_sec": 0.044,
+      "back_sec": 0.014
+    },
+    "imu_3": {
+      "front_sec": 0.007,
+      "back_sec": 0.006
+    },
+    "imu_4": {
+      "front_sec": 0.023,
+      "back_sec": 0.035
+    }
+  },
+  "verb": "Drink",
+  "verb_class": 9,
+  "noun": "Coca-cola",
+  "noun_class": 27,
+  "action": "Drink Coca-cola",
+  "action_class": 27,
+  "imu_hz": 163.04,
+  "imu_hz_per_device": {
+    "imu_1": 56.38,
+    "imu_2": 198.59,
+    "imu_3": 198.77,
+    "imu_4": 198.4
+  }
+}

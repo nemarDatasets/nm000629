@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0027_phase2_003_write-tracing",
+  "subject_id": "P0027",
+  "phase": "Phase_2",
+  "sequence": 3,
+  "category": "task",
+  "raw_type": "phase_Write_Tracing",
+  "start_ts": -2208956968.354261,
+  "end_ts": -2208956800.033888,
+  "duration_sec": 168.320373,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.082,
+      "back_sec": 0.027
+    },
+    "imu_2": {
+      "front_sec": 0.011,
+      "back_sec": 0.01
+    },
+    "imu_3": {
+      "front_sec": 0.03,
+      "back_sec": 0.019
+    },
+    "imu_4": {
+      "front_sec": 0.056,
+      "back_sec": 0.005
+    }
+  },
+  "verb": "Write",
+  "verb_class": 5,
+  "noun": "Copybook",
+  "noun_class": 16,
+  "action": "Write Copybook",
+  "action_class": 16,
+  "imu_hz": 197.16,
+  "imu_hz_per_device": {
+    "imu_1": 198.54,
+    "imu_2": 192.88,
+    "imu_3": 198.59,
+    "imu_4": 198.63
+  }
+}

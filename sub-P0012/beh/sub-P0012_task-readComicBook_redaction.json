@@ -1,0 +1,107 @@
+[
+  {
+    "rel_start": 3.604,
+    "rel_end": 12.604,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1850,
+        1750,
+        350,
+        410
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 3.633,
+    "rel_end": 12.633,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1850,
+        1750,
+        346,
+        410
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 12.604,
+    "rel_end": 19.604,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1850,
+        1750,
+        346,
+        218
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 12.633,
+    "rel_end": 19.634,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1850,
+        1750,
+        346,
+        218
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 19.604,
+    "rel_end": 220.604,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1950,
+        2012,
+        270,
+        148
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 220.604,
+    "rel_end": 231.604,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1700,
+        1670,
+        740,
+        490
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 231.604,
+    "rel_end": 241.604,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1880,
+        1950,
+        420,
+        210
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  }
+]

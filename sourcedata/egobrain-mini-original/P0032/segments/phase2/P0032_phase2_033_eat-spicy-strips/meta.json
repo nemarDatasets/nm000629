@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0032_phase2_033_eat-spicy-strips",
+  "subject_id": "P0032",
+  "phase": "Phase_2",
+  "sequence": 33,
+  "category": "task",
+  "raw_type": "phase_Eat_Spicy_Strips",
+  "start_ts": -2208970857.551585,
+  "end_ts": -2208970748.9107857,
+  "duration_sec": 108.640799,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.024,
+      "back_sec": 0.014
+    },
+    "imu_2": {
+      "front_sec": 0.043,
+      "back_sec": 0.024
+    },
+    "imu_3": {
+      "front_sec": 0.044,
+      "back_sec": 0.021
+    },
+    "imu_4": {
+      "front_sec": 0.013,
+      "back_sec": 0.026
+    }
+  },
+  "verb": "Eat",
+  "verb_class": 8,
+  "noun": "Spicy strips",
+  "noun_class": 24,
+  "action": "Eat Spicy strips",
+  "action_class": 24,
+  "imu_hz": 198.29,
+  "imu_hz_per_device": {
+    "imu_1": 198.62,
+    "imu_2": 197.37,
+    "imu_3": 198.54,
+    "imu_4": 198.62
+  }
+}

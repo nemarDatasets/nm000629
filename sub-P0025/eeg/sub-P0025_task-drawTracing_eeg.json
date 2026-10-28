@@ -1,0 +1,66 @@
+{
+  "TaskName": "drawTracing",
+  "TaskDescription": "Everyday action 'Draw Picture Tracing' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 96.4375,
+  "EgoBrainSegment": {
+    "segment_id": "P0025_phase2_003_draw-tracing",
+    "action": "Draw Picture Tracing",
+    "phase": "Phase_2",
+    "duration_sec": 96.438572,
+    "imu_hz": 162.51,
+    "imu_hz_per_device": {
+      "imu_1": 198.53,
+      "imu_2": 198.53,
+      "imu_3": 54.44,
+      "imu_4": 198.53
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.049,
+        "back_sec": 0.037
+      },
+      "imu_2": {
+        "front_sec": 0.002,
+        "back_sec": 0.073
+      },
+      "imu_3": {
+        "front_sec": 0.014,
+        "back_sec": 0.125
+      },
+      "imu_4": {
+        "front_sec": 0.034,
+        "back_sec": 0.055
+      }
+    },
+    "verb": "Draw",
+    "verb_class": 7,
+    "noun": "Picture Tracing",
+    "noun_class": 21,
+    "action_class": 21,
+    "category": "task",
+    "sequence": 3,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0025/names",
+    "start_key": "start_ts"
+  }
+}

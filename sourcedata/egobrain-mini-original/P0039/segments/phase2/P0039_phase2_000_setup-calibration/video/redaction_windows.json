@@ -1,0 +1,18 @@
+[
+  {
+    "rel_start": 40.63,
+    "rel_end": 45.63,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": true,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 0.0,
+    "rel_end": 71.906,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "interaction tag (video/audio kept as recorded) -- the experimenter is present and interacting with the subject during this range; not purely solo-subject data"
+  }
+]

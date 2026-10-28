@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	114.9774	play-cards	meta.json action	stim-P0021S002Ego	sub-P0021/stim-P0021S002Ego_audiovideo.mp4	stim-P0021S002Audio	sub-P0021/stim-P0021S002Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	114.9266875

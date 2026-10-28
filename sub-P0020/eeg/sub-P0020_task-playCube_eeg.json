@@ -1,0 +1,75 @@
+{
+  "TaskName": "playCube",
+  "TaskDescription": "Everyday action 'Play_II Cube' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 235.3242,
+  "EgoBrainSegment": {
+    "segment_id": "P0020_phase2_023_play-cube",
+    "action": "Play_II Cube",
+    "phase": "Phase_2",
+    "duration_sec": 235.32548,
+    "imu_hz": 9.94,
+    "imu_hz_per_device": {
+      "imu_1": 9.94,
+      "imu_2": 9.94,
+      "imu_3": 9.94,
+      "imu_4": 9.94
+    },
+    "eeg_quality_flags": [
+      {
+        "rel_start": 0.0,
+        "rel_end": 235.33,
+        "issue": "reference_contact_lost",
+        "description": "An EEG ear reference electrode (CMS/DRL) lost skin contact. All 32 channels share this reference, so every channel is affected, not only those on one side. The signal still shows coarse physiological events (eye blinks, chewing), but its amplitude and spectral power (e.g. alpha) are not comparable to normally-referenced recordings: exclude this range from band-power / amplitude-based analyses, and use it for anything else only with care.",
+        "evidence": "Emotiv headset contact-quality channels CQ_CMS / CQ_DRL read 0 (no contact) in the raw EDF for this range; the EEG shows large transients at the moments contact was lost and restored."
+      }
+    ],
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.025,
+        "back_sec": 0.035
+      },
+      "imu_2": {
+        "front_sec": 0.094,
+        "back_sec": 0.12
+      },
+      "imu_3": {
+        "front_sec": 0.126,
+        "back_sec": 0.069
+      },
+      "imu_4": {
+        "front_sec": 0.073,
+        "back_sec": 0.076
+      }
+    },
+    "verb": "Play_II",
+    "verb_class": 2,
+    "noun": "Cube",
+    "noun_class": 9,
+    "action_class": 9,
+    "category": "task",
+    "sequence": 23,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0020/names",
+    "start_key": "start_ts"
+  }
+}

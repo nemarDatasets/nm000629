@@ -1,0 +1,10 @@
+[
+  {
+    "rel_start": 0.306,
+    "rel_end": 46.639,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "not task data (video/audio kept as recorded) -- the subject misunderstood the task and played with the Rubik's cube instead of the building blocks; not the intended task -- data users should decide whether to use this span"
+  }
+]

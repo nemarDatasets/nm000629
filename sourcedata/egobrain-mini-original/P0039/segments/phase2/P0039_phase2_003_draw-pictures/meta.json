@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0039_phase2_003_draw-pictures",
+  "subject_id": "P0039",
+  "phase": "Phase_2",
+  "sequence": 3,
+  "category": "task",
+  "raw_type": "phase_Draw_Pictures",
+  "start_ts": -2208962623.137301,
+  "end_ts": -2208962307.37532,
+  "duration_sec": 315.761981,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.005,
+      "back_sec": 0.034
+    },
+    "imu_2": {
+      "front_sec": 0.065,
+      "back_sec": 0.007
+    },
+    "imu_3": {
+      "front_sec": 0.007,
+      "back_sec": 0.026
+    },
+    "imu_4": {
+      "front_sec": 0.069,
+      "back_sec": 0.023
+    }
+  },
+  "verb": "Draw",
+  "verb_class": 7,
+  "noun": "Pictures",
+  "noun_class": 22,
+  "action": "Draw Pictures",
+  "action_class": 22,
+  "imu_hz": 184.83,
+  "imu_hz_per_device": {
+    "imu_1": 191.16,
+    "imu_2": 150.98,
+    "imu_3": 198.59,
+    "imu_4": 198.59
+  }
+}

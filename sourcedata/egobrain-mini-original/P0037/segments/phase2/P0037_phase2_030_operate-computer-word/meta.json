@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0037_phase2_030_operate-computer-word",
+  "subject_id": "P0037",
+  "phase": "Phase_2",
+  "sequence": 30,
+  "category": "task",
+  "raw_type": "phase_Operate_Computer_(Word)",
+  "start_ts": -2208946945.3869343,
+  "end_ts": -2208946759.4333973,
+  "duration_sec": 185.953537,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.088,
+      "back_sec": 0.235
+    },
+    "imu_2": {
+      "front_sec": 0.036,
+      "back_sec": 0.034
+    },
+    "imu_3": {
+      "front_sec": 0.002,
+      "back_sec": 0.001
+    },
+    "imu_4": {
+      "front_sec": 0.021,
+      "back_sec": 0.023
+    }
+  },
+  "verb": "Operate",
+  "verb_class": 0,
+  "noun": "Computer (Word)",
+  "noun_class": 0,
+  "action": "Operate Computer (Word)",
+  "action_class": 0,
+  "imu_hz": 162.86,
+  "imu_hz_per_device": {
+    "imu_1": 55.86,
+    "imu_2": 198.51,
+    "imu_3": 198.6,
+    "imu_4": 198.47
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0033_phase2_019_draw-computer-pictures",
+  "subject_id": "P0033",
+  "phase": "Phase_2",
+  "sequence": 19,
+  "category": "task",
+  "raw_type": "phase_Draw_Computer_Pictures",
+  "start_ts": -2208953742.336493,
+  "end_ts": -2208953598.584731,
+  "duration_sec": 143.751762,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.009,
+      "back_sec": 0.014
+    },
+    "imu_2": {
+      "front_sec": 0.014,
+      "back_sec": 0.05
+    },
+    "imu_3": {
+      "front_sec": 0.049,
+      "back_sec": 0.026
+    },
+    "imu_4": {
+      "front_sec": 0.026,
+      "back_sec": 0.023
+    }
+  },
+  "verb": "Operate",
+  "verb_class": 0,
+  "noun": "Computer (Paint)",
+  "noun_class": 3,
+  "action": "Operate Computer (Paint)",
+  "action_class": 3,
+  "imu_hz": 197.44,
+  "imu_hz_per_device": {
+    "imu_1": 198.63,
+    "imu_2": 193.96,
+    "imu_3": 198.58,
+    "imu_4": 198.58
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0027_phase2_004_eat-snack-c",
+  "subject_id": "P0027",
+  "phase": "Phase_2",
+  "sequence": 4,
+  "category": "task",
+  "raw_type": "phase_Eat_Snack_C",
+  "start_ts": -2208956800.033888,
+  "end_ts": -2208956751.00994,
+  "duration_sec": 49.023948,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.002,
+      "back_sec": 0.071
+    },
+    "imu_2": {
+      "front_sec": 0.041,
+      "back_sec": 0.042
+    },
+    "imu_3": {
+      "front_sec": 0.044,
+      "back_sec": 0.051
+    },
+    "imu_4": {
+      "front_sec": 0.117,
+      "back_sec": 0.04
+    }
+  },
+  "verb": "Eat",
+  "verb_class": 8,
+  "noun": "Snack",
+  "noun_class": 23,
+  "action": "Eat Snack",
+  "action_class": 23,
+  "imu_hz": 197.94,
+  "imu_hz_per_device": {
+    "imu_1": 198.47,
+    "imu_2": 196.35,
+    "imu_3": 198.47,
+    "imu_4": 198.47
+  }
+}

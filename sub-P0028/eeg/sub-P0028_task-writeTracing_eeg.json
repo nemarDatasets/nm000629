@@ -1,0 +1,66 @@
+{
+  "TaskName": "writeTracing",
+  "TaskDescription": "Everyday action 'Write Copybook' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 184.7266,
+  "EgoBrainSegment": {
+    "segment_id": "P0028_phase2_032_write-tracing",
+    "action": "Write Copybook",
+    "phase": "Phase_2",
+    "duration_sec": 184.729472,
+    "imu_hz": 198.11,
+    "imu_hz_per_device": {
+      "imu_1": 198.57,
+      "imu_2": 198.57,
+      "imu_3": 196.62,
+      "imu_4": 198.66
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.002,
+        "back_sec": 0.083
+      },
+      "imu_2": {
+        "front_sec": 0.003,
+        "back_sec": 0.016
+      },
+      "imu_3": {
+        "front_sec": 0.001,
+        "back_sec": 0.018
+      },
+      "imu_4": {
+        "front_sec": 0.0,
+        "back_sec": 0.006
+      }
+    },
+    "verb": "Write",
+    "verb_class": 5,
+    "noun": "Copybook",
+    "noun_class": 16,
+    "action_class": 16,
+    "category": "task",
+    "sequence": 32,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0028/names",
+    "start_key": "start_ts"
+  }
+}

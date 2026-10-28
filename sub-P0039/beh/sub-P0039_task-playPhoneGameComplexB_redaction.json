@@ -1,0 +1,17 @@
+[
+  {
+    "rel_start": 24.85,
+    "rel_end": 63.35,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1450,
+        350,
+        1450,
+        1550
+      ]
+    },
+    "mute_audio": false,
+    "reason": "not task data (video altered for this range) -- unexpected event -- a mobile-game advert is playing on the phone, so for these 38.5 s the subject is watching an advert rather than playing the game this segment is labelled with; not task data, consider excluding it. The picture is ALSO blurred here because the advert shows a scantily dressed figure (reviewer's request 2026-10-08, not a privacy leak) -- unlike a text leak, a figure stays recognisable through the 854x480 downscale. Re-filed from \"D:\" to \"F:\" on 2026-10-10: D is the privacy family, and this window said \"not for privacy\" in its own text."
+  }
+]

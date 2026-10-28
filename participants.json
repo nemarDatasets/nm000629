@@ -1,0 +1,15 @@
+{
+  "participant_id": {
+    "Description": "EgoBrain subject code P#### (as released)"
+  },
+  "age": {
+    "Description": "age in years, if released",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "sex/gender as released"
+  },
+  "handedness": {
+    "Description": "as released"
+  }
+}

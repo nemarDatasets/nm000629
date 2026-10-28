@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0003_phase2_022_play-cube",
+  "subject_id": "P0003",
+  "phase": "Phase_2",
+  "sequence": 22,
+  "category": "task",
+  "raw_type": "phase_Play_Cube",
+  "start_ts": -2208957239.131733,
+  "end_ts": -2208957192.034047,
+  "duration_sec": 47.097686,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.006,
+      "back_sec": 0.124
+    },
+    "imu_2": {
+      "front_sec": 0.072,
+      "back_sec": 0.012
+    },
+    "imu_3": {
+      "front_sec": 0.007,
+      "back_sec": 0.082
+    },
+    "imu_4": {
+      "front_sec": 0.031,
+      "back_sec": 0.112
+    }
+  },
+  "verb": "Play_II",
+  "verb_class": 2,
+  "noun": "Cube",
+  "noun_class": 9,
+  "action": "Play_II Cube",
+  "action_class": 9,
+  "imu_hz": 9.97,
+  "imu_hz_per_device": {
+    "imu_1": 9.96,
+    "imu_2": 9.98,
+    "imu_3": 9.98,
+    "imu_4": 9.96
+  }
+}

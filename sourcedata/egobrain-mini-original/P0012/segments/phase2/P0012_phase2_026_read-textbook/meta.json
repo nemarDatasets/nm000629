@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0012_phase2_026_read-textbook",
+  "subject_id": "P0012",
+  "phase": "Phase_2",
+  "sequence": 26,
+  "category": "task",
+  "raw_type": "phase_Read_Textbook",
+  "start_ts": -2208974507.1825,
+  "end_ts": -2208974388.973475,
+  "duration_sec": 118.209025,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.011,
+      "back_sec": 0.076
+    },
+    "imu_2": {
+      "front_sec": 0.046,
+      "back_sec": 0.013
+    },
+    "imu_3": {
+      "front_sec": 0.026,
+      "back_sec": 0.012
+    },
+    "imu_4": {
+      "front_sec": 0.001,
+      "back_sec": 0.078
+    }
+  },
+  "verb": "Read",
+  "verb_class": 6,
+  "noun": "Textbook",
+  "noun_class": 18,
+  "action": "Read Textbook",
+  "action_class": 18,
+  "imu_hz": 9.95,
+  "imu_hz_per_device": {
+    "imu_1": 9.95,
+    "imu_2": 9.95,
+    "imu_3": 9.95,
+    "imu_4": 9.95
+  }
+}

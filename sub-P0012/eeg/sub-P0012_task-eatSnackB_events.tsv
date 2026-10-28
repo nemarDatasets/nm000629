@@ -1,0 +1,6 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	115.9905	eat-snack-b	meta.json action	stim-P0012S022Ego	sub-P0012/stim-P0012S022Ego_audiovideo.mp4	stim-P0012S022Audio	sub-P0012/stim-P0012S022Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	115.98253333333334
+2.545	16.767	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+19.08	15.499	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+52.579	44.501	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+97.08	4.499	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

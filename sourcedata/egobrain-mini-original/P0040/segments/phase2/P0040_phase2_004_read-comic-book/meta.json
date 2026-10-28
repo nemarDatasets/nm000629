@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0040_phase2_004_read-comic-book",
+  "subject_id": "P0040",
+  "phase": "Phase_2",
+  "sequence": 4,
+  "category": "task",
+  "raw_type": "phase_Read_Comic-book",
+  "start_ts": -2208975632.488665,
+  "end_ts": -2208975490.701702,
+  "duration_sec": 141.786963,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.024,
+      "back_sec": 0.007
+    },
+    "imu_2": {
+      "front_sec": 0.014,
+      "back_sec": 0.01
+    },
+    "imu_3": {
+      "front_sec": 0.057,
+      "back_sec": 0.012
+    },
+    "imu_4": {
+      "front_sec": 0.017,
+      "back_sec": 0.009
+    }
+  },
+  "verb": "Read",
+  "verb_class": 6,
+  "noun": "Comic-book",
+  "noun_class": 19,
+  "action": "Read Comic-book",
+  "action_class": 19,
+  "imu_hz": 198.49,
+  "imu_hz_per_device": {
+    "imu_1": 198.57,
+    "imu_2": 198.23,
+    "imu_3": 198.57,
+    "imu_4": 198.62
+  }
+}

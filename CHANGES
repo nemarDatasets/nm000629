@@ -1,0 +1,3 @@
+1.0.0 (private draft)
+  - Mini BIDS/media profile and complete documented source copy. Participant clocks shifted only in deposit metadata; exact originals retained on Voyager.
+  - Omit two subject-linked date strings in source viewer comments only; classify image encoder signatures separately from participant identifiers.

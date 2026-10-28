@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0022_phase2_022_watch-monitor",
+  "subject_id": "P0022",
+  "phase": "Phase_2",
+  "sequence": 22,
+  "category": "task",
+  "raw_type": "phase_Watch_Monitor",
+  "start_ts": -2208969505.4326887,
+  "end_ts": -2208969308.159574,
+  "duration_sec": 197.273115,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.035,
+      "back_sec": 0.029
+    },
+    "imu_2": {
+      "front_sec": 0.0,
+      "back_sec": 0.02
+    },
+    "imu_3": {
+      "front_sec": 0.042,
+      "back_sec": 0.008
+    },
+    "imu_4": {
+      "front_sec": 0.009,
+      "back_sec": 0.012
+    }
+  },
+  "verb": "Watch",
+  "verb_class": 4,
+  "noun": "Computer (Web & Video)",
+  "noun_class": 14,
+  "action": "Watch Computer (Web & Video)",
+  "action_class": 14,
+  "imu_hz": 197.1,
+  "imu_hz_per_device": {
+    "imu_1": 198.6,
+    "imu_2": 198.64,
+    "imu_3": 198.64,
+    "imu_4": 192.51
+  }
+}

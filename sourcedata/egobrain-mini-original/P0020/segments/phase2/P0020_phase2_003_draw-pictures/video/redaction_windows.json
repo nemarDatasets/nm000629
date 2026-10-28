@@ -1,0 +1,18 @@
+[
+  {
+    "rel_start": 0.0,
+    "rel_end": 129.87,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "not task data (video/audio kept as recorded) -- the subject misunderstood the task and drew on the laptop instead of on paper; not the intended task -- data users should decide whether to use this span"
+  },
+  {
+    "rel_start": 0.0,
+    "rel_end": 307.946,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "interaction tag (video/audio kept as recorded) -- a second person is in the room around rel 130-135 s, when the subject switches from the laptop to paper"
+  }
+]

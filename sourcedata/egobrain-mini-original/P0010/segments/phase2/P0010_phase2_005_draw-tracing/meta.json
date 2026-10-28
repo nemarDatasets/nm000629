@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0010_phase2_005_draw-tracing",
+  "subject_id": "P0010",
+  "phase": "Phase_2",
+  "sequence": 5,
+  "category": "task",
+  "raw_type": "phase_Draw_Tracing",
+  "start_ts": -2208967527.071389,
+  "end_ts": -2208967249.664562,
+  "duration_sec": 277.406827,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.009,
+      "back_sec": 0.03
+    },
+    "imu_2": {
+      "front_sec": 0.094,
+      "back_sec": 0.056
+    },
+    "imu_3": {
+      "front_sec": 0.01,
+      "back_sec": 0.031
+    },
+    "imu_4": {
+      "front_sec": 0.049,
+      "back_sec": 0.117
+    }
+  },
+  "verb": "Draw",
+  "verb_class": 7,
+  "noun": "Picture Tracing",
+  "noun_class": 21,
+  "action": "Draw Picture Tracing",
+  "action_class": 21,
+  "imu_hz": 9.94,
+  "imu_hz_per_device": {
+    "imu_1": 9.94,
+    "imu_2": 9.93,
+    "imu_3": 9.94,
+    "imu_4": 9.93
+  }
+}

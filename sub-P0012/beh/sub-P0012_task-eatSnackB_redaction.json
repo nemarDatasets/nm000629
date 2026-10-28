@@ -1,0 +1,62 @@
+[
+  {
+    "rel_start": 2.545,
+    "rel_end": 19.312,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1860,
+        1930,
+        320,
+        230
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 19.08,
+    "rel_end": 34.579,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1860,
+        1930,
+        320,
+        230
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 52.579,
+    "rel_end": 97.08,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1860,
+        1930,
+        320,
+        230
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 97.08,
+    "rel_end": 101.579,
+    "blur_video": true,
+    "region": {
+      "ego": [
+        1820,
+        1910,
+        510,
+        250
+      ]
+    },
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  }
+]

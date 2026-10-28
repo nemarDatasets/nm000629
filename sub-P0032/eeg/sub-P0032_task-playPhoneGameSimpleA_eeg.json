@@ -1,0 +1,66 @@
+{
+  "TaskName": "playPhoneGameSimpleA",
+  "TaskDescription": "Everyday action 'Play_III Phone game (Simple)' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 160.5508,
+  "EgoBrainSegment": {
+    "segment_id": "P0032_phase2_030_play-phone-game-simple-a",
+    "action": "Play_III Phone game (Simple)",
+    "phase": "Phase_2",
+    "duration_sec": 160.551211,
+    "imu_hz": 197.43,
+    "imu_hz_per_device": {
+      "imu_1": 198.63,
+      "imu_2": 193.94,
+      "imu_3": 198.58,
+      "imu_4": 198.58
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.026,
+        "back_sec": 0.002
+      },
+      "imu_2": {
+        "front_sec": 0.024,
+        "back_sec": 0.014
+      },
+      "imu_3": {
+        "front_sec": 0.042,
+        "back_sec": 0.009
+      },
+      "imu_4": {
+        "front_sec": 0.037,
+        "back_sec": 0.019
+      }
+    },
+    "verb": "Play_III",
+    "verb_class": 3,
+    "noun": "Phone game (Simple)",
+    "noun_class": 10,
+    "action_class": 10,
+    "category": "task",
+    "sequence": 30,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0032/names",
+    "start_key": "start_ts"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "TaskName": "playComputerGameKeyboard",
+  "TaskDescription": "Everyday action 'Play_I Computer game (Keyboard)' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 88.3359,
+  "EgoBrainSegment": {
+    "segment_id": "P0031_phase2_013_play-computer-game-keyboard",
+    "action": "Play_I Computer game (Keyboard)",
+    "phase": "Phase_2",
+    "duration_sec": 88.334444,
+    "imu_hz": 166.75,
+    "imu_hz_per_device": {
+      "imu_1": 71.3,
+      "imu_2": 198.63,
+      "imu_3": 198.54,
+      "imu_4": 198.54
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.049,
+        "back_sec": 0.105
+      },
+      "imu_2": {
+        "front_sec": 0.014,
+        "back_sec": 0.022
+      },
+      "imu_3": {
+        "front_sec": 0.021,
+        "back_sec": 0.046
+      },
+      "imu_4": {
+        "front_sec": 0.004,
+        "back_sec": 0.007
+      }
+    },
+    "verb": "Play_I",
+    "verb_class": 1,
+    "noun": "Computer game (Keyboard)",
+    "noun_class": 5,
+    "action_class": 5,
+    "category": "task",
+    "sequence": 13,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0031/names",
+    "start_key": "start_ts"
+  }
+}

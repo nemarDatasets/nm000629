@@ -1,0 +1,10 @@
+[
+  {
+    "rel_start": 18.5,
+    "rel_end": 32.5,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": true,
+    "reason": "interaction tag (audio altered for this range) -- bystander/experimenter audible interaction (not a solo-subject window)"
+  }
+]

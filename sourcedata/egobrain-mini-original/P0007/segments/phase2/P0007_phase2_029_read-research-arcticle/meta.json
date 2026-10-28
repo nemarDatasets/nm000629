@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0007_phase2_029_read-research-arcticle",
+  "subject_id": "P0007",
+  "phase": "Phase_2",
+  "sequence": 29,
+  "category": "task",
+  "raw_type": "phase_Read_Research_Arcticle",
+  "start_ts": -2208948756.760913,
+  "end_ts": -2208948630.096689,
+  "duration_sec": 126.664224,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.137,
+      "back_sec": 0.064
+    },
+    "imu_2": {
+      "front_sec": 0.021,
+      "back_sec": 0.069
+    },
+    "imu_3": {
+      "front_sec": 0.039,
+      "back_sec": 0.003
+    },
+    "imu_4": {
+      "front_sec": 0.04,
+      "back_sec": 0.025
+    }
+  },
+  "verb": "Read",
+  "verb_class": 6,
+  "noun": "Research Article",
+  "noun_class": 20,
+  "action": "Read Research Article",
+  "action_class": 20,
+  "imu_hz": 9.95,
+  "imu_hz_per_device": {
+    "imu_1": 9.94,
+    "imu_2": 9.95,
+    "imu_3": 9.95,
+    "imu_4": 9.95
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "TaskName": "playComputerGameMouse",
+  "License": "CC-BY-NC-4.0",
+  "MediaRole": "recorded_experience_not_presented_stimulus",
+  "EEGTimeOffsetSeconds": 0.0,
+  "FileTimeOffsetSeconds": 0.0,
+  "SynchronizationSource": "Authors released EEG-anchored aligned per-action clips; no new calibration or independent physical synchrony claim.",
+  "SynchronizationEvidence": "Source segment meta.json and published release documentation; clip-origin mapping assumed as released.",
+  "StimulusPresentation": "Not an externally presented movie/sound. Ego camera/microphone recording used as reusable benchmark input.",
+  "SourceSegment": "P0018_phase2_007_play-computer-game-mouse",
+  "BIDSProposalRevisions": {
+    "BEP044": "43ab3991df379d3aef8a2d7e9d5b25395ba2bbdb",
+    "BEP047": "d02449331a81d188ab317e0f5c37c166d34e1851"
+  },
+  "RecordingDuration": 944.4101333333333,
+  "VideoCodec": "h264",
+  "VideoFrameRate": 29.97002997002997,
+  "VideoFrameCount": 28304,
+  "ImageWidth": 854,
+  "ImageHeight": 480,
+  "VideoTimeBase": "1/30000",
+  "VideoStartPTS": 0,
+  "HasEmbeddedAudio": true,
+  "AudioCodec": "aac",
+  "AudioSampleRate": 48000,
+  "AudioChannelCount": 2
+}

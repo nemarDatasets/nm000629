@@ -1,0 +1,4 @@
+{
+  "Description": "Adapter-specific manifest; not a released BIDS table",
+  "SourceRoles": "recorded_experience_not_presented_stimulus"
+}

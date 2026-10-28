@@ -1,0 +1,212 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>EgoBrain-Mini · P0032 · phase2_010_drink-coca-cola-c</title>
+<style>
+:root {
+  --bg: #F3F5F7; --surface: #FFFFFF; --surface-2: #EAEDF1; --surface-3: #DEE3E8;
+  --text: #1A222C; --text-dim: #5B6675; --text-faint: #8892A0;
+  --accent: #00A4EF; --accent-soft: rgba(0,164,239,0.12);
+  --good: #7FBA00; --good-soft: rgba(127,186,0,0.14);
+  --bad: #F25022; --bad-soft: rgba(242,80,34,0.12);
+  --warn: #FFB900; --warn-soft: rgba(255,185,0,0.16);
+  --border: rgba(15,20,30,0.10);
+  --shadow: 0 1px 2px rgba(15,20,30,0.06), 0 8px 24px rgba(15,20,30,0.05);
+  --shadow-hover: 0 2px 6px rgba(15,20,30,0.09), 0 14px 32px rgba(15,20,30,0.10);
+  --stat-purple: #7FBA00; --stat-gold: #FFB900;
+  --fs-h1: 40px; --fs-body: 16px;
+  --mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141A; --surface: #1B212B; --surface-2: #222A35; --surface-3: #2B3542;
+    --text: #E7EAEE; --text-dim: #9AA5B3; --text-faint: #6C7787;
+    --accent: #00A4EF; --accent-soft: rgba(0,164,239,0.22);
+    --good: #7FBA00; --good-soft: rgba(127,186,0,0.24);
+    --bad: #F25022; --bad-soft: rgba(242,80,34,0.22);
+    --warn: #FFB900; --warn-soft: rgba(255,185,0,0.24);
+    --stat-purple: #7FBA00; --stat-gold: #FFB900;
+    --border: rgba(255,255,255,0.08);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    --shadow-hover: 0 2px 6px rgba(0,0,0,0.4), 0 14px 32px rgba(0,0,0,0.45);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141A; --surface: #1B212B; --surface-2: #222A35; --surface-3: #2B3542;
+  --text: #E7EAEE; --text-dim: #9AA5B3; --text-faint: #6C7787;
+  --accent: #00A4EF; --accent-soft: rgba(0,164,239,0.22);
+  --good: #7FBA00; --good-soft: rgba(127,186,0,0.24);
+  --bad: #F25022; --bad-soft: rgba(242,80,34,0.22);
+  --warn: #FFB900; --warn-soft: rgba(255,185,0,0.24);
+  --stat-purple: #7FBA00; --stat-gold: #FFB900;
+  --border: rgba(255,255,255,0.08);
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  --shadow-hover: 0 2px 6px rgba(0,0,0,0.4), 0 14px 32px rgba(0,0,0,0.45);
+}
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.55; font-size:var(--fs-body); }
+.topbar { position:sticky; top:0; z-index:20; height:52px; display:flex; align-items:center;
+  justify-content:space-between; padding:0 20px; background:var(--surface); border-bottom:1px solid var(--border); }
+.topbar .brand { display:flex; align-items:center; gap:9px; font-weight:700; color:var(--text); text-decoration:none; }
+.topbar .brand .dot { width:7px; height:7px; border-radius:50%; background:var(--good); box-shadow:0 0 0 3px var(--accent-soft); flex-shrink:0; }
+#theme-toggle { border:1px solid var(--border); background:var(--surface-2); color:var(--text-dim); border-radius:8px;
+  padding:6px 12px; cursor:pointer; font-family:var(--mono); }
+#theme-toggle:hover { border-color:var(--accent); color:var(--accent); }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 48px 24px 90px; }
+.breadcrumb { display:flex; align-items:center; gap:8px; color:var(--text-dim); margin:0 0 22px; }
+.breadcrumb a { color:var(--text-dim); text-decoration:none; display:inline-flex; align-items:center; }
+.breadcrumb a:hover { color:var(--accent); }
+.breadcrumb .sep { color:var(--text-faint); }
+.breadcrumb .current { color:var(--text); font-weight:650; display:inline-flex; align-items:center; gap:6px; }
+.home-icon { width:14px; height:14px; display:block; }
+.subject-tag { font-family:var(--mono); font-weight:700; color:var(--accent); background:var(--accent-soft);
+  padding:2px 10px; border-radius:7px; letter-spacing:.02em; }
+h1 { font-size:var(--fs-h1); margin:0 0 6px; letter-spacing:-.01em; font-weight:700; display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+h1 .subject-tag { font-size:1em; padding:3px 12px; }
+h1 .rest { color:var(--text-dim); font-weight:600; }
+.h1-sub { font-family:var(--mono); color:var(--accent); font-weight:600; margin:0 0 16px; }
+.dek { color:var(--text-dim); max-width:70ch; margin:0 0 28px; }
+.section-label { font-family:var(--mono); letter-spacing:.02em;
+  color:var(--text-faint); margin:32px 0 12px; font-weight:700; }
+.stats-panel { background:var(--surface-2); border:1px solid var(--border); border-radius:14px;
+  padding:20px 22px 6px; margin-bottom:36px; }
+.stats-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:20px 28px; padding-bottom:20px; }
+.stat .n { font-family:var(--mono); font-weight:700; color:var(--text); font-size:var(--fs-h1); }
+.stat .l { color:var(--text-faint); margin-top:2px; }
+.stat.c-eeg .n { color: var(--stat-purple); }
+.stat.c-cov .n { color: var(--stat-gold); }
+.gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:18px 16px; margin-bottom:40px; }
+.gallery-item { text-decoration:none; color:var(--text); display:block; }
+.gallery-item .thumb { position:relative; aspect-ratio:1/1; border-radius:10px; overflow:hidden;
+  background:var(--surface-2); box-shadow:var(--shadow); transition:transform .15s ease, box-shadow .15s ease; }
+.gallery-item:hover .thumb { transform:translateY(-4px); box-shadow:var(--shadow-hover); }
+.gallery-item .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+.gallery-item .dot { position:absolute; top:8px; right:8px; width:9px; height:9px; border-radius:50%; box-shadow:0 0 0 2px rgba(255,255,255,.85); }
+.gallery-item .dot.pass { background:var(--good); }
+.gallery-item .dot.fail { background:var(--bad); }
+.gallery-item .dot.warn { background:#E69600; }
+.gallery-item .eegq-badge { font-family:var(--mono); font-size:10px;
+  font-weight:800; color:#1A222C; padding:2px 6px; border-radius:6px; background:rgba(230,150,0,.96);
+  border:1.5px solid #fff3d6; }
+.eegq-note, .eegq-banner { background:rgba(230,150,0,0.10); border:1px solid rgba(199,119,0,0.55); border-radius:10px;
+  padding:12px 16px; margin:0 0 16px; color:var(--text); }
+.eegq-note b.t, .eegq-banner-title { color:#C77700; font-weight:700; }
+.eegq-banner ul { margin:6px 0 8px; padding-left:20px; font-size:13.5px; }
+.eegq-banner-note { color:var(--text-dim); font-size:12.5px; }
+.eegq-note p { margin:0 0 8px; }
+.eegq-note p:last-child { margin:0; }
+.gallery-item .badge-stack { position:absolute; top:6px; left:7px; display:flex; flex-direction:column; gap:4px; align-items:flex-start; }
+.gallery-item .thumb.short-dur { box-shadow:0 0 0 3px var(--bad) inset; }
+.gallery-item .short-badge { font-family:var(--mono); font-size:10px; font-weight:700;
+  color:#fff; padding:2px 6px; border-radius:6px; background:rgba(224,82,82,.92); }
+.gallery-item .gap-badge, .gallery-item .pad-badge { font-family:var(--mono); font-size:10px;
+  font-weight:700; color:#fff; padding:2px 6px; border-radius:6px; }
+.gallery-item .gap-badge { background:rgba(242,80,34,.92); }
+.gallery-item .pad-badge { background:rgba(255,185,0,.92); color:#1A222C; }
+.gallery-item .interaction-badge { font-family:var(--mono); font-size:10px;
+  font-weight:700; color:#1A222C; padding:2px 6px; border-radius:6px; background:rgba(255,145,0,.95); }
+.gallery-item .exclude-badge { font-family:var(--mono); font-size:10px;
+  font-weight:700; color:#fff; padding:2px 6px; border-radius:6px; background:rgba(180,30,30,.96); border:1.5px solid #ffd9d9; }
+.mod-strip { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:14px; }
+.mod-chip { font-family:var(--mono); font-size:12px; font-weight:700; padding:3px 9px; border-radius:999px; border:1px solid; }
+.mod-chip.present { color:var(--good); border-color:var(--good); background:var(--good-soft); }
+.mod-chip.absent { color:var(--bad); border-color:var(--bad); background:var(--bad-soft); }
+.mod-chip.warn { color:#8a5a00; border-color:rgba(255,145,0,.95); background:rgba(255,145,0,.16); }
+.mod-chip.eegq { color:#C77700; border-color:#C77700; background:rgba(230,150,0,.14); }
+.mod-chip.exclude { color:#b41e1e; border-color:rgba(180,30,30,.9); background:rgba(180,30,30,.12); }
+.modality-missing { color:var(--text-faint); font-family:var(--mono); font-size:13px; padding:14px 0; }
+.exclude-banner { border:1.5px solid rgba(180,30,30,.55); background:rgba(180,30,30,.08);
+  border-radius:10px; padding:12px 16px; margin-bottom:16px; }
+.exclude-banner-title { font-weight:700; color:#b41e1e; margin-bottom:6px; }
+.exclude-banner ul { margin:0 0 6px 20px; padding:0; }
+.exclude-banner-note { color:var(--text-faint); font-size:12.5px; }
+.g-cap { font-weight:650; margin-top:9px; line-height:1.3; }
+.g-sub { color:var(--text-faint); font-family:var(--mono); margin-top:2px; }
+footer { padding-top:24px; margin-top:36px; border-top:1px solid var(--border); color:var(--text-faint); }
+a { color:var(--accent); }
+.sub { color:var(--text-dim); margin-bottom:6px; }
+.video-cell { background:#000; border-radius:10px; overflow:hidden; position:relative; box-shadow:var(--shadow); margin:0 auto 24px; max-width:640px; }
+.video-cell video { width:100%; display:block; background:#000; }
+.video-cell .vlabel { position:absolute; top:8px; left:10px; color:#fff; font-family:var(--mono);
+  background:rgba(0,0,0,.55); padding:2px 8px; border-radius:6px; }
+.panel { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 18px; box-shadow:var(--shadow); margin-bottom:14px; }
+.panel h3 { margin:0 0 4px; color:var(--text-dim); font-weight:700; letter-spacing:.02em; }
+.coverage-table { width:100%; border-collapse:collapse; font-family:var(--mono); font-size:13px;
+  border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+.coverage-table th { text-align:left; padding:8px 12px; background:var(--surface-2); color:var(--text-dim);
+  font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:.04em; border-bottom:1px solid var(--border); }
+.coverage-table th:not(:first-child), .coverage-table td.num { text-align:right; }
+.coverage-table td { padding:7px 12px; border-bottom:1px solid var(--border); }
+.coverage-table tbody tr:last-child td { border-bottom:none; }
+.coverage-table tbody tr:nth-child(even) { background:var(--surface-2); }
+.coverage-table td.num { color:var(--text); font-variant-numeric:tabular-nums; }
+.coverage-table td.delta { color:var(--text-faint); }
+.coverage-table.mismatch td.num { color:var(--bad); font-weight:700; }
+.coverage-table.mismatch td.delta { color:var(--bad); }
+.coverage-note { font-family:var(--mono); font-size:13px; margin-top:10px; padding:8px 12px; border-radius:8px; }
+.coverage-note.ok { color:var(--good); background:var(--good-soft); }
+.coverage-note.bad { color:var(--bad); background:var(--bad-soft); }
+.footnote { color:var(--text-faint); font-family:var(--mono); margin:0 0 10px; }
+canvas { width:100%; height:90px; display:block; border-radius:8px; background:var(--surface-2); cursor:pointer; }
+.legend { color:var(--text-faint); margin-top:6px; font-family:var(--mono); }
+.legend b { color: var(--accent); }
+
+
+.imuq-note { background:rgba(230,150,0,0.10); border:1px solid rgba(199,119,0,0.55); border-radius:10px;
+  padding:12px 16px; margin:0 0 18px; color:var(--text); }
+.imuq-note b.t { color:#C77700; }
+.imuq-note p { margin:0 0 8px; }
+.imuq-note p:last-child { margin:0; }
+.imuq-note code { font-family:var(--mono); }
+</style>
+<div class="topbar">
+  <a class="brand" href="../index.html"><span class="dot"></span>EgoBrain-Mini</a>
+  <button id="theme-toggle">&#9789; Theme</button>
+</div>
+<main class="main-content">
+    <div class="wrap">
+  <p class="breadcrumb"><svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="sep">&rsaquo;</span><a href="../index.html">P0032</a><span class="sep">&rsaquo;</span><span class="current">phase2_010_drink-coca-cola-c</span></p>
+  <h1><span class="subject-tag">P0032</span><span class="rest">Drink Coca-cola</span></h1>
+  <p class="sub">Duration 27.3s &middot; Ego (First-Person), synced with EEG/IMU/audio below</p>
+  <div class="mod-strip"><span class="mod-chip present" title="Recorded for this segment">&check; EEG</span><span class="mod-chip present" title="Recorded for this segment">&check; IMU</span><span class="mod-chip present" title="Recorded for this segment">&check; Audio</span></div>
+  
+  
+
+  <div class="video-cell" id="cell_ego">
+    <div class="vlabel">Ego (First-Person)</div>
+    <video id="v_ego" src="../../segments/phase2/P0032_phase2_010_drink-coca-cola-c/video/ego.mp4" controls playsinline preload="metadata"></video>
+  </div>
+
+  <div class="panel">
+    <h3>Modality Coverage (actual duration per modality)</h3>
+    <div class="footnote">* Independent of any on-screen clock or device timestamp -- each row is the modality's own real covered span (video/audio: file duration; IMU: timestamp range; EEG: sample count / 200Hz). Every modality shipped for a segment must span the identical real-world window.</div>
+    <table class="coverage-table"><thead><tr><th>Modality</th><th>Duration</th><th>vs. longest</th></tr></thead><tbody><tr><td>EEG</td><td class="num">27.30s</td><td class="num delta">−0.03s</td></tr><tr><td>Ego</td><td class="num">27.33s</td><td class="num delta">—</td></tr><tr><td>Audio-Ego</td><td class="num">27.29s</td><td class="num delta">−0.03s</td></tr><tr><td>IMU</td><td class="num">27.29s</td><td class="num delta">−0.03s</td></tr></tbody></table>
+    <div class="coverage-note ok">&check; all modalities agree within 0.0s.</div>
+  </div>
+
+  <p class="section-label">The line moving through each chart below tracks the video's current playback position</p>
+  <div class="panel">
+    <h3>EEG (Overall Brain Activity)</h3>
+    <div class="footnote">* Combines all 32 electrodes into one number per instant using RMS (root-mean-square) — higher means larger overall EEG signal amplitude at that moment (computed on the artifact-cleaned data).</div>
+    <canvas id="eegCanvas"></canvas>
+    <div class="legend">
+      <div><b style="color:#00A4EF">&mdash;</b> Combined signal strength across all 32 electrodes</div>
+      <div><b style="color:#FFB900">&#8942;</b> EEG marker (segment start, from EEG's own log)</div>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>IMU (Body Motion, 4 Sensors)</h3>
+    <div class="footnote">* Each sensor's x/y/z acceleration combined into one "magnitude" number per instant — higher means faster/harder movement, regardless of direction.</div><canvas id="imuCanvas"></canvas><div class="legend"><div><b style="color:#7FBA00">Green</b> = left wrist (imu_1)</div><div><b style="color:#FFB900">Yellow</b> = left upper arm (imu_2)</div><div><b style="color:#F25022">Red</b> = right upper arm (imu_4)</div><div><b style="color:#00A4EF">Blue</b> = right wrist (imu_3)</div></div><div class="footnote">* Shaded/labeled "padded" region: IMU's own real logging started later or stopped earlier than every other modality's shared window (a device timing gap, not a bug). Rather than shortening EEG/video/audio to match, that gap is filled by repeating the nearest real sample at IMU's own sampling interval — so array lengths line up, but it is NOT a real reading. Treat that span as flat filler, not motion data.</div>
+  </div>
+  <div class="panel">
+    <h3>Audio (Ego)</h3>
+    <div class="footnote">* Volume envelope of the camera's own microphone track — a sudden sharp sound (a knock, a click) shows up as a tall, narrow spike.</div><canvas id="audioCanvas"></canvas><div class="legend"><b style="color:#00A4EF">&mdash;</b> Ego microphone</div>
+  </div>
+
+  <footer>Click any chart to jump playback to that moment.</footer>
+    </div>
+</main>
+<script src="../site.js"></script>
+<script src="../mini-viewer.js"></script>
+<script>initMiniViewer({duration: 27.294956, chartData: {"duration": 27.294956, "eeg_rms": [1.26, 1.11, 0.9, 0.77, 0.66, 0.58, 0.55, 0.58, 0.57, 0.56, 0.59, 0.58, 0.63, 0.62, 0.63, 0.65, 0.64, 0.63, 0.6, 0.68, 1.04, 1.02, 0.85, 0.7, 0.64, 0.64, 0.58, 0.6, 0.54, 0.59, 0.54, 0.55, 0.53, 0.5, 0.44, 0.46, 0.44, 0.44, 0.44, 0.4, 0.55, 1.43, 1.11, 0.88, 1.13, 0.55, 0.45, 0.47, 0.63, 0.59, 0.57, 0.47, 0.56, 0.57, 0.53, 0.56, 0.45, 0.8, 0.8, 0.66, 0.64, 0.69, 0.48, 0.47, 0.4, 0.56, 0.75, 0.66, 2.6, 2.54, 2.08, 1.68, 1.51, 1.28, 1.09, 0.96, 0.75, 0.67, 0.59, 0.65, 0.57, 0.49, 0.46, 0.48, 0.47, 0.47, 0.52, 0.5, 0.47, 0.52, 0.57, 0.77, 0.94, 0.83, 0.78, 0.83, 2.6, 2.33, 1.99, 1.69, 1.43, 1.21, 1.01, 0.85, 0.77, 0.64, 0.52, 0.45, 0.35, 0.48, 0.4, 0.31, 0.28, 0.57, 0.54, 0.52, 0.76, 0.64, 0.89, 0.87, 0.75, 0.57, 0.55, 0.55, 1.6, 1.15, 0.65, 0.47, 0.56, 0.8, 0.7, 0.57, 0.52, 0.68, 0.63, 0.61, 0.52, 0.45, 0.39, 0.95, 0.85, 0.63, 0.45, 0.37, 0.36, 0.29, 0.27, 0.29, 0.27, 0.36, 1.62, 1.39, 1.22, 1.22, 0.69, 0.6, 0.66, 0.66, 0.59, 0.55, 0.57, 0.49, 0.43, 0.43, 0.44, 0.42, 0.42, 0.33, 0.6, 1.1, 1.11, 0.82, 0.63, 0.6, 0.39, 1.04, 2.1, 1.65, 1.24, 1.53, 0.61, 0.52, 0.65, 0.71, 0.57, 0.55, 0.49, 0.45, 0.43, 0.4, 0.45, 0.36, 0.44, 1.07, 1.21, 0.61, 0.4, 0.71, 0.55, 0.57, 0.74, 0.64, 0.55, 0.46, 0.44, 0.61, 0.42, 0.37, 0.33, 0.44, 0.64, 0.43, 0.58, 0.6, 0.4, 0.43, 0.57, 0.81, 0.78, 0.67, 0.6, 0.42, 0.41, 0.43, 0.53, 0.43, 0.64, 0.86, 1.52, 3.02, 2.42, 1.97, 1.6, 1.35, 1.15, 1.03, 1.01, 1.24, 1.03, 0.89, 0.74, 0.79, 0.66, 0.48, 0.58, 0.61, 0.7, 0.73, 0.69, 0.69, 0.7, 0.7, 0.72, 0.68, 0.62, 0.69, 0.76, 0.65, 0.71, 0.74, 0.85, 0.81, 0.78, 0.74, 1.33, 1.43, 0.87, 0.61, 0.72, 0.92, 0.71, 0.62, 0.69, 0.72, 0.53, 0.48, 0.7, 0.65, 0.54, 0.52, 0.98, 0.89, 0.91, 0.81, 0.59, 0.63, 1.36, 2.18, 1.62, 1.03, 0.67, 0.63, 0.61, 0.99, 1.03, 0.92, 0.73, 0.86, 1.22, 0.99, 0.56, 0.34, 0.35, 0.44, 0.43, 0.43, 0.47, 0.54, 0.46, 0.55, 0.57, 0.48, 0.45, 0.39, 0.44, 0.42, 0.4, 0.49, 0.45, 0.54, 0.36, 0.45, 0.39, 0.4, 0.37, 0.54, 0.39, 0.43, 0.53, 0.47, 0.61, 0.66, 0.46, 0.49, 0.6, 0.64, 1.27, 1.62, 0.86, 0.93, 1.11, 0.53, 0.71, 0.85, 0.89, 1.07, 1.05, 1.18, 1.06, 0.92, 0.89, 1.37, 1.07, 0.96, 1.85, 3.41, 2.45, 1.62, 1.6, 1.32, 1.13, 0.94, 0.93, 0.88, 0.84, 0.68, 0.59, 0.83, 1.22, 1.08, 0.84, 0.62, 0.47, 0.41, 0.35, 0.31, 0.32, 0.43, 0.42, 0.36, 0.41, 0.52, 0.35, 0.37, 0.43, 0.6, 0.71, 0.77, 0.71, 0.55, 0.46, 0.45, 0.33, 0.37, 0.38, 0.44, 0.34, 0.36, 0.37, 0.37, 0.38, 1.58, 3.83, 2.78, 2.2, 1.71, 1.34, 1.19, 1.07, 1.07, 0.79, 1.91, 2.3, 1.95, 1.69, 1.62, 2.33, 3.04, 2.79], "eeg_hz": 15.384615384615385, "imu": {"imu_1": [2.212, 2.226, 2.229, 2.231, 2.223, 2.236, 2.227, 2.24, 2.242, 2.227, 2.247, 2.244, 2.256, 2.292, 2.366, 2.566, 2.493, 2.24, 2.163, 2.31, 2.446, 2.321, 2.333, 2.381, 2.367, 2.251, 2.431, 2.374, 2.391, 2.407, 2.34, 2.181, 2.251, 2.357, 2.372, 2.382, 2.409, 2.493, 2.461, 2.376, 2.426, 2.592, 2.564, 2.384, 2.223, 2.033, 1.963, 1.896, 1.854, 1.883, 1.872, 2.09, 2.119, 2.222, 2.188, 2.015, 2.319, 2.23, 2.232, 2.223, 2.15, 2.107, 2.162, 2.259, 2.352, 2.383, 2.401, 2.403, 2.42, 2.33, 2.299, 2.231, 2.234, 2.295, 2.325, 2.196, 2.169, 2.163, 2.137, 2.169, 2.134, 2.119, 2.328, 2.339, 2.314, 2.269, 2.276, 2.444, 2.416, 2.385, 2.383, 2.379, 2.366, 2.332, 2.327, 2.344, 2.337, 2.337, 2.33, 2.308, 2.328, 2.347, 2.335, 2.33, 2.335, 2.349, 2.327, 2.322, 2.343, 2.342, 2.357, 2.425, 2.445, 2.476, 2.459, 2.313, 2.168, 1.932, 1.92, 2.07, 2.12, 2.258, 2.196, 2.202, 2.248, 2.291, 2.233, 2.227, 2.242, 2.235, 2.21, 2.236, 2.215, 2.236, 2.226, 2.231, 2.222, 2.213, 2.215, 2.219, 2.215, 2.211, 2.204, 2.201, 2.211, 2.206, 2.204, 2.204, 2.204, 2.228, 2.207, 2.209, 2.204, 2.184, 2.198, 2.193, 2.191, 2.192, 2.189, 2.186, 2.176, 2.179, 2.176, 2.197, 2.19, 2.208, 2.188, 2.186, 2.184, 2.166, 2.218, 2.185, 2.192, 2.194, 2.172, 2.24, 2.13, 2.29, 2.304, 2.25, 2.214, 2.251, 2.279, 2.331, 2.313, 2.274, 2.243, 2.217, 2.175, 2.207, 2.264, 2.275, 2.265, 2.241, 2.266, 2.174, 2.132, 2.121, 2.133, 2.129, 2.133, 2.13, 2.123, 2.122, 2.114, 2.144, 2.125, 2.131, 2.157, 2.122, 2.116, 2.089, 2.076, 2.053, 2.039, 2.051, 2.054, 2.048, 2.048, 2.048, 2.036, 2.014, 2.057, 2.079, 2.107, 2.129, 2.163, 2.09, 2.1, 2.117, 2.126, 2.163, 2.209, 2.231, 2.262, 2.303, 2.278, 2.311, 2.33, 2.321, 2.323, 2.301, 2.307, 2.284, 2.282, 2.275, 2.308, 2.294, 2.29, 2.287, 2.283, 2.326, 2.317, 2.3, 2.306, 2.301, 2.301, 2.302, 2.302, 2.301, 2.301, 2.303, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.303, 2.303, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.302, 2.303, 2.302, 2.308, 2.336, 2.379, 2.39, 2.372, 2.401, 2.375, 2.253, 2.228, 2.175, 2.13, 2.119, 2.131, 2.11, 2.086, 2.107, 2.112, 2.101, 2.106, 2.107, 2.098, 2.084, 2.066, 2.05, 2.054, 2.046, 2.055, 2.055, 2.077, 2.123, 2.133, 2.094, 2.093, 2.106, 2.149, 2.18, 2.243, 2.303, 2.334, 2.376, 2.354, 2.335, 2.318, 2.318, 2.288, 2.264, 2.291, 2.319, 2.299, 2.459, 2.482, 2.151, 2.039, 2.024, 2.133, 2.464, 2.63, 2.555, 2.474, 2.504, 2.407, 2.481, 2.589, 2.515, 2.485, 2.493, 2.505, 2.465, 2.458, 2.442, 2.445, 2.435, 2.441, 2.428, 2.443, 2.429, 2.496, 2.678, 2.728, 2.584, 2.586, 2.554, 2.506, 2.375, 2.006, 1.943, 2.112, 2.161, 2.437, 2.403, 2.293, 2.324, 2.37, 2.506, 2.515, 2.288, 2.101, 1.967, 2.073, 2.108, 2.277, 2.359, 2.353, 2.382, 2.405, 2.408, 2.447, 2.423, 2.484, 2.383, 2.369, 2.358, 2.395, 2.423, 2.463, 2.496, 2.401, 2.378, 2.277, 2.006, 2.147, 2.056, 2.176, 2.667, 2.774, 2.775, 2.59, 2.7, 2.268, 2.428, 2.408], "imu_2": [2.067, 2.062, 2.061, 2.053, 2.061, 2.065, 2.064, 2.058, 2.065, 2.063, 2.068, 2.058, 2.065, 2.067, 2.069, 2.105, 2.183, 2.112, 2.102, 2.046, 2.028, 2.035, 2.079, 2.086, 2.052, 2.074, 2.102, 2.106, 2.061, 2.144, 2.104, 1.978, 1.843, 1.939, 2.038, 2.075, 2.057, 2.109, 2.129, 2.141, 2.06, 2.031, 2.149, 2.14, 2.028, 1.913, 1.898, 1.913, 1.855, 1.811, 1.805, 1.829, 1.885, 2.178, 2.187, 1.89, 1.972, 2.1, 2.13, 2.091, 2.066, 2.041, 2.058, 2.071, 2.101, 2.138, 2.125, 2.114, 2.105, 2.161, 2.156, 2.148, 2.118, 2.12, 2.155, 2.2, 2.179, 2.099, 2.086, 2.078, 2.089, 2.068, 2.078, 2.127, 2.141, 2.138, 2.13, 2.153, 2.224, 2.198, 2.173, 2.182, 2.186, 2.17, 2.179, 2.177, 2.181, 2.184, 2.17, 2.182, 2.179, 2.178, 2.165, 2.17, 2.18, 2.171, 2.176, 2.176, 2.177, 2.18, 2.183, 2.184, 2.191, 2.211, 2.2, 2.109, 2.063, 2.001, 1.981, 1.98, 1.977, 2.0, 1.998, 2.005, 2.0, 2.014, 2.028, 2.026, 2.028, 2.023, 1.995, 2.005, 2.012, 2.014, 2.022, 2.016, 2.018, 2.013, 1.996, 2.01, 2.027, 2.008, 2.001, 1.992, 1.999, 2.008, 1.997, 2.002, 1.998, 1.992, 1.989, 2.004, 1.985, 1.975, 1.984, 1.996, 1.999, 2.003, 1.997, 1.983, 1.976, 1.983, 1.979, 1.983, 1.978, 1.992, 2.004, 1.983, 1.982, 1.98, 1.978, 1.985, 1.985, 1.981, 1.969, 1.989, 2.017, 2.016, 2.003, 2.026, 2.035, 2.037, 2.025, 2.038, 2.019, 2.026, 2.019, 2.007, 1.992, 2.0, 1.998, 2.001, 1.997, 2.003, 1.99, 1.945, 1.891, 1.865, 1.853, 1.85, 1.85, 1.848, 1.832, 1.818, 1.818, 1.81, 1.798, 1.802, 1.81, 1.817, 1.809, 1.787, 1.772, 1.763, 1.754, 1.749, 1.753, 1.754, 1.752, 1.751, 1.754, 1.741, 1.738, 1.759, 1.771, 1.78, 1.804, 1.823, 1.831, 1.821, 1.838, 1.862, 1.902, 1.935, 1.954, 1.979, 1.987, 2.008, 2.03, 2.03, 2.045, 2.045, 2.039, 2.043, 2.042, 2.037, 2.049, 2.055, 2.055, 2.054, 2.06, 2.072, 2.061, 2.044, 2.058, 2.069, 2.07, 2.07, 2.07, 2.068, 2.066, 2.072, 2.073, 2.066, 2.065, 2.071, 2.068, 2.065, 2.068, 2.068, 2.066, 2.068, 2.064, 2.069, 2.066, 2.068, 2.062, 2.067, 2.067, 2.064, 2.067, 2.066, 2.07, 2.061, 2.066, 2.067, 2.065, 2.076, 2.111, 2.046, 2.023, 2.065, 2.061, 2.048, 1.993, 1.949, 1.912, 1.881, 1.851, 1.827, 1.812, 1.794, 1.792, 1.789, 1.784, 1.78, 1.771, 1.766, 1.756, 1.75, 1.742, 1.744, 1.746, 1.739, 1.741, 1.774, 1.803, 1.807, 1.82, 1.849, 1.871, 1.904, 1.917, 1.97, 2.009, 2.03, 2.045, 2.061, 2.052, 2.051, 2.046, 2.034, 2.034, 2.027, 2.037, 2.037, 2.062, 2.086, 2.034, 1.965, 2.017, 2.032, 2.069, 2.158, 2.186, 2.213, 2.22, 2.217, 2.256, 2.29, 2.259, 2.232, 2.251, 2.255, 2.247, 2.237, 2.245, 2.217, 2.201, 2.199, 2.247, 2.262, 2.27, 2.308, 2.384, 2.304, 2.175, 2.11, 2.157, 2.131, 2.067, 1.965, 2.004, 1.884, 1.918, 2.001, 2.057, 2.069, 1.982, 1.99, 2.019, 2.039, 1.971, 1.916, 1.855, 1.86, 1.872, 1.88, 1.951, 1.98, 1.992, 2.027, 2.009, 2.057, 2.063, 2.086, 2.041, 2.003, 2.034, 2.046, 2.048, 2.048, 2.011, 2.063, 2.086, 2.068, 1.997, 1.894, 1.895, 1.964, 2.278, 2.401, 2.336, 2.303, 2.305, 2.222], "imu_3": [0.686, 0.692, 0.688, 0.69, 0.684, 0.685, 0.685, 0.683, 0.685, 0.685, 0.683, 0.687, 0.687, 0.683, 0.684, 0.682, 0.683, 0.678, 0.666, 0.666, 0.663, 0.654, 0.65, 0.644, 0.635, 0.626, 0.62, 0.616, 0.612, 0.61, 0.608, 0.61, 0.601, 0.595, 0.592, 0.588, 0.587, 0.583, 0.58, 0.574, 0.571, 0.57, 0.575, 0.571, 0.571, 0.565, 0.564, 0.605, 0.585, 0.475, 0.452, 0.692, 1.034, 0.974, 0.936, 0.923, 0.734, 0.605, 0.639, 0.976, 1.087, 0.763, 0.599, 0.807, 1.044, 1.051, 0.947, 0.894, 0.715, 0.611, 0.602, 0.613, 0.633, 0.632, 0.47, 0.477, 0.4, 0.428, 0.542, 0.637, 0.714, 0.686, 0.621, 0.612, 0.646, 0.492, 0.401, 0.392, 0.477, 0.337, 0.29, 0.353, 0.491, 0.502, 0.693, 0.727, 0.899, 1.124, 1.155, 1.057, 1.036, 1.149, 1.087, 0.998, 1.2, 1.329, 1.07, 1.065, 1.108, 1.113, 1.143, 1.104, 1.0, 0.894, 0.772, 0.762, 0.765, 0.727, 0.786, 0.855, 0.97, 0.925, 0.928, 0.956, 0.999, 1.083, 1.091, 1.025, 1.109, 1.116, 1.116, 1.145, 1.164, 1.127, 1.148, 1.123, 1.109, 1.105, 1.102, 1.11, 1.113, 1.099, 1.1, 1.106, 1.094, 1.091, 1.094, 1.089, 1.086, 1.262, 1.185, 1.052, 1.072, 1.088, 1.088, 1.087, 1.041, 1.152, 1.135, 1.168, 1.196, 1.017, 0.93, 0.744, 0.77, 0.797, 0.79, 0.707, 0.661, 0.674, 0.595, 0.541, 0.465, 0.348, 0.317, 0.165, 0.281, 0.657, 0.662, 0.774, 1.242, 1.065, 1.568, 1.06, 0.874, 0.814, 0.797, 0.901, 0.719, 0.735, 0.769, 0.811, 0.814, 0.824, 0.822, 0.818, 0.806, 0.813, 0.806, 0.812, 0.812, 0.8, 0.801, 0.799, 0.801, 0.805, 0.806, 0.801, 0.802, 0.801, 0.804, 0.803, 0.802, 0.802, 0.801, 0.802, 0.802, 0.801, 0.8, 0.799, 0.801, 0.801, 0.8, 0.799, 0.8, 0.798, 0.802, 0.8, 0.797, 0.799, 0.799, 0.806, 0.804, 0.802, 0.802, 0.8, 0.805, 0.801, 0.801, 0.798, 0.801, 0.801, 0.8, 0.799, 0.798, 0.801, 0.8, 0.808, 0.802, 0.8, 0.813, 0.826, 0.843, 0.856, 0.845, 0.842, 0.835, 0.837, 0.839, 0.843, 0.84, 0.835, 0.836, 0.839, 0.838, 0.839, 0.837, 0.838, 0.839, 0.84, 0.84, 0.84, 0.838, 0.84, 0.84, 0.839, 0.84, 0.841, 0.842, 0.842, 0.842, 0.844, 0.845, 0.844, 0.844, 0.843, 0.843, 0.852, 0.845, 0.854, 0.843, 0.838, 0.845, 0.843, 0.846, 0.842, 0.843, 0.844, 0.847, 0.846, 0.844, 0.842, 0.843, 0.843, 0.839, 0.838, 0.837, 0.84, 0.838, 0.839, 0.832, 0.833, 0.837, 0.839, 0.841, 0.837, 0.835, 0.84, 0.841, 0.842, 0.839, 0.837, 0.836, 0.841, 0.837, 0.833, 0.831, 0.832, 0.843, 0.844, 0.865, 0.869, 0.87, 0.91, 0.918, 0.877, 0.82, 0.738, 0.734, 0.683, 0.751, 0.717, 0.671, 0.658, 0.692, 0.667, 0.554, 0.443, 0.289, 0.346, 0.523, 0.665, 0.804, 1.146, 0.774, 0.655, 0.654, 0.615, 0.638, 0.644, 0.628, 0.613, 0.614, 0.602, 0.599, 0.591, 0.59, 0.583, 0.577, 0.572, 0.576, 0.572, 0.57, 0.567, 0.563, 0.557, 0.55, 0.55, 0.541, 0.539, 0.537, 0.533, 0.533, 0.534, 0.534, 0.533, 0.534, 0.536, 0.535, 0.537, 0.533, 0.532, 0.532, 0.533, 0.551, 0.53, 0.536, 0.538, 0.541, 0.542, 0.543, 0.544, 0.544, 0.546, 0.544, 0.549, 0.547, 0.551, 0.554, 0.553, 0.553, 0.553, 0.554, 0.556, 0.551, 0.559], "imu_4": [1.129, 1.117, 1.115, 1.116, 1.121, 1.12, 1.109, 1.114, 1.114, 1.111, 1.112, 1.11, 1.119, 1.122, 1.111, 1.102, 1.098, 1.108, 1.118, 1.115, 1.112, 1.119, 1.119, 1.112, 1.121, 1.132, 1.131, 1.122, 1.128, 1.148, 1.122, 1.11, 1.12, 1.129, 1.135, 1.124, 1.121, 1.147, 1.112, 1.106, 1.145, 1.146, 1.129, 1.119, 1.132, 1.127, 1.131, 1.077, 0.976, 1.043, 1.241, 1.268, 1.161, 1.121, 1.234, 1.242, 1.178, 1.2, 1.151, 1.214, 1.252, 1.331, 1.192, 1.08, 1.029, 1.012, 0.968, 0.95, 1.015, 1.184, 1.242, 1.26, 1.212, 1.188, 1.19, 1.187, 1.13, 1.102, 1.114, 1.13, 1.038, 1.103, 1.22, 1.255, 1.266, 1.272, 1.24, 1.148, 1.201, 1.209, 1.163, 1.122, 1.1, 1.06, 1.006, 1.021, 1.085, 1.063, 1.146, 1.238, 1.189, 1.14, 1.143, 1.085, 1.026, 1.005, 1.091, 1.074, 1.049, 1.068, 1.057, 1.018, 1.052, 1.084, 1.195, 1.28, 1.304, 1.358, 1.347, 1.29, 1.262, 1.251, 1.248, 1.25, 1.264, 1.26, 1.248, 1.243, 1.2, 1.183, 1.19, 1.216, 1.199, 1.227, 1.227, 1.221, 1.2, 1.179, 1.174, 1.201, 1.212, 1.22, 1.221, 1.209, 1.211, 1.203, 1.203, 1.199, 1.2, 1.189, 1.178, 1.171, 1.149, 1.163, 1.211, 1.249, 1.251, 1.207, 1.225, 1.193, 1.209, 1.199, 1.208, 1.226, 1.223, 1.267, 1.213, 1.249, 1.25, 1.267, 1.147, 1.179, 1.067, 0.94, 0.966, 1.112, 1.192, 1.244, 1.214, 1.265, 1.183, 1.259, 0.899, 1.04, 0.907, 0.872, 0.894, 0.835, 0.926, 0.928, 0.881, 0.864, 0.861, 0.878, 0.885, 0.881, 0.869, 0.879, 0.898, 0.897, 0.895, 0.895, 0.901, 0.894, 0.889, 0.894, 0.896, 0.893, 0.89, 0.901, 0.891, 0.89, 0.89, 0.892, 0.893, 0.895, 0.888, 0.888, 0.89, 0.896, 0.893, 0.887, 0.893, 0.888, 0.895, 0.899, 0.892, 0.889, 0.892, 0.897, 0.9, 0.889, 0.891, 0.888, 0.891, 0.895, 0.892, 0.893, 0.887, 0.89, 0.897, 0.885, 0.887, 0.891, 0.892, 0.874, 0.887, 0.896, 0.905, 0.898, 0.893, 0.887, 0.878, 0.869, 0.883, 0.895, 0.906, 0.892, 0.89, 0.888, 0.89, 0.891, 0.898, 0.896, 0.889, 0.888, 0.889, 0.89, 0.892, 0.891, 0.893, 0.894, 0.89, 0.895, 0.893, 0.891, 0.893, 0.894, 0.893, 0.89, 0.892, 0.891, 0.891, 0.886, 0.894, 0.896, 0.888, 0.906, 0.881, 0.863, 0.894, 0.903, 0.893, 0.885, 0.885, 0.891, 0.894, 0.891, 0.885, 0.891, 0.891, 0.897, 0.888, 0.894, 0.891, 0.904, 0.892, 0.891, 0.892, 0.897, 0.901, 0.902, 0.887, 0.895, 0.897, 0.898, 0.895, 0.89, 0.89, 0.893, 0.888, 0.9, 0.898, 0.9, 0.904, 0.892, 0.898, 0.902, 0.895, 0.886, 0.898, 0.9, 0.893, 0.869, 0.859, 0.857, 0.959, 0.997, 1.042, 1.014, 1.005, 1.01, 1.025, 1.072, 1.085, 1.114, 1.126, 1.176, 1.253, 1.217, 1.134, 1.037, 1.02, 1.023, 1.233, 1.2, 1.139, 1.087, 1.085, 1.134, 1.141, 1.114, 1.103, 1.129, 1.138, 1.12, 1.12, 1.118, 1.135, 1.146, 1.131, 1.123, 1.121, 1.12, 1.125, 1.139, 1.131, 1.126, 1.133, 1.124, 1.133, 1.15, 1.13, 1.128, 1.132, 1.136, 1.136, 1.132, 1.114, 1.127, 1.134, 1.137, 1.132, 1.131, 1.128, 1.123, 1.124, 1.126, 1.126, 1.127, 1.126, 1.117, 1.119, 1.136, 1.133, 1.131, 1.147, 1.081, 1.102, 1.148, 1.135, 1.114, 1.119, 1.128, 1.11, 1.128, 1.117]}, "imu_hz": 15.29163906271237, "imu_padding": {"front_sec": 0.024, "back_sec": 0.059}, "audio_ego": [0.0107, 0.0237, 0.0102, 0.0075, 0.0101, 0.0081, 0.01, 0.0111, 0.0107, 0.0088, 0.0078, 0.0081, 0.0062, 0.0042, 0.0067, 0.006, 0.0121, 0.0142, 0.0096, 0.0639, 0.0214, 0.1216, 0.0112, 0.0088, 0.0075, 0.0153, 0.0829, 0.0769, 0.0077, 0.0052, 0.0089, 0.0059, 0.0053, 0.0045, 0.0043, 0.0096, 0.01, 0.0272, 0.013, 0.009, 0.0145, 0.0087, 0.0099, 0.0067, 0.0063, 0.0078, 0.0064, 0.0087, 0.0173, 0.0183, 0.0218, 0.0079, 0.0065, 0.0472, 0.0089, 0.0247, 0.0037, 0.0146, 0.0049, 0.0038, 0.0117, 0.0127, 0.0308, 0.0786, 0.0117, 0.0105, 0.0088, 0.0054, 0.04, 0.012, 0.0119, 0.0265, 0.0151, 0.0119, 0.014, 0.058, 0.0431, 0.0149, 0.0138, 0.0164, 0.0264, 0.0089, 0.0153, 0.0106, 0.0125, 0.0055, 0.0084, 0.005, 0.0047, 0.0053, 0.0056, 0.0052, 0.115, 0.0785, 0.0476, 0.0249, 0.0146, 0.0078, 0.0058, 0.0107, 0.0046, 0.0452, 0.0581, 0.0461, 0.007, 0.0535, 0.0048, 0.0328, 0.0418, 0.0082, 0.0092, 0.0113, 0.0149, 0.0122, 0.0072, 0.006, 0.0113, 0.0069, 0.0052, 0.0072, 0.0082, 0.0062, 0.0074, 0.1413, 0.3539, 0.0618, 0.0233, 0.013, 0.007, 0.0044, 0.0041, 0.0052, 0.0034, 0.0028, 0.0031, 0.5839, 0.5336, 0.0327, 0.0178, 0.0076, 0.0131, 0.0027, 0.381, 0.2253, 0.0143, 0.0295, 0.0215, 0.953, 0.0754, 0.022, 0.0303, 0.009, 0.0308, 0.0035, 0.0057, 0.0159, 0.0047, 0.0036, 0.0041, 0.0111, 0.0042, 0.0074, 0.0075, 0.004, 0.004, 0.0048, 0.0077, 0.006, 0.087, 0.0054, 0.0053, 0.0058, 0.0051, 0.0066, 0.0069, 0.0085, 0.0063, 0.0074, 0.0124, 0.0135, 0.0073, 0.0079, 0.009, 0.0055, 0.0063, 0.0048, 0.0074, 0.0063, 0.0063, 0.0055, 0.0094, 0.0069, 0.0088, 0.0078, 0.0078, 0.007, 0.008, 0.0094, 0.0067, 0.0057, 0.0059, 0.0053, 0.0164, 0.0076, 0.0057, 0.0193, 0.0262, 0.0074, 0.005, 0.0072, 0.0106, 0.054, 0.018, 0.0152, 0.032, 0.0127, 0.0576, 0.0196, 0.0178, 0.0197, 0.2437, 0.0054, 0.0074, 0.0092, 0.0068, 0.0056, 0.0173, 0.0096, 0.0032, 0.0049, 0.0045, 0.0086, 0.0045, 0.0039, 0.0042, 0.0036, 0.0214, 0.01, 0.221, 0.0435, 0.0279, 0.0093, 0.0803, 0.0622, 0.0118, 0.0042, 0.0061, 0.0141, 0.0069, 0.0165, 0.0057, 0.0049, 0.0048, 0.0078, 0.008, 0.0059, 0.0058, 0.0037, 0.0036, 0.0036, 0.0042, 0.036, 0.036, 0.0304, 0.0217, 0.0197, 0.0105, 0.0084, 0.0078, 0.0049, 0.0036, 0.0027, 0.0061, 0.0076, 0.0031, 0.003, 0.0036, 0.0039, 0.0031, 0.0044, 0.024, 0.0034, 0.0046, 0.0053, 0.017, 0.0087, 0.0088, 0.028, 0.0083, 0.0051, 0.0129, 0.0041, 0.0058, 0.0035, 0.0045, 0.0056, 0.0125, 0.006, 0.0068, 0.0251, 0.0084, 0.0084, 0.0038, 0.0168, 0.0088, 0.0138, 0.0849, 0.0374, 0.0593, 0.0408, 0.0104, 0.0071, 0.0061, 0.0068, 0.0074, 0.0075, 0.0078, 0.0115, 0.0284, 0.0073, 0.009, 0.0084, 0.0035, 0.3616, 0.1666, 0.1229, 0.2191, 0.0176, 0.0108, 0.0076, 0.0077, 0.0059, 0.0051, 0.0036, 0.0048, 0.0032, 0.0047, 0.0113, 0.0059, 0.0055, 0.0069, 0.0047, 0.004, 0.0052, 0.0101, 0.0082, 0.0067, 0.0059, 0.0072, 0.0061, 0.006, 0.0063, 0.0079, 0.0146, 0.0077, 0.005, 0.0038, 0.0046, 0.0049, 0.0034, 0.0039, 0.0263, 0.0221, 0.0086, 0.0043, 0.0241, 0.0055, 0.0042, 0.0073, 0.0074, 0.0332, 0.0106, 0.0157, 0.0058, 0.004, 0.0081, 0.0069, 0.0038, 0.0046, 0.006, 0.004, 0.0045, 0.0061, 0.0037, 0.0034, 0.0045, 0.0047, 0.3591, 0.2976, 0.0565, 0.0149, 0.1465, 0.0313, 0.011, 0.0061, 0.0078, 0.0063, 0.0073, 0.0085, 0.0058, 0.0053, 0.0087, 0.0083, 0.005, 0.0102, 0.0084, 0.0134, 0.0183, 0.0073], "audio_hz": 15.0}, excludeWindows: [], eegWarnWindows: []});</script>

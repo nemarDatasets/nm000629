@@ -1,0 +1,3 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	175.2901	read-textbook	meta.json action	stim-P0022S020Ego	sub-P0022/stim-P0022S020Ego_audiovideo.mp4	stim-P0022S020Audio	sub-P0022/stim-P0022S020Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	175.2891
+0.0	1.971	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

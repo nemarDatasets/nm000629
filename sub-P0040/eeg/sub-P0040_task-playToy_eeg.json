@@ -1,0 +1,66 @@
+{
+  "TaskName": "playToy",
+  "TaskDescription": "Everyday action 'Play_II Toys' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 210.8242,
+  "EgoBrainSegment": {
+    "segment_id": "P0040_phase2_015_play-toy",
+    "action": "Play_II Toys",
+    "phase": "Phase_2",
+    "duration_sec": 210.825106,
+    "imu_hz": 198.52,
+    "imu_hz_per_device": {
+      "imu_1": 198.62,
+      "imu_2": 198.32,
+      "imu_3": 198.54,
+      "imu_4": 198.62
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.01,
+        "back_sec": 0.0
+      },
+      "imu_2": {
+        "front_sec": 0.029,
+        "back_sec": 0.027
+      },
+      "imu_3": {
+        "front_sec": 0.049,
+        "back_sec": 0.038
+      },
+      "imu_4": {
+        "front_sec": 0.001,
+        "back_sec": 0.009
+      }
+    },
+    "verb": "Play_II",
+    "verb_class": 2,
+    "noun": "Toys",
+    "noun_class": 6,
+    "action_class": 6,
+    "category": "task",
+    "sequence": 15,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0040/names",
+    "start_key": "start_ts"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "TaskName": "readTextbook",
+  "TaskDescription": "Everyday action 'Read Textbook' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 145.8906,
+  "EgoBrainSegment": {
+    "segment_id": "P0029_phase2_029_read-textbook",
+    "action": "Read Textbook",
+    "phase": "Phase_2",
+    "duration_sec": 145.888273,
+    "imu_hz": 164.55,
+    "imu_hz_per_device": {
+      "imu_1": 198.47,
+      "imu_2": 62.53,
+      "imu_3": 198.58,
+      "imu_4": 198.63
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.044,
+        "back_sec": 0.009
+      },
+      "imu_2": {
+        "front_sec": 0.087,
+        "back_sec": 0.191
+      },
+      "imu_3": {
+        "front_sec": 0.055,
+        "back_sec": 0.004
+      },
+      "imu_4": {
+        "front_sec": 0.003,
+        "back_sec": 0.023
+      }
+    },
+    "verb": "Read",
+    "verb_class": 6,
+    "noun": "Textbook",
+    "noun_class": 18,
+    "action_class": 18,
+    "category": "task",
+    "sequence": 29,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0029/names",
+    "start_key": "start_ts"
+  }
+}

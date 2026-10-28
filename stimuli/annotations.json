@@ -1,0 +1,11 @@
+{
+  "annot_id": {
+    "Description": "Globally unique annotation identifier"
+  },
+  "description": {
+    "Description": "Annotation meaning"
+  },
+  "stimulus_id": {
+    "Description": "Referenced stimulus/benchmark-input id"
+  }
+}

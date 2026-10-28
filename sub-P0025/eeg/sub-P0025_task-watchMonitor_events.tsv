@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	183.1747	watch-monitor	meta.json action	stim-P0025S008Ego	sub-P0025/stim-P0025S008Ego_audiovideo.mp4	stim-P0025S008Audio	sub-P0025/stim-P0025S008Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	183.1758

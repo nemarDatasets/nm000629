@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0028_phase2_026_eat-sugers-a",
+  "subject_id": "P0028",
+  "phase": "Phase_2",
+  "sequence": 26,
+  "category": "task",
+  "raw_type": "phase_Eat_Sugers_A",
+  "start_ts": -2208953405.0460052,
+  "end_ts": -2208953247.916196,
+  "duration_sec": 157.129809,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.037,
+      "back_sec": 0.008
+    },
+    "imu_2": {
+      "front_sec": 0.077,
+      "back_sec": 0.0
+    },
+    "imu_3": {
+      "front_sec": 0.005,
+      "back_sec": 0.041
+    },
+    "imu_4": {
+      "front_sec": 0.0,
+      "back_sec": 0.051
+    }
+  },
+  "verb": "Eat",
+  "verb_class": 8,
+  "noun": "Sugers",
+  "noun_class": 25,
+  "action": "Eat Sugers",
+  "action_class": 25,
+  "imu_hz": 198.23,
+  "imu_hz_per_device": {
+    "imu_1": 198.52,
+    "imu_2": 198.63,
+    "imu_3": 197.15,
+    "imu_4": 198.62
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "stimulus_id": {
+    "Description": "Unique BEP044 identifier; benchmark recorded-input role is explicit, not experiment presentation."
+  },
+  "type": {
+    "Description": "Media type per pinned BEP044"
+  },
+  "filename": {
+    "Description": "Relative path within stimuli/"
+  },
+  "present": {
+    "Description": "Payload is included"
+  },
+  "license": {
+    "Description": "Source licence; additional no-redistribution terms apply"
+  },
+  "description": {
+    "Description": "Media description"
+  },
+  "media_role": {
+    "Description": "Recorded experience, not externally presented stimulus"
+  },
+  "source_segment": {
+    "Description": "Original HF segment identifier"
+  },
+  "recording_duration": {
+    "Description": "Duration from actual media container/header",
+    "Units": "s"
+  }
+}

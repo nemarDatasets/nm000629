@@ -1,0 +1,16 @@
+**/beh/*_audio.wav
+**/beh/*_video.mp4
+**/beh/*_video.json
+**/beh/*_redaction.json
+derivatives/**/*.npy
+
+**/beh/*_audiovideo.mp4
+**/beh/*_audiovideo.json
+**/beh/*_audio.json
+**/beh/*_video.json
+stimuli/**/*_provenance.json
+benchmark_index.tsv
+benchmark_index.json
+stimuli/dataset_description.json
+
+sourcedata/**

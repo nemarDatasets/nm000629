@@ -1,0 +1,3 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	18.3386	drink-coca-cola-b	meta.json action	stim-P0027S021Ego	sub-P0027/stim-P0027S021Ego_audiovideo.mp4	stim-P0027S021Audio	sub-P0027/stim-P0027S021Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	18.318
+0.0	4.0	video_redacted_audio_muted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

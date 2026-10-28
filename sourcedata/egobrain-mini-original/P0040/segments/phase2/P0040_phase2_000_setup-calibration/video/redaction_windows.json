@@ -1,0 +1,34 @@
+[
+  {
+    "rel_start": 20.46,
+    "rel_end": 26.46,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": true,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 48.46,
+    "rel_end": 95.46,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": true,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 20.46,
+    "rel_end": 26.46,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "interaction tag (video/audio kept as recorded) -- the experimenter is present and interacting with the subject during this range; not purely solo-subject data"
+  },
+  {
+    "rel_start": 47.46,
+    "rel_end": 121.46,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "interaction tag (video/audio kept as recorded) -- the experimenter is present and interacting with the subject during this range; not purely solo-subject data"
+  }
+]

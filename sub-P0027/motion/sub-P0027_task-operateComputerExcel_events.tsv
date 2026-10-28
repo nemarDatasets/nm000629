@@ -1,0 +1,3 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	149.5248	operate-computer-excel	meta.json action	stim-P0027S005Ego	sub-P0027/stim-P0027S005Ego_audiovideo.mp4	stim-P0027S005Audio	sub-P0027/stim-P0027S005Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	149.516
+5.2	6.0	video_redacted	redaction_windows.json	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a

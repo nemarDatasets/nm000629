@@ -1,0 +1,8 @@
+{
+  "acq_time": {
+    "Description": "De-identified: 1900-01-01T00:00:00 + seconds since this participant's first segment (real dates removed)."
+  },
+  "source_segment": {
+    "Description": "EgoBrain-Mini segment folder this file was converted from (P####_phase2_NNN_<action>)."
+  }
+}

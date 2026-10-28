@@ -1,0 +1,51 @@
+{
+  "segment_id": "P0037_phase2_000_setup-calibration",
+  "subject_id": "P0037",
+  "phase": "Phase_2",
+  "sequence": 0,
+  "category": "auxiliary",
+  "raw_type": "setup_calibration",
+  "start_ts": -2208952688.9869127,
+  "end_ts": -2208952584.6612253,
+  "duration_sec": 104.325688,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.01,
+      "back_sec": 0.13
+    },
+    "imu_2": {
+      "front_sec": 0.056,
+      "back_sec": 0.022
+    },
+    "imu_3": {
+      "front_sec": 0.009,
+      "back_sec": 0.006
+    },
+    "imu_4": {
+      "front_sec": 0.001,
+      "back_sec": 0.008
+    }
+  },
+  "raw_types": [
+    "sensor_check",
+    "published_date",
+    "phase_calibration",
+    "sound_check",
+    "phase_Calibration_phase",
+    "eyesopen_element_hcdo",
+    "eyesclose_element_q956"
+  ],
+  "imu_hz": 160.36,
+  "imu_hz_per_device": {
+    "imu_1": 45.65,
+    "imu_2": 198.55,
+    "imu_3": 198.63,
+    "imu_4": 198.61
+  }
+}

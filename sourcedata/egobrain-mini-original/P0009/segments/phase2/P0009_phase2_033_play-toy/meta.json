@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0009_phase2_033_play-toy",
+  "subject_id": "P0009",
+  "phase": "Phase_2",
+  "sequence": 33,
+  "category": "task",
+  "raw_type": "phase_Play_Toy",
+  "start_ts": -2208948694.642617,
+  "end_ts": -2208948604.368786,
+  "duration_sec": 90.273831,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.063,
+      "back_sec": 0.088
+    },
+    "imu_2": {
+      "front_sec": 0.128,
+      "back_sec": 0.052
+    },
+    "imu_3": {
+      "front_sec": 0.021,
+      "back_sec": 0.011
+    },
+    "imu_4": {
+      "front_sec": 0.119,
+      "back_sec": 0.15
+    }
+  },
+  "verb": "Play_II",
+  "verb_class": 2,
+  "noun": "Toys",
+  "noun_class": 6,
+  "action": "Play_II Toys",
+  "action_class": 6,
+  "imu_hz": 9.95,
+  "imu_hz_per_device": {
+    "imu_1": 9.95,
+    "imu_2": 9.95,
+    "imu_3": 9.96,
+    "imu_4": 9.95
+  }
+}

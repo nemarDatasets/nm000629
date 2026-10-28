@@ -1,0 +1,66 @@
+{
+  "TaskName": "readComicBook",
+  "TaskDescription": "Everyday action 'Read Comic-book' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 226.8867,
+  "EgoBrainSegment": {
+    "segment_id": "P0007_phase2_022_read-comic-book",
+    "action": "Read Comic-book",
+    "phase": "Phase_2",
+    "duration_sec": 226.886363,
+    "imu_hz": 9.94,
+    "imu_hz_per_device": {
+      "imu_1": 9.93,
+      "imu_2": 9.94,
+      "imu_3": 9.93,
+      "imu_4": 9.94
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.055,
+        "back_sec": 0.132
+      },
+      "imu_2": {
+        "front_sec": 0.042,
+        "back_sec": 0.007
+      },
+      "imu_3": {
+        "front_sec": 0.111,
+        "back_sec": 0.083
+      },
+      "imu_4": {
+        "front_sec": 0.0,
+        "back_sec": 0.081
+      }
+    },
+    "verb": "Read",
+    "verb_class": 6,
+    "noun": "Comic-book",
+    "noun_class": 19,
+    "action_class": 19,
+    "category": "task",
+    "sequence": 22,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0007/names",
+    "start_key": "start_ts"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0015_phase2_037_write-notes",
+  "subject_id": "P0015",
+  "phase": "Phase_2",
+  "sequence": 37,
+  "category": "task",
+  "raw_type": "phase_Write_Notes",
+  "start_ts": -2208949116.299209,
+  "end_ts": -2208948898.77752,
+  "duration_sec": 217.521689,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.037,
+      "back_sec": 0.069
+    },
+    "imu_2": {
+      "front_sec": 0.037,
+      "back_sec": 0.064
+    },
+    "imu_3": {
+      "front_sec": 0.107,
+      "back_sec": 0.071
+    },
+    "imu_4": {
+      "front_sec": 0.06,
+      "back_sec": 0.02
+    }
+  },
+  "verb": "Write",
+  "verb_class": 5,
+  "noun": "Notes",
+  "noun_class": 17,
+  "action": "Write Notes",
+  "action_class": 17,
+  "imu_hz": 9.94,
+  "imu_hz_per_device": {
+    "imu_1": 9.94,
+    "imu_2": 9.94,
+    "imu_3": 9.93,
+    "imu_4": 9.94
+  }
+}

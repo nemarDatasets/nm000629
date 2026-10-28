@@ -1,0 +1,64 @@
+{
+  "segment_id": "P0008_phase2_036_read-textbook",
+  "subject_id": "P0008",
+  "phase": "Phase_2",
+  "sequence": 36,
+  "category": "task",
+  "raw_type": "phase_Read_Textbook",
+  "start_ts": -2208958329.703361,
+  "end_ts": -2208958053.28859,
+  "duration_sec": 276.414771,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.01,
+      "back_sec": 0.186
+    },
+    "imu_2": {
+      "front_sec": 0.021,
+      "back_sec": 0.147
+    },
+    "imu_3": {
+      "front_sec": 0.101,
+      "back_sec": 0.083
+    },
+    "imu_4": {
+      "front_sec": 0.03,
+      "back_sec": 0.105
+    }
+  },
+  "verb": "Read",
+  "verb_class": 6,
+  "noun": "Textbook",
+  "noun_class": 18,
+  "action": "Read Textbook",
+  "action_class": 18,
+  "eeg_quality_flags": [
+    {
+      "rel_start": 0.0,
+      "rel_end": 185.0,
+      "issue": "signal_quality_poor",
+      "description": "The EEG is dominated by a large artifact shared across channels: amplitude stays above ~1 mV on most of the 32 channels for at least 10 s, far above normal EEG (~0.05-0.15 mV) and task artifacts such as chewing (~0.3-0.5 mV). Likely a poorly-contacting electrode or cable; the exact cause cannot be recovered from the recording. Exclude this range from EEG analyses.",
+      "evidence": "Episode read off the raw EEG: the 10-s rolling median of the per-2-s amplitude jumps from ~0.1 mV to 1-3 mV at the start and falls back below 0.15 mV (and stays there for 60 s) at the end, where an experimenter re-attached a loose electrode (tagged in the report). The headset's own signal-quality reading (EQ_OVERALL) is mostly 0 over the episode, while its contact-quality channels mostly still read 'good'."
+    },
+    {
+      "rel_start": 3.03,
+      "rel_end": 78.4,
+      "issue": "reference_contact_lost",
+      "description": "An EEG ear reference electrode (CMS/DRL) lost skin contact. All 32 channels share this reference, so every channel is affected, not only those on one side. Its amplitude and spectral power (e.g. alpha) are not comparable to normally-referenced recordings: exclude this range from band-power / amplitude-based analyses, and use it for anything else only with care.",
+      "evidence": "Emotiv headset contact-quality channels CQ_CMS / CQ_DRL read 0 (no contact) in the raw EDF for this range; the EEG shows large transients at the moments contact was lost and restored."
+    }
+  ],
+  "imu_hz": 9.94,
+  "imu_hz_per_device": {
+    "imu_1": 9.94,
+    "imu_2": 9.93,
+    "imu_3": 9.93,
+    "imu_4": 9.93
+  }
+}

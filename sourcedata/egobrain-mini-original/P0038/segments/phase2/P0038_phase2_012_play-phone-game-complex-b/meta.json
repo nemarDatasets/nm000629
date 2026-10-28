@@ -1,0 +1,48 @@
+{
+  "segment_id": "P0038_phase2_012_play-phone-game-complex-b",
+  "subject_id": "P0038",
+  "phase": "Phase_2",
+  "sequence": 12,
+  "category": "task",
+  "raw_type": "phase_Play_Phone_Game_(Complex)_B",
+  "start_ts": -2208958362.186762,
+  "end_ts": -2208958216.660614,
+  "duration_sec": 145.526148,
+  "modality_presence": {
+    "eeg": true,
+    "imu": true,
+    "video_ego": true,
+    "audio_ego": true
+  },
+  "imu_padding": {
+    "imu_1": {
+      "front_sec": 0.028,
+      "back_sec": 0.017
+    },
+    "imu_2": {
+      "front_sec": 0.018,
+      "back_sec": 0.022
+    },
+    "imu_3": {
+      "front_sec": 0.011,
+      "back_sec": 0.011
+    },
+    "imu_4": {
+      "front_sec": 0.008,
+      "back_sec": 0.014
+    }
+  },
+  "verb": "Play_III",
+  "verb_class": 3,
+  "noun": "Phone game (Complex)",
+  "noun_class": 13,
+  "action": "Play_III Phone game (Complex)",
+  "action_class": 13,
+  "imu_hz": 198.53,
+  "imu_hz_per_device": {
+    "imu_1": 198.58,
+    "imu_2": 198.58,
+    "imu_3": 198.63,
+    "imu_4": 198.36
+  }
+}

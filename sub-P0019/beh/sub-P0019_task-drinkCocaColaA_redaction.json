@@ -1,0 +1,10 @@
+[
+  {
+    "rel_start": 7.31,
+    "rel_end": 7.46,
+    "blur_video": false,
+    "region": null,
+    "mute_audio": false,
+    "reason": "not task data (video/audio kept as recorded) -- unexpected event -- the subject left the task (stood up, walked around the room, fetched books); not task data, and the EEG here likely carries movement artefacts"
+  }
+]

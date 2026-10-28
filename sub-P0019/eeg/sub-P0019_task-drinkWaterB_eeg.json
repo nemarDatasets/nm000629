@@ -1,0 +1,66 @@
+{
+  "TaskName": "drinkWaterB",
+  "TaskDescription": "Everyday action 'Drink Water' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 12.0898,
+  "EgoBrainSegment": {
+    "segment_id": "P0019_phase2_020_drink-water-b",
+    "action": "Drink Water",
+    "phase": "Phase_2",
+    "duration_sec": 12.088367,
+    "imu_hz": 10.09,
+    "imu_hz_per_device": {
+      "imu_1": 10.09,
+      "imu_2": 10.09,
+      "imu_3": 10.09,
+      "imu_4": 10.09
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.077,
+        "back_sec": 0.089
+      },
+      "imu_2": {
+        "front_sec": 0.015,
+        "back_sec": 0.102
+      },
+      "imu_3": {
+        "front_sec": 0.077,
+        "back_sec": 0.05
+      },
+      "imu_4": {
+        "front_sec": 0.118,
+        "back_sec": 0.021
+      }
+    },
+    "verb": "Drink",
+    "verb_class": 9,
+    "noun": "Water",
+    "noun_class": 26,
+    "action_class": 26,
+    "category": "task",
+    "sequence": 20,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0019/names",
+    "start_key": "start_ts"
+  }
+}

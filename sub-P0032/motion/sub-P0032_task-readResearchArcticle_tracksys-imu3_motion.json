@@ -1,0 +1,16 @@
+{
+  "TaskName": "readResearchArcticle",
+  "TrackingSystemName": "IMU imu_3 (RightWrist)",
+  "SamplingFrequency": 198.56,
+  "SamplingFrequencyEffective": 198.558,
+  "RecordingDuration": 139.209,
+  "MotionChannelCount": 21,
+  "Description": "Samples as recorded. LATENCY = logger batch-arrival time in s relative to the segment start (EEG-anchored); 80-90% of rows share their batch's time. Spread each batch evenly to the next batch for one time per sample (see README). Acceleration in standard gravity (g).",
+  "SourceDevice": "imu_3",
+  "ACCELChannelCount": 3,
+  "GYROChannelCount": 3,
+  "ORNTChannelCount": 7,
+  "MAGNChannelCount": 3,
+  "MISCChannelCount": 4,
+  "LATENCYChannelCount": 1
+}

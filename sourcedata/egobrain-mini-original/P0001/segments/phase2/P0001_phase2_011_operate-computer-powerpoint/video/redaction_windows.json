@@ -1,0 +1,41 @@
+[
+  {
+    "rel_start": 5.943,
+    "rel_end": 10.343,
+    "blur_video": true,
+    "region": [
+      1080,
+      0,
+      1880,
+      800
+    ],
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 365.643,
+    "rel_end": 368.577,
+    "blur_video": true,
+    "region": [
+      1080,
+      0,
+      1880,
+      800
+    ],
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  },
+  {
+    "rel_start": 368.647,
+    "rel_end": 369.568,
+    "blur_video": true,
+    "region": [
+      1080,
+      0,
+      1880,
+      800
+    ],
+    "mute_audio": false,
+    "reason": "privacy redaction (personally identifiable information was briefly visible on screen)"
+  }
+]

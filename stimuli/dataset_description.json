@@ -1,0 +1,9 @@
+{
+  "Name": "EgoBrain-Mini recorded experience input catalog (BEP044 draft)",
+  "BIDSVersion": "1.10.0",
+  "License": "CC-BY-NC-4.0",
+  "DatasetType": "raw",
+  "Description": "Experimental BEP044-compatible organization of recorded experience, not claim of presentation or accepted-extension validation.",
+  "BEP044Revision": "43ab3991df379d3aef8a2d7e9d5b25395ba2bbdb",
+  "BEP047Revision": "d02449331a81d188ab317e0f5c37c166d34e1851"
+}

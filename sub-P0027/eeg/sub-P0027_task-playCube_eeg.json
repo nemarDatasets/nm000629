@@ -1,0 +1,66 @@
+{
+  "TaskName": "playCube",
+  "TaskDescription": "Everyday action 'Play_II Cube' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "n/a",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 96.5117,
+  "EgoBrainSegment": {
+    "segment_id": "P0027_phase2_037_play-cube",
+    "action": "Play_II Cube",
+    "phase": "Phase_2",
+    "duration_sec": 96.512846,
+    "imu_hz": 196.82,
+    "imu_hz_per_device": {
+      "imu_1": 198.54,
+      "imu_2": 191.75,
+      "imu_3": 198.63,
+      "imu_4": 198.38
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.03,
+        "back_sec": 0.066
+      },
+      "imu_2": {
+        "front_sec": 0.029,
+        "back_sec": 0.042
+      },
+      "imu_3": {
+        "front_sec": 0.064,
+        "back_sec": 0.025
+      },
+      "imu_4": {
+        "front_sec": 0.059,
+        "back_sec": 0.092
+      }
+    },
+    "verb": "Play_II",
+    "verb_class": 2,
+    "noun": "Cube",
+    "noun_class": 9,
+    "action_class": 9,
+    "category": "task",
+    "sequence": 37,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0027/names",
+    "start_key": "start_ts"
+  }
+}

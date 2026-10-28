@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	232.0663	play-computer-game-mouse	meta.json action	stim-P0033S032Ego	sub-P0033/stim-P0033S032Ego_audiovideo.mp4	stim-P0033S032Audio	sub-P0033/stim-P0033S032Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	232.065
