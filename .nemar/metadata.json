@@ -1,0 +1,82 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Nie Lin": {},
+    "Yansen Wang": {},
+    "Dongqi Han": {},
+    "Weibang Jiang": {},
+    "Jingyuan Li": {},
+    "Ryosuke Furuta": {},
+    "Yoichi Sato": {},
+    "Dongsheng Li": {}
+  },
+  "title": "EgoBrain-Mini: egocentric video, 32-channel EEG, wrist/arm IMU and audio during everyday actions (40 adults)",
+  "license": "CC-BY-NC-4.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "beh",
+    "eeg",
+    "motion"
+  ],
+  "resource_type_specific": "Neuroimaging Dataset",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000629",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000629",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "sizes": [
+    "74.99 GB (17558 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".gif",
+    ".gitattributes",
+    ".html",
+    ".jpg",
+    ".js",
+    ".json",
+    ".md",
+    ".mp4",
+    ".npy",
+    ".parquet",
+    ".png",
+    ".py",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".wav"
+  ],
+  "description": "EgoBrain-Mini is a multimodal dataset of 40 adults performing everyday actions, combining egocentric video, 32-channel EEG at 256 Hz, four wrist/arm IMU sensors and 16 kHz microphone audio. It contains 1,562 action segments and about 63 hours of raw EEG. The BIDS conversion keeps the original signal and media values unchanged and adds a catalog of recorded experiences, the original source copy, and a reader for partial multimodal access.",
+  "methods_description": "EEG was recorded with 32 channels at 256 Hz and stored in BrainVision float32 format with unchanged microvolt values. Four IMU sensors, 16 kHz audio and egocentric video were recorded alongside it. Timing is anchored to the EEG-based clip origin, and no independent physical synchronization calibration is asserted.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "egocentric video"
+    },
+    {
+      "term": "inertial measurement unit"
+    },
+    {
+      "term": "action understanding"
+    },
+    {
+      "term": "multimodal"
+    },
+    {
+      "term": "everyday actions"
+    }
+  ],
+  "source_hash": "ebcfdffb3b5e29d7e72aa45ef3c12819b1b42de6a1a09842c5098ffda260c75f"
+}

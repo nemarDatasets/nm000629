@@ -14,3 +14,4 @@ benchmark_index.json
 stimuli/dataset_description.json
 
 sourcedata/**
+.nemar/
