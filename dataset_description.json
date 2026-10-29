@@ -32,5 +32,5 @@
       "Description": "BIDS conversion for NEMAR (values and media bytes unchanged)"
     }
   ],
-  "Description": "BIDS conversion of EgoBrain-Mini with original Mini release under sourcedata, role-aware recorded-experience catalog, and tested lazy multimodal reader. Private author-review copy only."
+  "Description": "BIDS conversion of EgoBrain-Mini with original Mini release under sourcedata, role-aware recorded-experience catalog, and tested lazy multimodal reader. Released openly under CC-BY-NC-4.0 for non-commercial research use. Please do not attempt to identify any participants, and use the data for non-commercial purposes only."
 }

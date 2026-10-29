@@ -4,7 +4,7 @@
   "SamplingFrequency": 256.0,
   "EEGChannelCount": 32,
   "PowerLineFrequency": 50,
-  "EEGReference": "n/a",
+  "EEGReference": "CMS/DRL reference sensors placed on the earlobes using EMOTIV ear clips (EMOTIV FLEX 2 Gel)",
   "SoftwareFilters": "n/a",
   "Manufacturer": "Emotiv",
   "ManufacturersModelName": "FLEX 2 Gel",

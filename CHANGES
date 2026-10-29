@@ -1,3 +1,6 @@
+1.1.0 (Oct 2026)
+  - EEGReference set to CMS/DRL earlobe sensors with EMOTIV ear clips (EMOTIV FLEX 2 Gel) in all 1,562 recordings, per author confirmation; derivatives cleaned with average reference marked accordingly.
+  - dataset_description Description updated for public release under CC-BY-NC-4.0 with responsible-use note.
 1.0.0 (private draft)
   - Mini BIDS/media profile and complete documented source copy. Participant clocks shifted only in deposit metadata; exact originals retained on Voyager.
   - Omit two subject-linked date strings in source viewer comments only; classify image encoder signatures separately from participant identifiers.

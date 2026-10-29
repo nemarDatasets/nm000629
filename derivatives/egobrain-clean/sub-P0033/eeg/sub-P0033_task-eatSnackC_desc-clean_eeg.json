@@ -43,5 +43,6 @@
   "ChannelNamesProvenance": "Inferred same row order as raw.npy under the authors' described order-preserving processing; raw waveform verification does not independently verify clean-array row order.",
   "Sources": [
     "bids::sub-P0033/eeg/sub-P0033_task-eatSnackC_eeg.vhdr"
-  ]
+  ],
+  "EEGReference": "average"
 }
