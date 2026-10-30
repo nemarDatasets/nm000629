@@ -169,6 +169,12 @@ exclude those participants) rather than relying on `channels.tsv`.
 The IMU samples that a slow unit did record are real and correctly timestamped; there are simply fewer of them. The sampled
 rate of every sensor is in its own sidecar.
 
+## Ethics
+
+The authors state in their paper (Lin et al., ICLR 2026, arXiv:2506.01353, Appendix B.1): "All subjects were informed of the experimental process and signed informed consent forms before the experiment. This study was approved by the ethical committee of local Institutional Review Board for Human Research Protections." The paper describes the 40 participants as 27 male and 13 female; individual age, sex and handedness are not part of the release (`n/a` in `participants.tsv`).
+
+The paper does not name the review board or give a protocol number, so `EthicsApprovals` is not set in `dataset_description.json` rather than guessed. Questions about the approval can be sent to the maintainers at nielin@iis.u-tokyo.ac.jp.
+
 ## Privacy and responsible use
 
 The release contains first-person video and participants' voices. Rather than blanking whole pictures, the authors applied
