@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "EgoBrain-Mini: egocentric video, 32-channel EEG, wrist/arm IMU and audio during everyday actions (40 adults)",
+  "description": "EgoBrain-Mini is a BIDS conversion of the lightweight release of EgoBrain, a multimodal dataset of 40 adults performing 39 everyday seated actions. It provides synchronised egocentric video, 32-channel EEG (EMOTIV FLEX 2 Gel, 256 Hz), four body-worn IMUs and audio across 1,562 sub-actions (about 63 hours of EEG). The dataset supports research on human action understanding from first-person video and brain activity.",
+  "methods_description": "Participants sat at a desk and performed everyday actions. A screen prompt named each task, the participant executed it, then clicked end to delimit the sub-action. EEG was recorded with an EMOTIV FLEX 2 Gel headset (32 channels, 256 Hz) with CMS/DRL reference sensors on the earlobes. A GoPro mounted on the headset captured egocentric video (854x480, about 30 fps) and audio. Four IMUs were worn on the wrists and upper arms (left/right wrist and left/right upper arm). IMU sampling rates vary across participants: P0001 and P0022 onward logged at about 200 Hz, whereas P0002 to P0021 logged at about 10 Hz; per-file rates are given by SamplingFrequency in each motion sidecar. The dataset was converted to BIDS by Bruno Aristimunha for NEMAR and EEGDash, with the original EEG values unchanged.",
+  "license": "CC-BY-NC-4.0",
+  "dataset_type": "raw",
   "authors": {
     "Nie Lin": {},
     "Yansen Wang": {},
@@ -11,16 +16,44 @@
     "Yoichi Sato": {},
     "Dongsheng Li": {}
   },
-  "title": "EgoBrain-Mini: egocentric video, 32-channel EEG, wrist/arm IMU and audio during everyday actions (40 adults)",
-  "license": "CC-BY-NC-4.0",
-  "dataset_type": "raw",
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "beh",
-    "eeg",
-    "motion"
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "electroencephalography"
+    },
+    {
+      "term": "egocentric video"
+    },
+    {
+      "term": "inertial measurement unit"
+    },
+    {
+      "term": "audio"
+    },
+    {
+      "term": "action understanding"
+    },
+    {
+      "term": "multimodal"
+    },
+    {
+      "term": "everyday actions"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "human activity recognition"
+    },
+    {
+      "term": "first-person vision"
+    },
+    {
+      "term": "wearable sensors"
+    }
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/nm000629",
@@ -33,8 +66,15 @@
       "relation_type": "IsDescribedBy"
     }
   ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
+  "modalities": [
+    "beh",
+    "eeg",
+    "motion"
+  ],
   "sizes": [
-    "74.99 GB (17558 files)"
+    "74.99 GB (17718 files)"
   ],
   "formats": [
     ".eeg",
@@ -56,27 +96,5 @@
     ".vmrk",
     ".wav"
   ],
-  "description": "EgoBrain-Mini is a multimodal dataset of 40 adults performing everyday actions, combining egocentric video, 32-channel EEG at 256 Hz, four wrist/arm IMU sensors and 16 kHz microphone audio. It contains 1,562 action segments and about 63 hours of raw EEG. The BIDS conversion keeps the original signal and media values unchanged and adds a catalog of recorded experiences, the original source copy, and a reader for partial multimodal access.",
-  "methods_description": "EEG was recorded with 32 channels at 256 Hz and stored in BrainVision float32 format with unchanged microvolt values. Four IMU sensors, 16 kHz audio and egocentric video were recorded alongside it. Timing is anchored to the EEG-based clip origin, and no independent physical synchronization calibration is asserted.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "egocentric video"
-    },
-    {
-      "term": "inertial measurement unit"
-    },
-    {
-      "term": "action understanding"
-    },
-    {
-      "term": "multimodal"
-    },
-    {
-      "term": "everyday actions"
-    }
-  ],
-  "source_hash": "ebcfdffb3b5e29d7e72aa45ef3c12819b1b42de6a1a09842c5098ffda260c75f"
+  "source_hash": "d3ec194330de0d036b0942d3b9fb7892e332fdee48cfabe5bd581ba2e544a325"
 }
