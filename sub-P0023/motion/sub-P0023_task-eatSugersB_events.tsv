@@ -1,2 +1,0 @@
-onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
-0.0	63.086	eat-sugers-b	meta.json action	stim-P0023S001Ego	sub-P0023/stim-P0023S001Ego_audiovideo.mp4	stim-P0023S001Audio	sub-P0023/stim-P0023S001Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	63.0859

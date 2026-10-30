@@ -1,0 +1,66 @@
+{
+  "TaskName": "readResearchArticle",
+  "TaskDescription": "Everyday action 'Read Research Article' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "CMS/DRL reference sensors placed on the earlobes using EMOTIV ear clips (EMOTIV FLEX 2 Gel)",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 112.9609,
+  "EgoBrainSegment": {
+    "segment_id": "P0034_phase2_002_read-research-arcticle",
+    "action": "Read Research Article",
+    "phase": "Phase_2",
+    "duration_sec": 112.960818,
+    "imu_hz": 198.41,
+    "imu_hz_per_device": {
+      "imu_1": 198.6,
+      "imu_2": 198.6,
+      "imu_3": 197.82,
+      "imu_4": 198.6
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.017,
+        "back_sec": 0.023
+      },
+      "imu_2": {
+        "front_sec": 0.038,
+        "back_sec": 0.001
+      },
+      "imu_3": {
+        "front_sec": 0.027,
+        "back_sec": 0.071
+      },
+      "imu_4": {
+        "front_sec": 0.031,
+        "back_sec": 0.011
+      }
+    },
+    "verb": "Read",
+    "verb_class": 6,
+    "noun": "Research Article",
+    "noun_class": 20,
+    "action_class": 20,
+    "category": "task",
+    "sequence": 2,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0034/names",
+    "start_key": "start_ts"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "TaskName": "eatSugarsC",
+  "TaskDescription": "Everyday action 'Eat Sugars' (EgoBrain Phase 2 sub-action), seated at a desk; prompt -> execute -> end click.",
+  "SamplingFrequency": 256.0,
+  "EEGChannelCount": 32,
+  "PowerLineFrequency": 50,
+  "EEGReference": "CMS/DRL reference sensors placed on the earlobes using EMOTIV ear clips (EMOTIV FLEX 2 Gel)",
+  "SoftwareFilters": "n/a",
+  "Manufacturer": "Emotiv",
+  "ManufacturersModelName": "FLEX 2 Gel",
+  "CapManufacturer": "Emotiv",
+  "RecordingType": "continuous",
+  "RecordingDuration": 59.8867,
+  "EgoBrainSegment": {
+    "segment_id": "P0025_phase2_030_eat-sugers-c",
+    "action": "Eat Sugars",
+    "phase": "Phase_2",
+    "duration_sec": 59.88644,
+    "imu_hz": 178.14,
+    "imu_hz_per_device": {
+      "imu_1": 198.68,
+      "imu_2": 198.54,
+      "imu_3": 116.67,
+      "imu_4": 198.68
+    },
+    "imu_padding": {
+      "imu_1": {
+        "front_sec": 0.025,
+        "back_sec": 0.011
+      },
+      "imu_2": {
+        "front_sec": 0.02,
+        "back_sec": 0.021
+      },
+      "imu_3": {
+        "front_sec": 0.176,
+        "back_sec": 0.007
+      },
+      "imu_4": {
+        "front_sec": 0.008,
+        "back_sec": 0.031
+      }
+    },
+    "verb": "Eat",
+    "verb_class": 8,
+    "noun": "Sugars",
+    "noun_class": 25,
+    "action_class": 25,
+    "category": "task",
+    "sequence": 30,
+    "modality_presence": {
+      "eeg": true,
+      "imu": true,
+      "video_ego": true,
+      "audio_ego": true
+    },
+    "dropped_keys": [
+      "end_ts",
+      "raw_type",
+      "start_ts",
+      "subject_id"
+    ],
+    "channel_names_source": "channels.json/subjects/P0025/names",
+    "start_key": "start_ts"
+  }
+}

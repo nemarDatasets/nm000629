@@ -1,0 +1,2 @@
+onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
+0.0	66.0766	eat-sugars-b	meta.json action	stim-P0013S010Ego	sub-P0013/stim-P0013S010Ego_audiovideo.mp4	stim-P0013S010Audio	sub-P0013/stim-P0013S010Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	66.066

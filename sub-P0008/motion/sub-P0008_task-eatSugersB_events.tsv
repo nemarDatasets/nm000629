@@ -1,3 +1,0 @@
-onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
-0.0	50.89	bad_signal_quality_poor	meta.json eeg_quality_flags	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
-0.0	50.8864	eat-sugers-b	meta.json action	stim-P0008S030Ego	sub-P0008/stim-P0008S030Ego_audiovideo.mp4	stim-P0008S030Audio	sub-P0008/stim-P0008S030Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	50.884

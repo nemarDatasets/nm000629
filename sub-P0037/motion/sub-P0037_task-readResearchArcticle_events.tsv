@@ -1,2 +1,0 @@
-onset	duration	trial_type	source	experience_id	experience_file	audio_experience_id	audio_experience_file	media_role	media_onset	media_offset	common_duration
-0.0	460.1634	read-research-arcticle	meta.json action	stim-P0037S011Ego	sub-P0037/stim-P0037S011Ego_audiovideo.mp4	stim-P0037S011Audio	sub-P0037/stim-P0037S011Audio_audio.wav	recorded_experience_not_presented_stimulus	0	0	460.159

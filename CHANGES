@@ -1,4 +1,6 @@
 1.1.0 (Oct 2026)
+  - Task names corrected in the BIDS edition: eatSugersA/B/C -> eatSugarsA/B/C and readResearchArcticle -> readResearchArticle (filenames, sidecars, events, derivatives, stimuli catalog); source segment ids and sourcedata keep the original release spelling; mapping in code/task-name-corrections.tsv.
+  - README rewritten for public release: overview figures, structure, EEG hardware/reference, known data issues (EEG quality of two participants, IMU rate issues), responsible-use note.
   - EEGReference set to CMS/DRL earlobe sensors with EMOTIV ear clips (EMOTIV FLEX 2 Gel) in all 1,562 recordings, per author confirmation; derivatives cleaned with average reference marked accordingly.
   - dataset_description Description updated for public release under CC-BY-NC-4.0 with responsible-use note.
 1.0.0 (private draft)
