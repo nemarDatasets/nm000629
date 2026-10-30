@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "EgoBrain-Mini: egocentric video, 32-channel EEG, wrist/arm IMU and audio during everyday actions (40 adults)",
-  "description": "EgoBrain-Mini is a BIDS conversion of the lightweight release of EgoBrain, a multimodal dataset of 40 adults performing 39 everyday seated actions. It provides synchronised egocentric video, 32-channel EEG (EMOTIV FLEX 2 Gel, 256 Hz), four body-worn IMUs and audio across 1,562 sub-actions (about 63 hours of EEG). The dataset supports research on human action understanding from first-person video and brain activity.",
-  "methods_description": "Participants sat at a desk and performed everyday actions. A screen prompt named each task, the participant executed it, then clicked end to delimit the sub-action. EEG was recorded with an EMOTIV FLEX 2 Gel headset (32 channels, 256 Hz) with CMS/DRL reference sensors on the earlobes. A GoPro mounted on the headset captured egocentric video (854x480, about 30 fps) and audio. Four IMUs were worn on the wrists and upper arms (left/right wrist and left/right upper arm). IMU sampling rates vary across participants: P0001 and P0022 onward logged at about 200 Hz, whereas P0002 to P0021 logged at about 10 Hz; per-file rates are given by SamplingFrequency in each motion sidecar. The dataset was converted to BIDS by Bruno Aristimunha for NEMAR and EEGDash, with the original EEG values unchanged.",
+  "description": "EgoBrain-Mini is the BIDS edition of the lightweight egocentric release of EgoBrain. It provides synchronised first-person video, 32-channel EEG, four body-worn IMUs and audio from 40 adults performing 39 everyday seated actions, totalling 1,562 sub-actions and about 63 hours of EEG. The dataset supports research on multimodal human action understanding and brain-behaviour decoding. Raw EEG values, audio and video are unchanged from the original release, and the original files are kept under sourcedata.",
+  "methods_description": "EEG was recorded with an EMOTIV FLEX 2 Gel headset (32 channels, 256 Hz) with CMS/DRL reference sensors on the earlobes. A GoPro mounted on the headset captured egocentric video (854x480, about 30 fps) and audio. Four IMUs were worn on the wrists and upper arms. Seated participants followed a screen prompt, performed the action, then clicked end, and that bracket defines each sub-action. IMU sampling rates differ across participants (about 10 Hz or 200 Hz).",
   "license": "CC-BY-NC-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -21,37 +21,21 @@
       "term": "EEG"
     },
     {
-      "term": "electroencephalography"
-    },
-    {
       "term": "egocentric video"
     },
     {
       "term": "inertial measurement unit"
     },
     {
-      "term": "audio"
-    },
-    {
-      "term": "action understanding"
+      "term": "human action understanding"
     },
     {
       "term": "multimodal"
     },
     {
-      "term": "everyday actions"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "human activity recognition"
-    },
-    {
-      "term": "first-person vision"
-    },
-    {
-      "term": "wearable sensors"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
@@ -94,7 +78,8 @@
     ".txt",
     ".vhdr",
     ".vmrk",
-    ".wav"
+    ".wav",
+    ".yml"
   ],
-  "source_hash": "d3ec194330de0d036b0942d3b9fb7892e332fdee48cfabe5bd581ba2e544a325"
+  "source_hash": "ba4bc2e7ae9407d8d9ebcba2423bac45ce561866c083c59b0df9a0e8fe884f7d"
 }
