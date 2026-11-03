@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "EgoBrain-Mini: egocentric video, 32-channel EEG, wrist/arm IMU and audio during everyday actions (40 adults)",
-  "description": "EgoBrain-Mini is the BIDS edition of the lightweight egocentric release of EgoBrain. It provides synchronised first-person video, 32-channel EEG, four body-worn IMUs and audio from 40 adults performing 39 everyday seated actions, totalling 1,562 sub-actions and about 63 hours of EEG. The dataset supports research on multimodal human action understanding and brain-behaviour decoding. Raw EEG values, audio and video are unchanged from the original release, and the original files are kept under sourcedata.",
-  "methods_description": "EEG was recorded with an EMOTIV FLEX 2 Gel headset (32 channels, 256 Hz) with CMS/DRL reference sensors on the earlobes. A GoPro mounted on the headset captured egocentric video (854x480, about 30 fps) and audio. Four IMUs were worn on the wrists and upper arms. Seated participants followed a screen prompt, performed the action, then clicked end, and that bracket defines each sub-action. IMU sampling rates differ across participants (about 10 Hz or 200 Hz).",
+  "description": "EgoBrain-Mini is a BIDS conversion of the lightweight egocentric release of EgoBrain. It contains synchronised first-person video, 32-channel EEG, four body-worn IMUs and audio from 40 adults performing 39 everyday seated actions, with 1,562 sub-actions and about 63 hours of EEG. The dataset supports research on multimodal human action understanding and brain-behaviour decoding. The IMU sampling rate varies across participants (about 200 Hz for P0001 and P0022 onward, about 10 Hz for P0002 to P0021), so per-file SamplingFrequency values should be used. The original release is preserved under sourcedata.",
+  "methods_description": "EEG was recorded at 256 Hz with an EMOTIV FLEX 2 Gel 32-channel headset, with CMS/DRL reference sensors on the earlobes. A GoPro mounted on the headset captured egocentric video (854x480, about 30 fps) and audio. Four IMUs were worn on the wrists and upper arms. Participants sat at a desk and followed a screen prompt, executed the action, then clicked end to delimit each sub-action.",
   "license": "CC-BY-NC-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -27,15 +27,13 @@
       "term": "inertial measurement unit"
     },
     {
-      "term": "human action understanding"
+      "term": "action understanding"
     },
     {
       "term": "multimodal"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "everyday activities"
     }
   ],
   "related_identifiers": [
@@ -81,5 +79,5 @@
     ".wav",
     ".yml"
   ],
-  "source_hash": "ba4bc2e7ae9407d8d9ebcba2423bac45ce561866c083c59b0df9a0e8fe884f7d"
+  "source_hash": "81e372dca0f03d3b3f739b866aa18b5ba85a4a40b284408530e02713ff6275ad"
 }
