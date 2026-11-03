@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000629-blue)](https://doi.org/10.82901/nemar.nm000629)
+
 <p align="center">
   <img src="code/readme-assets/egobrain_mosaic.jpg" alt="EgoBrain spelled out in first-person frames from the release, over real EEG from the same recordings" width="100%">
 </p>
